@@ -15,6 +15,33 @@ export default function Footer() {
               Kuzey Kıbrıs&apos;ın en profesyonel dövme stüdyosu.
               Sanatı cildinize işliyoruz.
             </p>
+            {/* Social Media */}
+            <div className="flex items-center gap-3 mt-4">
+              <a
+                href="https://www.instagram.com/cyprustatt00"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full border border-[#c9a96e]/30 flex items-center justify-center hover:border-[#c9a96e] hover:bg-[#c9a96e]/10 transition-all group"
+                aria-label="Instagram"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="#c9a96e"/>
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/9005488910673"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full border border-[#25d366]/30 flex items-center justify-center hover:border-[#25d366] hover:bg-[#25d366]/10 transition-all"
+                aria-label="WhatsApp"
+              >
+                <svg width="16" height="16" fill="#25d366" viewBox="0 0 32 32">
+                  <path d="M16.004 3C9.375 3 4 8.373 4 15.003c0 2.122.558 4.112 1.529 5.842L4 29l8.385-1.504A11.95 11.95 0 0016.004 28c6.629 0 12.003-5.374 12.003-11.997C28.007 8.373 22.633 3 16.004 3z"/>
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* Links */}
