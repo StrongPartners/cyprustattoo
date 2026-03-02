@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,9 +8,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <div className="mb-4">
-              <span className="text-white font-bold text-xl tracking-wider">CYPRUS</span>
-              <span className="text-[#c9a96e] font-bold text-xl tracking-wider ml-2">TATTOO</span>
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/logo-icon.png"
+                alt="Cyprus Tattoo Logo"
+                width={52}
+                height={52}
+                className="h-12 w-12 object-contain"
+              />
+              <Image
+                src="/logo-text.png"
+                alt="Cyprus Tattoo"
+                width={130}
+                height={36}
+                className="h-8 w-auto object-contain"
+              />
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
               Kuzey Kıbrıs&apos;ın en profesyonel dövme stüdyosu.
