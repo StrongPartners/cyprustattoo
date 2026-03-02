@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Ana Sayfa" },
@@ -30,18 +31,15 @@ export default function Header() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-full border-2 border-[#c9a96e] flex items-center justify-center group-hover:bg-[#c9a96e] transition-colors">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-[#c9a96e] group-hover:text-black transition-colors">
-              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-              <path d="M2 17l10 5 10-5"/>
-              <path d="M2 12l10 5 10-5"/>
-            </svg>
-          </div>
-          <div>
-            <span className="text-white font-bold text-lg tracking-wider">CYPRUS</span>
-            <span className="text-[#c9a96e] font-bold text-lg tracking-wider ml-2">TATTOO</span>
-          </div>
+        <Link href="/" className="flex items-center group">
+          <Image
+            src="/logo.png"
+            alt="Cyprus Tattoo Logo"
+            width={160}
+            height={44}
+            className="h-10 w-auto object-contain brightness-100 group-hover:brightness-110 transition-all"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
