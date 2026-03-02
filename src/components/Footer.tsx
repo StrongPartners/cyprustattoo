@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Cyprus Tattoo Logo"
                 width={140}
                 height={93}

@@ -33,7 +33,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center group">
           <Image
-            src="/logo.jpg"
+            src="/logo.png"
             alt="Cyprus Tattoo Logo"
             width={140}
             height={93}
