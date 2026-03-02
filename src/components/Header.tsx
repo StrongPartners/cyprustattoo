@@ -31,23 +31,13 @@ export default function Header() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          {/* Dairesel badge ikonu */}
+        <Link href="/" className="flex items-center group">
           <Image
             src="/logo-icon.png"
             alt="Cyprus Tattoo"
             width={52}
             height={52}
             className="h-12 w-12 object-contain group-hover:scale-105 transition-transform drop-shadow-lg"
-            priority
-          />
-          {/* Yatay metin logosu */}
-          <Image
-            src="/logo-text.png"
-            alt="Cyprus Tattoo"
-            width={140}
-            height={38}
-            className="h-9 w-auto object-contain hidden sm:block"
             priority
           />
         </Link>

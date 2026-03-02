@@ -16,13 +16,10 @@ export default function Footer() {
                 height={52}
                 className="h-12 w-12 object-contain"
               />
-              <Image
-                src="/logo-text.png"
-                alt="Cyprus Tattoo"
-                width={130}
-                height={36}
-                className="h-8 w-auto object-contain"
-              />
+              <div>
+                <span className="text-white font-bold text-xl tracking-wider">CYPRUS</span>
+                <span className="text-[#c9a96e] font-bold text-xl tracking-wider ml-2">TATTOO</span>
+              </div>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
               Kuzey Kıbrıs&apos;ın en profesyonel dövme stüdyosu.
