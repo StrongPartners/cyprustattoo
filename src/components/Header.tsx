@@ -33,11 +33,11 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center group">
           <Image
-            src="/logo-icon.png"
-            alt="Cyprus Tattoo"
-            width={52}
-            height={52}
-            className="h-12 w-12 object-contain group-hover:scale-105 transition-transform drop-shadow-lg"
+            src="/logo.jpg"
+            alt="Cyprus Tattoo Logo"
+            width={140}
+            height={93}
+            className="h-14 w-auto object-contain group-hover:scale-105 transition-transform"
             priority
           />
         </Link>

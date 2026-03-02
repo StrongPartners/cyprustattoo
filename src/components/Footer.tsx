@@ -8,18 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="mb-4">
               <Image
-                src="/logo-icon.png"
+                src="/logo.jpg"
                 alt="Cyprus Tattoo Logo"
-                width={52}
-                height={52}
-                className="h-12 w-12 object-contain"
+                width={140}
+                height={93}
+                className="h-16 w-auto object-contain"
               />
-              <div>
-                <span className="text-white font-bold text-xl tracking-wider">CYPRUS</span>
-                <span className="text-[#c9a96e] font-bold text-xl tracking-wider ml-2">TATTOO</span>
-              </div>
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
               Kuzey Kıbrıs&apos;ın en profesyonel dövme stüdyosu.
