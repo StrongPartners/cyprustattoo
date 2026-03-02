@@ -12,8 +12,8 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="Cyprus Tattoo Logo"
-                width={140}
-                height={93}
+                width={800}
+                height={436}
                 className="h-16 w-auto object-contain"
               />
             </div>

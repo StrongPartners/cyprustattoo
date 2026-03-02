@@ -35,8 +35,8 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="Cyprus Tattoo Logo"
-            width={140}
-            height={93}
+            width={800}
+            height={436}
             className="h-14 w-auto object-contain group-hover:scale-105 transition-transform"
             priority
           />
