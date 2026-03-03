@@ -46,28 +46,28 @@ export default function Header() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden sm:flex items-center gap-4 md:gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="nav-link text-white/80 hover:text-[#c9a96e] text-sm font-medium tracking-wide transition-colors uppercase"
+              className="nav-link text-white/80 hover:text-[#c9a96e] text-[10px] md:text-sm font-medium tracking-wide transition-colors uppercase"
             >
               {link.label}
             </Link>
           ))}
 
           {/* Language Switcher */}
-          <div className="flex items-center gap-1 bg-white/5 rounded-full p-1 border border-white/10 ml-4">
+          <div className="flex items-center gap-1 bg-white/5 rounded-full p-1 border border-white/10 ml-2 md:ml-4">
             <button
               onClick={() => setLanguage('tr')}
-              className={`text-[10px] font-black px-3 py-1.5 rounded-full transition-all duration-300 ${language === 'tr' ? 'bg-primary text-black shadow-lg shadow-primary/20' : 'text-white/30 hover:text-white/60'}`}
+              className={`text-[9px] md:text-[10px] font-black px-2 md:px-3 py-1 md:py-1.5 rounded-full transition-all duration-300 ${language === 'tr' ? 'bg-primary text-black shadow-lg shadow-primary/20' : 'text-white/30 hover:text-white/60'}`}
             >
               TR
             </button>
             <button
               onClick={() => setLanguage('en')}
-              className={`text-[10px] font-black px-3 py-1.5 rounded-full transition-all duration-300 ${language === 'en' ? 'bg-primary text-black shadow-lg shadow-primary/20' : 'text-white/30 hover:text-white/60'}`}
+              className={`text-[9px] md:text-[10px] font-black px-2 md:px-3 py-1 md:py-1.5 rounded-full transition-all duration-300 ${language === 'en' ? 'bg-primary text-black shadow-lg shadow-primary/20' : 'text-white/30 hover:text-white/60'}`}
             >
               EN
             </button>
@@ -77,7 +77,7 @@ export default function Header() {
             href="https://wa.me/9005488910673"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#c9a96e] hover:bg-[#e2c88a] text-black font-bold text-sm px-5 py-2.5 rounded transition-all hover:shadow-lg hover:shadow-[#c9a96e]/30 uppercase tracking-wide"
+            className="hidden lg:block bg-[#c9a96e] hover:bg-[#e2c88a] text-black font-bold text-xs px-4 py-2 rounded transition-all hover:shadow-lg hover:shadow-[#c9a96e]/30 uppercase tracking-wide"
           >
             {t.nav.booking}
           </a>
@@ -85,7 +85,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="sm:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menü"
         >
