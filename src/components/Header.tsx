@@ -37,9 +37,10 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="Cyprus Tattoo Logo"
-            width={800}
-            height={436}
-            className="h-14 w-auto object-contain group-hover:scale-105 transition-transform"
+            width={300}
+            height={164}
+            className="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform"
+            style={{ maxHeight: '48px', width: 'auto' }}
             priority
           />
         </Link>

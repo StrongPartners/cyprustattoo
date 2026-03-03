@@ -69,11 +69,10 @@ export default function Footer() {
 
           {/* Locations */}
           <div>
-            <h4 className="text-white text-sm font-bold uppercase tracking-[0.2em] mb-8">KIBRIS</h4>
+            <h4 className="text-white text-sm font-bold uppercase tracking-[0.2em] mb-8">LOKASYON</h4>
             <ul className="space-y-4">
               <li className="text-white/40 text-sm">Girne / Kyrenia</li>
-              <li className="text-white/40 text-sm">Lefkoşa / Nicosia</li>
-              <li className="text-white/40 text-sm">Magosa / Famagusta</li>
+              <li className="text-white/40 text-sm italic">Kuzey Kıbrıs</li>
             </ul>
           </div>
 

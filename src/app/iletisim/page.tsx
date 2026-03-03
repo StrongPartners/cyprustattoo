@@ -68,8 +68,8 @@ export default function IletisimPage() {
           {[
             {
               title: isEn ? "Address" : "Adres",
-              value: isEn ? "North Cyprus" : "Kuzey Kıbrıs",
-              sub: isEn ? "Kyrenia & Nicosia" : "Girne & Lefkoşa"
+              value: isEn ? "Kyrenia / Girne" : "Girne / Kyrenia",
+              sub: isEn ? "North Cyprus" : "Kuzey Kıbrıs"
             },
             {
               title: isEn ? "Hours" : "Saatler",

@@ -46,8 +46,8 @@ export default function HakkimizdaPage() {
             <div className="space-y-8 text-white/50 text-lg sm:text-xl font-light leading-relaxed">
               <p>
                 {isEn
-                  ? "Cyprus Tattoo was founded in the heart of North Cyprus by professionals who see tattoo art as a way of life. We provide services at international standards throughout the island, especially in Nicosia and Kyrenia."
-                  : "Cyprus Tattoo, Kuzey Kıbrıs'ın kalbinde, dövme sanatını bir yaşam biçimi olarak gören profesyoneller tarafından kuruldu. Lefkoşa ve Girne başta olmak üzere tüm adaya uluslararası standartlarda hizmet veriyoruz."}
+                  ? "Cyprus Tattoo was founded in the heart of Kyrenia by professionals who see tattoo art as a way of life."
+                  : "Cyprus Tattoo, Girne'nin kalbinde, dövme sanatını bir yaşam biçimi olarak gören profesyoneller tarafından kuruldu."}
               </p>
               <p>
                 {isEn

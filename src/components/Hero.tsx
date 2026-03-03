@@ -62,18 +62,18 @@ export default function Hero() {
                     {t.hero.desc}
                 </p>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                     <a
                         href="https://wa.me/9005488910673"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full sm:w-auto px-10 py-5 bg-primary text-black font-black uppercase tracking-widest rounded-xl hover:bg-secondary transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-primary/20"
+                        className="btn-gold w-full sm:w-auto text-center"
                     >
                         {t.hero.cta_whatsapp}
                     </a>
                     <Link
                         href="/galeri"
-                        className="w-full sm:w-auto px-10 py-5 bg-white/5 text-white border border-white/10 font-bold uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all backdrop-blur-md"
+                        className="w-full sm:w-auto px-10 py-5 bg-white/5 text-white border border-white/10 font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all backdrop-blur-md text-center"
                     >
                         {t.hero.cta_gallery}
                     </Link>
