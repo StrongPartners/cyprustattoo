@@ -338,19 +338,22 @@ export default function Home() {
               {
                 slug: "kuzey-kibris-dovme-studyosu-secim-rehberi",
                 title: "Dövme Stüdyosu Seçim Rehberi",
-                image: "/gallery/tattoo-1.jpg",
+                image: "/blog/image1.png",
+                alt: "Kuzey Kıbrıs dövme stüdyosu seçim rehberi",
                 desc: "Kuzey Kıbrıs'ta güvenilir stüdyo seçerken dikkat etmeniz gerekenler."
               },
               {
                 slug: "kibris-ikliminde-dovme-bakimi",
                 title: "Kıbrıs İkliminde Dövme Bakımı",
-                image: "/gallery/tattoo-2.jpg",
+                image: "/blog/image2.png",
+                alt: "Kıbrıs ikliminde dövme bakımı rehberi",
                 desc: "Güneş, deniz ve nemle doğru baş etme yöntemleri."
               },
               {
                 slug: "2026-kibris-dovme-trendleri",
                 title: "2026 Dövme Trendleri",
-                image: "/gallery/tattoo-3.jpg",
+                image: "/blog/image3.png",
+                alt: "2026 Kıbrıs dövme trendleri ve tarzları",
                 desc: "Kuzey Kıbrıs'ta en çok talep gören tarzlar ve tasarımlar."
               }
             ].map((post) => (
@@ -359,7 +362,7 @@ export default function Home() {
                   <div className="aspect-video relative overflow-hidden">
                     <Image
                       src={post.image}
-                      alt={post.title}
+                      alt={post.alt}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />

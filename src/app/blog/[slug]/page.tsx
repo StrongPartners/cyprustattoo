@@ -55,7 +55,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <div className="aspect-video relative rounded-2xl overflow-hidden border border-[#c9a96e]/10">
                         <Image
                             src={post.image}
-                            alt={post.title}
+                            alt={post.imageAlt}
                             fill
                             className="object-cover"
                             priority

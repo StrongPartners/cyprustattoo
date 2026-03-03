@@ -33,7 +33,7 @@ export default function BlogPage() {
                                 <div className="aspect-[16/9] overflow-hidden relative">
                                     <Image
                                         src={post.image}
-                                        alt={post.title}
+                                        alt={post.imageAlt}
                                         fill
                                         className="object-cover group-hover:scale-110 transition-transform duration-500"
                                     />
