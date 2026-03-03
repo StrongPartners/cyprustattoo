@@ -3,18 +3,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-const navLinks = [
-  { href: "/", label: "Ana Sayfa" },
-  { href: "/blog", label: "Blog" },
-  { href: "/galeri", label: "Galeri" },
-  { href: "/hakkimizda", label: "Hakkımızda" },
-  { href: "/iletisim", label: "İletişim" },
-];
+import { useLanguage } from "./LanguageContext";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -22,11 +16,19 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navLinks = [
+    { href: "/", label: t.nav.home },
+    { href: "/blog", label: t.nav.blog },
+    { href: "/galeri", label: t.nav.gallery },
+    { href: "/hakkimizda", label: t.nav.about },
+    { href: "/iletisim", label: t.nav.contact },
+  ];
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "bg-[#0a0a0a]/95 backdrop-blur-md border-b border-[#c9a96e]/20 py-3"
-          : "bg-transparent py-5"
+        ? "bg-[#0a0a0a]/95 backdrop-blur-md border-b border-[#c9a96e]/20 py-3"
+        : "bg-transparent py-5"
         }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
@@ -53,26 +55,30 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="https://www.instagram.com/cyprustatt00"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white/60 hover:text-[#c9a96e] transition-colors"
-            aria-label="Instagram"
-          >
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-              <circle cx="12" cy="12" r="4" />
-              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
-            </svg>
-          </a>
+
+          {/* Language Switcher */}
+          <div className="flex items-center gap-1 bg-white/5 rounded-full p-1 border border-white/10 ml-4">
+            <button
+              onClick={() => setLanguage('tr')}
+              className={`text-[10px] font-black px-3 py-1.5 rounded-full transition-all duration-300 ${language === 'tr' ? 'bg-primary text-black shadow-lg shadow-primary/20' : 'text-white/30 hover:text-white/60'}`}
+            >
+              TR
+            </button>
+            <button
+              onClick={() => setLanguage('en')}
+              className={`text-[10px] font-black px-3 py-1.5 rounded-full transition-all duration-300 ${language === 'en' ? 'bg-primary text-black shadow-lg shadow-primary/20' : 'text-white/30 hover:text-white/60'}`}
+            >
+              EN
+            </button>
+          </div>
+
           <a
             href="https://wa.me/9005488910673"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#c9a96e] hover:bg-[#e2c88a] text-black font-bold text-sm px-5 py-2.5 rounded transition-all hover:shadow-lg hover:shadow-[#c9a96e]/30 uppercase tracking-wide"
           >
-            Rezervasyon
+            {t.nav.booking}
           </a>
         </nav>
 
@@ -91,6 +97,24 @@ export default function Header() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-[#111] border-t border-[#c9a96e]/20 px-4 py-6 flex flex-col gap-4">
+          <div className="flex justify-center mb-4">
+            <div className="flex justify-center mb-6">
+              <div className="flex items-center bg-white/5 rounded-2xl p-1.5 border border-white/10 w-full max-w-[280px]">
+                <button
+                  onClick={() => setLanguage('tr')}
+                  className={`flex-1 text-xs font-black py-3 rounded-xl transition-all ${language === 'tr' ? 'bg-primary text-black shadow-lg shadow-primary/20' : 'text-white/40'}`}
+                >
+                  TÜRKÇE
+                </button>
+                <button
+                  onClick={() => setLanguage('en')}
+                  className={`flex-1 text-xs font-black py-3 rounded-xl transition-all ${language === 'en' ? 'bg-primary text-black shadow-lg shadow-primary/20' : 'text-white/40'}`}
+                >
+                  ENGLISH
+                </button>
+              </div>
+            </div>
+          </div>
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -108,7 +132,7 @@ export default function Header() {
             className="bg-[#c9a96e] text-black font-bold text-center px-5 py-3 rounded uppercase tracking-wide mt-2"
             onClick={() => setMenuOpen(false)}
           >
-            WhatsApp Rezervasyon
+            {t.nav.booking}
           </a>
         </div>
       )}

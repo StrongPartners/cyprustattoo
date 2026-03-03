@@ -1,14 +1,21 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from "./LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
-    <footer className="bg-[#0d0d0d] border-t border-[#c9a96e]/15 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+    <footer className="bg-surface py-20 px-4 mt-20 relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
           {/* Brand */}
-          <div>
-            <div className="mb-4">
+          <div className="md:col-span-1">
+            <div className="mb-8">
               <Image
                 src="/logo.png"
                 alt="Cyprus Tattoo Logo"
@@ -17,114 +24,81 @@ export default function Footer() {
                 className="h-16 w-auto object-contain"
               />
             </div>
-            <p className="text-white/50 text-sm leading-relaxed">
-              Kuzey Kıbrıs&apos;ın en profesyonel dövme stüdyosu.
-              Sanatı cildinize işliyoruz.
+            <p className="text-white/40 text-sm leading-relaxed mb-8">
+              Cyprus Tattoo Studio — Kuzey Kıbrıs&apos;ın kalbinde sanatı cildinize işliyoruz.
+              Profesyonellik, hijyen ve özgünlük bir arada.
             </p>
-            {/* Social Media */}
-            <div className="flex items-center gap-3 mt-4">
+            {/* Social */}
+            <div className="flex items-center gap-4">
               <a
                 href="https://www.instagram.com/cyprustatt00"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-[#c9a96e]/30 flex items-center justify-center hover:border-[#c9a96e] hover:bg-[#c9a96e]/10 transition-all group"
-                aria-label="Instagram"
+                className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:border-primary hover:bg-primary/10 transition-all group"
               >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                  <circle cx="12" cy="12" r="4"/>
-                  <circle cx="17.5" cy="6.5" r="0.5" fill="#c9a96e"/>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white/40 group-hover:text-primary transition-colors">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
                 </svg>
               </a>
               <a
                 href="https://wa.me/9005488910673"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-[#25d366]/30 flex items-center justify-center hover:border-[#25d366] hover:bg-[#25d366]/10 transition-all"
-                aria-label="WhatsApp"
+                className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:border-[#25d366] hover:bg-[#25d366]/10 transition-all group"
               >
-                <svg width="16" height="16" fill="#25d366" viewBox="0 0 32 32">
-                  <path d="M16.004 3C9.375 3 4 8.373 4 15.003c0 2.122.558 4.112 1.529 5.842L4 29l8.385-1.504A11.95 11.95 0 0016.004 28c6.629 0 12.003-5.374 12.003-11.997C28.007 8.373 22.633 3 16.004 3z"/>
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" className="text-white/40 group-hover:text-[#25d366] transition-colors">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
               </a>
             </div>
           </div>
 
-          {/* Links */}
+          {/* Nav */}
           <div>
-            <h3 className="text-[#c9a96e] font-semibold uppercase text-sm tracking-wider mb-4">
-              Hızlı Linkler
-            </h3>
-            <ul className="space-y-2">
-              {[
-                { href: "/", label: "Ana Sayfa" },
-                { href: "/galeri", label: "Galeri" },
-                { href: "/hakkimizda", label: "Hakkımızda" },
-                { href: "/iletisim", label: "İletişim" },
-              ].map((l) => (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className="text-white/50 hover:text-[#c9a96e] text-sm transition-colors"
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
+            <h4 className="text-white text-sm font-bold uppercase tracking-[0.2em] mb-8">{t.nav.home}</h4>
+            <ul className="space-y-4">
+              <li><Link href="/" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.home}</Link></li>
+              <li><Link href="/blog" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.blog}</Link></li>
+              <li><Link href="/galeri" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.gallery}</Link></li>
+              <li><Link href="/hakkimizda" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.about}</Link></li>
+              <li><Link href="/iletisim" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.contact}</Link></li>
+            </ul>
+          </div>
+
+          {/* Locations */}
+          <div>
+            <h4 className="text-white text-sm font-bold uppercase tracking-[0.2em] mb-8">KIBRIS</h4>
+            <ul className="space-y-4">
+              <li className="text-white/40 text-sm">Girne / Kyrenia</li>
+              <li className="text-white/40 text-sm">Lefkoşa / Nicosia</li>
+              <li className="text-white/40 text-sm">Magosa / Famagusta</li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="text-[#c9a96e] font-semibold uppercase text-sm tracking-wider mb-4">
-              İletişim
-            </h3>
-            <ul className="space-y-3 text-sm text-white/50">
-              <li className="flex items-center gap-2">
-                <svg width="16" height="16" fill="none" stroke="#c9a96e" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                </svg>
-                <a href="tel:+9005488910673" className="hover:text-[#c9a96e] transition-colors">
-                  +90 548 891 0673
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <svg width="16" height="16" fill="none" stroke="#c9a96e" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                </svg>
-                <span>Kuzey Kıbrıs</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <svg width="16" height="16" fill="none" stroke="#c9a96e" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                <span>Pzt-Cts: 10:00 - 21:00</span>
-              </li>
-              <li>
+            <h4 className="text-white text-sm font-bold uppercase tracking-[0.2em] mb-8">{t.nav.contact}</h4>
+            <ul className="space-y-4">
+              <li className="text-white/40 text-sm">+90 548 891 0673</li>
+              <li className="text-white/40 text-sm">info@cyprustattoo.ink</li>
+              <li className="text-white/40 text-sm italic">cyprustattoo.ink</li>
+              <li className="pt-4">
                 <a
                   href="https://wa.me/9005488910673"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#25d366] text-white text-xs font-medium px-4 py-2 rounded-full hover:bg-[#20b858] transition-colors mt-1"
+                  className="inline-block bg-primary/10 border border-primary/20 text-primary hover:bg-primary hover:text-black font-bold px-6 py-3 rounded-xl transition-all text-xs uppercase tracking-widest"
                 >
-                  <svg width="14" height="14" fill="white" viewBox="0 0 32 32">
-                    <path d="M16.004 3C9.375 3 4 8.373 4 15.003c0 2.122.558 4.112 1.529 5.842L4 29l8.385-1.504A11.95 11.95 0 0016.004 28c6.629 0 12.003-5.374 12.003-11.997C28.007 8.373 22.633 3 16.004 3zm0 21.994a9.955 9.955 0 01-5.085-1.393l-.365-.216-3.784.679.718-3.682-.237-.378A9.953 9.953 0 016.006 15c0-5.516 4.484-10.001 9.998-10.001S26 9.484 26 15.003c0 5.514-4.484 9.998-9.996 9.998z"/>
-                  </svg>
-                  WhatsApp Yaz
+                  {t.nav.booking}
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-[#c9a96e]/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3">
-          <p className="text-white/30 text-xs">
-            © 2025 Cyprus Tattoo. Tüm hakları saklıdır.
-          </p>
-          <p className="text-white/20 text-xs">
-            Kuzey Kıbrıs&apos;ın #1 Dövme Stüdyosu — cyprustattoo.ink
-          </p>
+        <div className="flex flex-col sm:flex-row items-center justify-between border-t border-white/5 pt-10 text-[10px] text-white/20 uppercase tracking-[0.2em] font-bold">
+          <p>{t.footer.copyright}</p>
+          <p className="mt-4 sm:mt-0">DESIGN BY ANTIGRAVITY AI</p>
         </div>
       </div>
     </footer>

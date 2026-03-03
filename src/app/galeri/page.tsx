@@ -1,79 +1,80 @@
-import type { Metadata } from "next";
+"use client";
+
 import Image from "next/image";
-
-export const metadata: Metadata = {
-  title: "Galeri | Cyprus Tattoo - Kuzey Kıbrıs Dövme Çalışmaları",
-  description:
-    "Cyprus Tattoo stüdyosunun gerçek dövme çalışmaları. Kuzey Kıbrıs'ta custom tasarım, realistik, minimalist, blackwork ve geleneksel dövme örnekleri. 40+ özgün çalışma.",
-  alternates: { canonical: "https://cyprustattoo.ink/galeri" },
-};
-
-const photos = Array.from({ length: 42 }, (_, i) => ({
-  src: `/gallery/tattoo-${i + 1}.jpg`,
-  alt: `Kuzey Kıbrıs dövme çalışması ${i + 1} - Cyprus Tattoo Studio`,
-}));
-
-const videos = [
-  { src: "/gallery/video-1.mp4", poster: "/gallery/tattoo-1.jpg", label: "Dövme Süreç Videosu 1" },
-  { src: "/gallery/video-2.mp4", poster: "/gallery/tattoo-2.jpg", label: "Dövme Süreç Videosu 2" },
-];
+import { galleryImages, galleryVideos } from "@/data/assets-data";
+import { useLanguage } from "@/components/LanguageContext";
 
 export default function GaleriPage() {
+  const { t } = useLanguage();
+
   return (
-    <div className="min-h-screen bg-[#0a0a0a] pt-24 pb-20 px-4">
+    <div className="min-h-screen bg-background pt-32 pb-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-14">
-          <p className="text-[#c9a96e] uppercase tracking-widest text-xs mb-3">Portfolyo</p>
-          <h1 className="text-5xl sm:text-6xl font-black text-white mb-4">GALERİ</h1>
-          <div className="w-12 h-0.5 bg-[#c9a96e] mx-auto mb-6" />
-          <p className="text-white/50 max-w-xl mx-auto text-sm leading-relaxed">
-            Kuzey Kıbrıs&apos;ta gerçekleştirdiğimiz özgün dövme çalışmaları.
-            Her tasarım, müşterimizin hikâyesini taşıyor.
+        <div className="text-center mb-20">
+          <p className="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4">Portfolio</p>
+          <h1 className="text-5xl sm:text-7xl font-black text-white mb-6 uppercase tracking-tighter">GALERİ</h1>
+          <div className="w-16 h-1 bg-primary mx-auto mb-8" />
+          <p className="text-white/50 max-w-2xl mx-auto text-lg leading-relaxed font-light">
+            Kuzey Kıbrıs&apos;ta gerçekleştirdiğimiz en güncel ve özgün dövme çalışmaları.
+            Her çizgi bir hikâye anlatır, her tasarım bir karakteri yansıtır.
           </p>
-          <p className="text-[#c9a96e]/70 text-xs mt-2 uppercase tracking-widest">
-            {photos.length}+ Özgün Çalışma
-          </p>
+        </div>
+
+        {/* Video grid - Featured */}
+        <div className="mb-24">
+          <div className="flex items-center gap-4 mb-12">
+            <h2 className="text-white text-xl font-bold uppercase tracking-widest">Süreç Videoları</h2>
+            <div className="flex-1 h-[1px] bg-white/5" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {galleryVideos.map((vid, i) => (
+              <div key={i} className="group rounded-2xl overflow-hidden border border-white/5 bg-surface transition-all hover:border-primary/20 relative">
+                <div className="aspect-[9/16] sm:aspect-video relative bg-black">
+                  <video
+                    src={vid}
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                    onMouseEnter={(e) => e.currentTarget.play()}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.pause();
+                      e.currentTarget.currentTime = 0;
+                    }}
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity">
+                    <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20">
+                      <span className="text-white text-2xl ml-1">▶</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Photo masonry grid */}
-        <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 mb-16">
-          {photos.map((img, i) => (
-            <div
-              key={i}
-              className="gallery-item break-inside-avoid mb-3 rounded overflow-hidden border border-[#c9a96e]/10 hover:border-[#c9a96e]/40 transition-all"
-            >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                width={500}
-                height={500}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          ))}
-        </div>
-
-        {/* Video grid */}
-        <div className="mb-16">
-          <h2 className="text-[#c9a96e] uppercase tracking-widest text-xs mb-6 text-center">
-            🎬 Süreç Videoları
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
-            {videos.map((vid, i) => (
-              <div key={i} className="rounded-lg overflow-hidden border border-[#c9a96e]/15 bg-[#111]">
-                <div className="aspect-video">
-                  <video
-                    src={vid.src}
-                    controls
-                    muted
-                    playsInline
-                    poster={vid.poster}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-3">
-                  <p className="text-white/50 text-xs">{vid.label}</p>
+        <div>
+          <div className="flex items-center gap-4 mb-12">
+            <h2 className="text-white text-xl font-bold uppercase tracking-widest">Çalışmalarımız</h2>
+            <div className="flex-1 h-[1px] bg-white/5" />
+          </div>
+          <div className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6">
+            {galleryImages.map((img, i) => (
+              <div
+                key={i}
+                className="relative group overflow-hidden rounded-2xl border border-white/5 hover:border-primary/20 transition-all break-inside-avoid"
+              >
+                <Image
+                  src={img}
+                  alt={`Cyprus Tattoo Portfolio ${i + 1}`}
+                  width={500}
+                  height={500}
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                  <p className="text-primary text-[10px] font-black uppercase tracking-widest">@cyprustatt00</p>
                 </div>
               </div>
             ))}
@@ -81,23 +82,21 @@ export default function GaleriPage() {
         </div>
 
         {/* CTA */}
-        <div className="text-center bg-[#111] border border-[#c9a96e]/15 rounded-lg p-10">
-          <h3 className="text-2xl font-black text-white mb-3">
-            Beğendiğin Bir Stil Var mı?
+        <div className="mt-24 text-center bg-surface border border-primary/10 rounded-[3rem] p-12 sm:p-20 relative overflow-hidden">
+          <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
+          <h3 className="text-3xl sm:text-5xl font-black text-white mb-6 uppercase tracking-tight">
+            Kendi Hikâyeni Yazmaya Hazır Mısın?
           </h3>
-          <p className="text-white/50 text-sm mb-6">
-            WhatsApp&apos;tan bize ulaş, sana özel tasarımını birlikte yaratalım.
+          <p className="text-white/40 text-lg mb-12 max-w-xl mx-auto font-light leading-relaxed">
+            WhatsApp üzerinden bize ulaş, hayalindeki tasarımı birlikte gerçeğe dönüştürelim.
           </p>
           <a
-            href="https://wa.me/9005488910673?text=Merhaba%2C%20galeriyi%20gördüm%20rezervasyon%20yapmak%20istiyorum."
+            href="https://wa.me/9005488910673"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-[#c9a96e] hover:bg-[#e2c88a] text-black font-bold px-8 py-4 rounded text-sm uppercase tracking-widest transition-all hover:shadow-xl hover:shadow-[#c9a96e]/20"
+            className="inline-flex items-center gap-4 bg-primary text-black font-black px-12 py-6 rounded-2xl text-sm uppercase tracking-widest transition-all hover:bg-secondary hover:scale-105 shadow-2xl shadow-primary/20"
           >
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 32 32">
-              <path d="M16.004 3C9.375 3 4 8.373 4 15.003c0 2.122.558 4.112 1.529 5.842L4 29l8.385-1.504A11.95 11.95 0 0016.004 28c6.629 0 12.003-5.374 12.003-11.997C28.007 8.373 22.633 3 16.004 3zm0 21.994a9.955 9.955 0 01-5.085-1.393l-.365-.216-3.784.679.718-3.682-.237-.378A9.953 9.953 0 016.006 15c0-5.516 4.484-10.001 9.998-10.001S26 9.484 26 15.003c0 5.514-4.484 9.998-9.996 9.998z"/>
-            </svg>
-            WhatsApp Rezervasyon
+            {t.cta_banner.button}
           </a>
         </div>
       </div>
