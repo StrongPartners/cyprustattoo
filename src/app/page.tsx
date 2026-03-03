@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Cyprus Tattoo | Kuzey Kıbrıs'ın En İyi Dövme Salonu",
+  title: "Cyprus Tattoo | Kuzey Kıbrıs Dövme Stüdyosu & Sanatı (KKTC)",
   description:
-    "Kuzey Kıbrıs (KKTC) dövme salonu. Custom tasarım, geleneksel, minimalist ve realistik dövme stilleri. North Cyprus tattoo studio. WhatsApp ile anında rezervasyon!",
+    "Kuzey Kıbrıs'ın (KKTC) en iyi dövme salonu. Lefkoşa ve Girne'de custom tasarım, realistik ve minimalist dövme. Güvenilir, hijyenik ve profesyonel tattoo sanatı.",
   alternates: { canonical: "https://cyprustattoo.ink" },
 };
 
@@ -116,7 +116,7 @@ export default function Home() {
               className="inline-flex items-center justify-center gap-3 bg-[#c9a96e] hover:bg-[#e2c88a] text-black font-bold px-8 py-4 rounded text-sm uppercase tracking-widest transition-all hover:shadow-2xl hover:shadow-[#c9a96e]/30"
             >
               <svg width="18" height="18" fill="currentColor" viewBox="0 0 32 32">
-                <path d="M16.004 3C9.375 3 4 8.373 4 15.003c0 2.122.558 4.112 1.529 5.842L4 29l8.385-1.504A11.95 11.95 0 0016.004 28c6.629 0 12.003-5.374 12.003-11.997C28.007 8.373 22.633 3 16.004 3zm0 21.994a9.955 9.955 0 01-5.085-1.393l-.365-.216-3.784.679.718-3.682-.237-.378A9.953 9.953 0 016.006 15c0-5.516 4.484-10.001 9.998-10.001S26 9.484 26 15.003c0 5.514-4.484 9.998-9.996 9.998z"/>
+                <path d="M16.004 3C9.375 3 4 8.373 4 15.003c0 2.122.558 4.112 1.529 5.842L4 29l8.385-1.504A11.95 11.95 0 0016.004 28c6.629 0 12.003-5.374 12.003-11.997C28.007 8.373 22.633 3 16.004 3zm0 21.994a9.955 9.955 0 01-5.085-1.393l-.365-.216-3.784.679.718-3.682-.237-.378A9.953 9.953 0 016.006 15c0-5.516 4.484-10.001 9.998-10.001S26 9.484 26 15.003c0 5.514-4.484 9.998-9.996 9.998z" />
               </svg>
               WhatsApp Rezervasyon
             </a>
@@ -126,7 +126,7 @@ export default function Home() {
             >
               Galeriyi Gör
               <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </Link>
           </div>
@@ -227,7 +227,7 @@ export default function Home() {
             >
               Tüm Galeriyi Gör
               <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
+                <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </Link>
           </div>
@@ -312,6 +312,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── LATEST BLOG POSTS ──────────────────────────────────── */}
+      <section className="py-24 px-4 bg-[#0a0a0a]">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+            <div>
+              <p className="text-[#c9a96e] uppercase tracking-widest text-xs mb-3">Bilgi Merkezi</p>
+              <h2 className="text-4xl sm:text-5xl font-black text-white gold-line">
+                Dövme Rehberi
+              </h2>
+            </div>
+            <Link
+              href="/blog"
+              className="text-[#c9a96e] hover:text-white transition-colors uppercase tracking-[0.2em] text-xs font-bold flex items-center gap-2 group"
+            >
+              Tüm Yazıları Gör
+              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" className="group-hover:translate-x-1 transition-transform">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                slug: "kuzey-kibris-dovme-studyosu-secim-rehberi",
+                title: "Dövme Stüdyosu Seçim Rehberi",
+                image: "/gallery/tattoo-1.jpg",
+                desc: "Kuzey Kıbrıs'ta güvenilir stüdyo seçerken dikkat etmeniz gerekenler."
+              },
+              {
+                slug: "kibris-ikliminde-dovme-bakimi",
+                title: "Kıbrıs İkliminde Dövme Bakımı",
+                image: "/gallery/tattoo-2.jpg",
+                desc: "Güneş, deniz ve nemle doğru baş etme yöntemleri."
+              },
+              {
+                slug: "2026-kibris-dovme-trendleri",
+                title: "2026 Dövme Trendleri",
+                image: "/gallery/tattoo-3.jpg",
+                desc: "Kuzey Kıbrıs'ta en çok talep gören tarzlar ve tasarımlar."
+              }
+            ].map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
+                <div className="bg-[#111] rounded-2xl border border-white/5 overflow-hidden transition-all group-hover:border-[#c9a96e]/20">
+                  <div className="aspect-video relative overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#c9a96e] transition-colors">{post.title}</h3>
+                    <p className="text-white/40 text-sm leading-relaxed mb-4">{post.desc}</p>
+                    <span className="text-[#c9a96e] text-xs font-bold uppercase tracking-widest">Okumaya Başla →</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── CTA ─────────────────────────────────────────────────── */}
       <section className="py-24 px-4 bg-[#0d0d0d] relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{
@@ -337,7 +401,7 @@ export default function Home() {
             className="inline-flex items-center justify-center gap-3 bg-[#c9a96e] hover:bg-[#e2c88a] text-black font-black px-10 py-5 rounded text-base uppercase tracking-widest transition-all hover:shadow-2xl hover:shadow-[#c9a96e]/30"
           >
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 32 32">
-              <path d="M16.004 3C9.375 3 4 8.373 4 15.003c0 2.122.558 4.112 1.529 5.842L4 29l8.385-1.504A11.95 11.95 0 0016.004 28c6.629 0 12.003-5.374 12.003-11.997C28.007 8.373 22.633 3 16.004 3zm0 21.994a9.955 9.955 0 01-5.085-1.393l-.365-.216-3.784.679.718-3.682-.237-.378A9.953 9.953 0 016.006 15c0-5.516 4.484-10.001 9.998-10.001S26 9.484 26 15.003c0 5.514-4.484 9.998-9.996 9.998z"/>
+              <path d="M16.004 3C9.375 3 4 8.373 4 15.003c0 2.122.558 4.112 1.529 5.842L4 29l8.385-1.504A11.95 11.95 0 0016.004 28c6.629 0 12.003-5.374 12.003-11.997C28.007 8.373 22.633 3 16.004 3zm0 21.994a9.955 9.955 0 01-5.085-1.393l-.365-.216-3.784.679.718-3.682-.237-.378A9.953 9.953 0 016.006 15c0-5.516 4.484-10.001 9.998-10.001S26 9.484 26 15.003c0 5.514-4.484 9.998-9.996 9.998z" />
             </svg>
             Şimdi Rezervasyon Yap
           </a>
