@@ -9,18 +9,16 @@ export async function POST(request: Request) {
         // Hem Google hem IndexNow (Bing/Yandex) tetiklenir
         const results = await masterIndex(urls);
 
-        const allSuccess = results.indexNow.success;
-        // Google başarısı credential yoksa false dönebilir, o yüzden genel başarıyı IndexNow'a bağladık
-        // Ancak response içinde detayları döneceğiz.
-
+        // Response içinde detayları döneceğiz.
         return NextResponse.json({
             message: "İndeksleme işlemi tamamlandı.",
             details: results
         });
 
-    } catch (error: any) {
+    } catch (error) {
+        const errorMessage = error instanceof Error ? error.message : "Bilinmeyen bir hata oluştu";
         return NextResponse.json(
-            { error: "Sunucu hatası oluştu.", details: error.message },
+            { error: "Sunucu hatası oluştu.", details: errorMessage },
             { status: 500 }
         );
     }

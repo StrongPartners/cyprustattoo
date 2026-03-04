@@ -1,0 +1,20 @@
+name: Remote Indexing Trigger
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Manuel tetikleme için
+
+jobs:
+  ping-indexer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for Vercel Deployment
+        run: sleep 60 # Vercel'in deploy olması için 1 dakika bekle
+
+      - name: Ping Indexing API
+        run: |
+          curl -X POST https://cyprustattoo.ink/api/indexnow \
+          -H "Content-Type: application/json" \
+          -d '{}'

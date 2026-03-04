@@ -1,5 +1,4 @@
 import { google } from "googleapis";
-import { blogPosts } from "@/data/blog-posts";
 
 /**
  * Google Indexing API için gerekli olan JSON anahtar dosyasının içeriği
@@ -45,9 +44,10 @@ export async function submitToGoogleIndexing(urls: string[]) {
                 },
             });
             results.push({ url, success: true, status: res.status });
-        } catch (error: any) {
-            console.error(`Error indexing ${url} on Google:`, error.message);
-            results.push({ url, success: false, error: error.message });
+        } catch (error) {
+            const errorMessage = error instanceof Error ? error.message : "Bilinmeyen bir hata oluştu";
+            console.error(`Error indexing ${url} on Google:`, errorMessage);
+            results.push({ url, success: false, error: errorMessage });
         }
     }
 
