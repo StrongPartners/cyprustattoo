@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -9,6 +9,13 @@ import { LanguageProvider } from "@/components/LanguageContext";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 const siteUrl = "https://cyprustattoo.ink";
+
+export const viewport: Viewport = {
+  themeColor: "#0a0a0a",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -38,6 +45,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Cyprus Tattoo Studio" }],
   creator: "Cyprus Tattoo",
   publisher: "Cyprus Tattoo",
+  manifest: "/manifest.json",
   robots: {
     index: true,
     follow: true,
@@ -60,7 +68,7 @@ export const metadata: Metadata = {
       "Kuzey Kıbrıs'ta profesyonel dövme salonu. Custom tasarım, geleneksel ve modern dövme stilleri. WhatsApp ile hızlı rezervasyon!",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Cyprus Tattoo Studio - Kuzey Kıbrıs Dövme Salonu",
@@ -72,7 +80,7 @@ export const metadata: Metadata = {
     title: "Cyprus Tattoo | Kuzey Kıbrıs Dövme Salonu",
     description:
       "Kuzey Kıbrıs'ın en iyi dövme salonu. Custom tasarım, profesyonel sanatçılar.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   alternates: {
     canonical: siteUrl,
@@ -83,6 +91,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "20b924f3fcd680cd",
+    other: {
+      "pinterst-site-verification": ["PLACEHOLDER_FOR_PINTEREST"], // Kullanıcı burayı güncelleyebilir
+    },
   },
   icons: {
     icon: [
@@ -95,22 +106,39 @@ export const metadata: Metadata = {
     ],
     shortcut: "/favicon.png",
   },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Cyprus Tattoo",
+  },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "TattooParlor",
+  "@id": `${siteUrl}/#organization`,
   name: "Cyprus Tattoo",
   description:
     "Kuzey Kıbrıs'ta profesyonel dövme salonu. Custom tasarım, geleneksel ve modern dövme stilleri.",
   url: siteUrl,
   telephone: "+9005488910673",
   priceRange: "$$",
-  image: `${siteUrl}/og-image.jpg`,
+  image: `${siteUrl}/og-image.png`,
+  logo: {
+    "@type": "ImageObject",
+    url: `${siteUrl}/logo.png`,
+  },
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Kuzey Kıbrıs",
+    addressLocality: "Lefkoşa",
+    addressRegion: "KKTC",
     addressCountry: "CY",
-    addressRegion: "Kuzey Kıbrıs",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "35.1856",
+    longitude: "33.3823",
   },
   openingHoursSpecification: [
     {
@@ -120,11 +148,16 @@ const jsonLd = {
       closes: "21:00",
     },
   ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+9005488910673",
+    contactType: "customer service",
+    availableLanguage: ["Turkish", "English"],
+  },
   sameAs: [
     `https://wa.me/9005488910673`,
+    "https://www.instagram.com/cyprustattoo", // Varsayılan/Örnek
   ],
-  hasMap: "https://maps.google.com",
-  servesCuisine: "Tattoo & Piercing",
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5",
@@ -145,8 +178,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <meta name="geo.region" content="CY" />
-        <meta name="geo.placename" content="Kuzey Kıbrıs" />
+        <meta name="geo.region" content="CY-01" />
+        <meta name="geo.placename" content="Lefkoşa" />
         <meta name="language" content="Turkish, English" />
       </head>
       <body className={`${inter.variable} antialiased bg-[#0a0a0a]`}>
