@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -183,6 +184,20 @@ export default function RootLayout({
         <meta name="language" content="Turkish, English" />
       </head>
       <body className={`${inter.variable} antialiased bg-[#0a0a0a]`}>
+        {/* Google Tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17997372323"
+        />
+        <Script id="google-ads">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17997372323');
+          `}
+        </Script>
         <LanguageProvider>
           <Header />
           <main>{children}</main>
