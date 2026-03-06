@@ -174,6 +174,20 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <head>
+        {/* Google Tag (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17997372323"
+        />
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-17997372323');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -184,20 +198,6 @@ export default function RootLayout({
         <meta name="language" content="Turkish, English" />
       </head>
       <body className={`${inter.variable} antialiased bg-[#0a0a0a]`}>
-        {/* Google Tag (gtag.js) */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17997372323"
-        />
-        <Script id="google-ads">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'AW-17997372323');
-          `}
-        </Script>
         <LanguageProvider>
           <Header />
           <main>{children}</main>
