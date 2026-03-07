@@ -36,6 +36,7 @@ export default function GalleryPreview() {
                                 muted
                                 loop
                                 playsInline
+                                title={`Cyprus Tattoo Highlight Video ${idx + 1}`}
                                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                             />
                         </div>

@@ -120,15 +120,16 @@ const jsonLd = {
   },
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Kuzey Kıbrıs",
-    addressLocality: "Lefkoşa",
-    addressRegion: "KKTC",
+    streetAddress: "Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1",
+    addressLocality: "Girne",
+    addressRegion: "Girne",
     addressCountry: "CY",
+    postalCode: "9000",
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: "35.1856",
-    longitude: "33.3823",
+    latitude: "35.3325467",
+    longitude: "33.3302902",
   },
   openingHoursSpecification: [
     {
@@ -183,7 +184,7 @@ export default function RootLayout({
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <meta name="geo.region" content="CY-01" />
-        <meta name="geo.placename" content="Lefkoşa" />
+        <meta name="geo.placename" content="Girne" />
         <meta name="language" content="Turkish, English" />
       </head>
       <body className={`${inter.variable} antialiased bg-[#0a0a0a]`}>

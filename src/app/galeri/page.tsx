@@ -36,6 +36,7 @@ export default function GaleriPage() {
                     loop
                     muted
                     playsInline
+                    title={`Cyprus Tattoo Process Video ${i + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
