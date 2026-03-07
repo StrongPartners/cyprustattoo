@@ -5,27 +5,27 @@ const API_KEY = process.env.GEMINI_API_KEY;
 const BLOG_DATA_PATH = path.resolve('src/data/blog-posts.ts');
 
 async function generateBlogPost() {
-    console.log('--- AI Blog Generator Started ---');
+  console.log('--- AI Blog Generator Started ---');
 
-    if (!API_KEY) {
-        console.error('Error: GEMINI_API_KEY is not set');
-        process.exit(1);
-    }
+  if (!API_KEY) {
+    console.error('Error: GEMINI_API_KEY is not set');
+    process.exit(1);
+  }
 
-    // 1. Read existing posts to avoid duplicates
-    const fileContent = fs.readFileSync(BLOG_DATA_PATH, 'utf-8');
-    const existingSlugs = [...fileContent.matchAll(/slug:\s*"([^"]+)"/g)].map(m => m[1]);
-    const lastIdMatch = fileContent.match(/id:\s*"(\d+)"/g);
-    let nextId = 1;
-    if (lastIdMatch) {
-        const lastId = Math.max(...lastIdMatch.map(m => parseInt(m.match(/\d+/)[0])));
-        nextId = lastId + 1;
-    }
+  // 1. Read existing posts to avoid duplicates
+  const fileContent = fs.readFileSync(BLOG_DATA_PATH, 'utf-8');
+  const existingSlugs = [...fileContent.matchAll(/slug:\s*"([^"]+)"/g)].map(m => m[1]);
+  const lastIdMatch = fileContent.match(/id:\s*"(\d+)"/g);
+  let nextId = 1;
+  if (lastIdMatch) {
+    const lastId = Math.max(...lastIdMatch.map(m => parseInt(m.match(/\d+/)[0])));
+    nextId = lastId + 1;
+  }
 
-    console.log(`Current slug count: ${existingSlugs.length}. Next ID: ${nextId}`);
+  console.log(`Current slug count: ${existingSlugs.length}. Next ID: ${nextId}`);
 
-    // 2. Prepare Prompt
-    const prompt = `You are an expert tattoo culture blogger and SEO specialist for "Cyprus Tattoo Ink", the premier tattoo studio in Girne, North Cyprus.
+  // 2. Prepare Prompt
+  const prompt = `You are an expert tattoo culture blogger and SEO specialist for "Cyprus Tattoo Ink", the premier tattoo studio in Girne, North Cyprus.
 Your goal is to write a highly engaging, professional, and informative blog post that established the studio as a local authority.
 
 CONSTRAINTS:
@@ -50,46 +50,51 @@ Return ONLY a valid JSON object matching this structure:
 
 IMPORTANT: The "content" must be rich, using ## for headers and properly formatted. Focus on high-value keywords like "Kuzey Kıbrıs dövme", "Girne tattoo", "KKTC dövme salonu".`;
 
-    // 3. Call Gemini
-    console.log('Requesting content from Gemini...');
-    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: { responseMimeType: 'application/json' }
-        })
-    });
+  // 3. Call Gemini
+  console.log('Requesting content from Gemini (1.5 Flash)...');
+  const response = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }],
+      generationConfig: {
+        responseMimeType: 'application/json',
+        candidateCount: 1,
+        maxOutputTokens: 8192, // To ensure long content
+        temperature: 0.7
+      }
+    })
+  });
 
-    const data = await response.json();
-    if (!data.candidates?.[0]?.content?.parts?.[0]?.text) {
-        console.error('Gemini API Error:', JSON.stringify(data, null, 2));
-        process.exit(1);
-    }
+  const data = await response.json();
+  if (!data.candidates?.[0]?.content?.parts?.[0]?.text) {
+    console.error('Gemini API Error:', JSON.stringify(data, null, 2));
+    process.exit(1);
+  }
 
-    const generatedPost = JSON.parse(data.candidates[0].content.parts[0].text);
+  const generatedPost = JSON.parse(data.candidates[0].content.parts[0].text);
 
-    // 4. Assign Image & ID
-    const imagePool = [
-        "/blog/studio-guide-hero.png",
-        "/blog/aftercare-guide-hero.png",
-        "/blog/first-tattoo-hero.png",
-        "/blog/trends-2026-hero.png"
-    ];
-    const randomImage = imagePool[Math.floor(Math.random() * imagePool.length)];
+  // 4. Assign Image & ID
+  const imagePool = [
+    "/blog/studio-guide-hero.png",
+    "/blog/aftercare-guide-hero.png",
+    "/blog/first-tattoo-hero.png",
+    "/blog/trends-2026-hero.png"
+  ];
+  const randomImage = imagePool[Math.floor(Math.random() * imagePool.length)];
 
-    const finalPost = {
-        id: nextId.toString(),
-        ...generatedPost,
-        image: randomImage,
-        date: new Date().toISOString().split('T')[0]
-    };
+  const finalPost = {
+    id: nextId.toString(),
+    ...generatedPost,
+    image: randomImage,
+    date: new Date().toISOString().split('T')[0]
+  };
 
-    // 5. Inject into File
-    console.log(`Writing new post: ${finalPost.title.tr}`);
+  // 5. Inject into File
+  console.log(`Writing new post: ${finalPost.title.tr}`);
 
-    // Simple injection: before the last '];'
-    const newPostString = `  {
+  // Simple injection: before the last '];'
+  const newPostString = `  {
     id: "${finalPost.id}",
     slug: "${finalPost.slug}",
     title: {
@@ -116,10 +121,10 @@ IMPORTANT: The "content" must be rich, using ## for headers and properly formatt
   },
 `;
 
-    const updatedContent = fileContent.replace(/\];\s*$/, `${newPostString}];`);
-    fs.writeFileSync(BLOG_DATA_PATH, updatedContent);
+  const updatedContent = fileContent.replace(/\];\s*$/, `${newPostString}];`);
+  fs.writeFileSync(BLOG_DATA_PATH, updatedContent);
 
-    console.log('--- Success ---');
+  console.log('--- Success ---');
 }
 
 generateBlogPost();
