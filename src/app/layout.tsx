@@ -96,17 +96,6 @@ export const metadata: Metadata = {
       "pinterst-site-verification": ["PLACEHOLDER_FOR_PINTEREST"], // Kullanıcı burayı güncelleyebilir
     },
   },
-  icons: {
-    icon: [
-      { url: "/favicon.png", type: "image/png", sizes: "64x64" },
-      { url: "/favicon-192.png", type: "image/png", sizes: "192x192" },
-      { url: "/favicon-512.png", type: "image/png", sizes: "512x512" },
-    ],
-    apple: [
-      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
-    ],
-    shortcut: "/favicon.png",
-  },
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
