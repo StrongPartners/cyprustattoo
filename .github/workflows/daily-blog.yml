@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "0 0,6,12,18 * * *" # Every 6 hours
   workflow_dispatch: # Manual run
+    inputs:
+      post_count:
+        description: 'Number of posts to generate'
+        required: true
+        default: '1'
+        type: string
 
 jobs:
   write-and-index:
@@ -22,6 +28,7 @@ jobs:
       - name: Generate AI Blog Post
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          POST_COUNT: ${{ github.event.inputs.post_count || '1' }}
         run: node scripts/generate-blog.mjs
 
       - name: Commit and Push Changes

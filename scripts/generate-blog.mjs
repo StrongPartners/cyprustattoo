@@ -3,28 +3,9 @@ import path from 'path';
 
 const API_KEY = process.env.GEMINI_API_KEY;
 const BLOG_DATA_PATH = path.resolve('src/data/blog-posts.ts');
+const POST_COUNT = parseInt(process.env.POST_COUNT || '1');
 
-async function generateBlogPost() {
-  console.log('--- AI Blog Generator Started ---');
-
-  if (!API_KEY) {
-    console.error('Error: GEMINI_API_KEY is not set');
-    process.exit(1);
-  }
-
-  // 1. Read existing posts to avoid duplicates
-  const fileContent = fs.readFileSync(BLOG_DATA_PATH, 'utf-8');
-  const existingSlugs = [...fileContent.matchAll(/slug:\s*"([^"]+)"/g)].map(m => m[1]);
-  const lastIdMatch = fileContent.match(/id:\s*"(\d+)"/g);
-  let nextId = 1;
-  if (lastIdMatch) {
-    const lastId = Math.max(...lastIdMatch.map(m => parseInt(m.match(/\d+/)[0])));
-    nextId = lastId + 1;
-  }
-
-  console.log(`Current slug count: ${existingSlugs.length}. Next ID: ${nextId}`);
-
-  // 2. Prepare Prompt
+async function generateSinglePost(existingSlugs, nextId) {
   const prompt = `You are an expert tattoo culture blogger and SEO specialist for "Cyprus Tattoo Ink", the premier tattoo studio in Girne, North Cyprus.
 Your goal is to write a highly engaging, professional, and informative blog post that established the studio as a local authority.
 
@@ -50,8 +31,7 @@ Return ONLY a valid JSON object matching this structure:
 
 IMPORTANT: The "content" must be rich, using ## for headers and properly formatted. Focus on high-value keywords like "Kuzey Kıbrıs dövme", "Girne tattoo", "KKTC dövme salonu".`;
 
-  // 3. Call Gemini
-  console.log('Requesting content from Gemini (2.0 Flash)...');
+  console.log(`Requesting content for post ID ${nextId} from Gemini (2.0 Flash)...`);
   const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -61,40 +41,55 @@ IMPORTANT: The "content" must be rich, using ## for headers and properly formatt
         response_mime_type: 'application/json',
         candidate_count: 1,
         max_output_tokens: 8192,
-        temperature: 0.7
+        temperature: 0.8
       }
     })
   });
 
   const data = await response.json();
   if (!data.candidates?.[0]?.content?.parts?.[0]?.text) {
-    console.error('Gemini API Error:', JSON.stringify(data, null, 2));
-    process.exit(1);
+    throw new Error('Gemini API Error: ' + JSON.stringify(data, null, 2));
   }
 
   const generatedPost = JSON.parse(data.candidates[0].content.parts[0].text);
 
-  // 4. Assign Image & ID
   const imagePool = [
     "/blog/studio-guide-hero.png",
     "/blog/aftercare-guide-hero.png",
     "/blog/first-tattoo-hero.png",
-    "/blog/trends-2026-hero.png"
+    "/blog/trends-2026-hero.png",
+    "/blog/winter-tattoo-benefits-hero.png"
   ];
   const randomImage = imagePool[Math.floor(Math.random() * imagePool.length)];
 
-  const finalPost = {
+  return {
     id: nextId.toString(),
     ...generatedPost,
     image: randomImage,
     date: new Date().toISOString().split('T')[0]
   };
+}
 
-  // 5. Inject into File
-  console.log(`Writing new post: ${finalPost.title.tr}`);
+async function run() {
+  console.log(`--- AI Blog Generator Started (Count: ${POST_COUNT}) ---`);
 
-  // Simple injection: before the last '];'
-  const newPostString = `  {
+  if (!API_KEY) {
+    console.error('Error: GEMINI_API_KEY is not set');
+    process.exit(1);
+  }
+
+  for (let i = 0; i < POST_COUNT; i++) {
+    const fileContent = fs.readFileSync(BLOG_DATA_PATH, 'utf-8');
+    const existingSlugs = [...fileContent.matchAll(/slug:\s*"([^"]+)"/g)].map(m => m[1]);
+    const allIds = [...fileContent.matchAll(/id:\s*"(\d+)"/g)].map(m => parseInt(m[1]));
+    const nextId = allIds.length > 0 ? Math.max(...allIds) + 1 : 1;
+
+    try {
+      const finalPost = await generateSinglePost(existingSlugs, nextId);
+
+      console.log(`Writing new post: ${finalPost.title.tr}`);
+
+      const newPostString = `  {
     id: "${finalPost.id}",
     slug: "${finalPost.slug}",
     title: {
@@ -121,10 +116,30 @@ IMPORTANT: The "content" must be rich, using ## for headers and properly formatt
   },
 `;
 
-  const updatedContent = fileContent.replace(/\];\s*$/, `${newPostString}];`);
-  fs.writeFileSync(BLOG_DATA_PATH, updatedContent);
+      // Check if we need to add a comma to the previous item
+      let updatedContent = fileContent.trim();
+      const lastBracketIndex = updatedContent.lastIndexOf('];');
 
-  console.log('--- Success ---');
+      if (lastBracketIndex !== -1) {
+        const leadingContent = updatedContent.substring(0, lastBracketIndex).trim();
+        // If the leading content doesn't end with a comma and it's not the start of the array
+        const endsWithComma = leadingContent.endsWith(',') || leadingContent.endsWith('[');
+        const joiner = endsWithComma ? '' : ',';
+
+        updatedContent = leadingContent + joiner + '\n' + newPostString + '];';
+        fs.writeFileSync(BLOG_DATA_PATH, updatedContent);
+        console.log(`Post ${i + 1}/${POST_COUNT} pushed successfully.`);
+      } else {
+        throw new Error('Could not find end of array in blog-posts.ts');
+      }
+
+    } catch (error) {
+      console.error(`Failed to generate post ${i + 1}:`, error);
+      process.exit(1);
+    }
+  }
+
+  console.log('--- All Posts Generated Successfully ---');
 }
 
-generateBlogPost();
+run();

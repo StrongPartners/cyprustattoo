@@ -3005,7 +3005,7 @@ In conclusion; the first tattoo is an unforgettable experience.When you are equi
 
   Remember; every collection starts with a single piece.Where does your story begin ? `
     }
-  }
+  },
   {
     id: "102",
     slug: "kuzey-kibris-dovme-sanati-ve-girne-rehberi",
