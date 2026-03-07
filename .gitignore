@@ -42,6 +42,7 @@ next-env.d.ts
 
 # original raw assets (too large for git - videos up to 250MB each)
 /assets/
+/public/assets/
 
 # credentials
 cyprustattooink-907429fa7a11.json
