@@ -52,15 +52,15 @@ IMPORTANT: The "content" must be rich, using ## for headers and properly formatt
 
   // 3. Call Gemini
   console.log('Requesting content from Gemini (1.5 Flash)...');
-  const response = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`, {
+  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
       generationConfig: {
-        responseMimeType: 'application/json',
-        candidateCount: 1,
-        maxOutputTokens: 8192, // To ensure long content
+        response_mime_type: 'application/json',
+        candidate_count: 1,
+        max_output_tokens: 8192,
         temperature: 0.7
       }
     })
