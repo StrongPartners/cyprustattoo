@@ -3911,4 +3911,190 @@ Yes, it is possible to remove a tattoo. Laser tattoo removal works by breaking d
 If you also want to step into the magical world of tattoo art and create a work that you will carry on your body for life, we welcome you to Cyprus Tattoo Ink. We look forward to turning the tattoo of your dreams into reality in our studio in Kyrenia. To reach us, you can call +90 548 891 0673 or send a message via WhatsApp. You can also review our work by visiting our website at [https://cyprustattoo.ink](https://cyprustattoo.ink) or by following our Instagram account at [https://www.instagram.com/cyprustattoo](https://www.instagram.com/cyprustattoo). Our address is: Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000. Remember, Cyprus Tattoo Ink is the address of quality and trust in tattoo art.`
     }
   },
+  {
+    id: "107",
+    slug: "dovme-bakiminin-incelikleri-ve-cyprus-tattoo-ink",
+    title: {
+      tr: "Dövme Bakımının İncelikleri: Cyprus Tattoo Ink Uzmanlığıyla Kalıcı Sanat",
+      en: "The Nuances of Tattoo Aftercare: Lasting Artistry with Cyprus Tattoo Ink Expertise"
+    },
+    description: {
+      tr: "Dövme sanatının kalıcılığı doğru bakımla başlar. Cyprus Tattoo Ink olarak dövme bakımı konusunda bilmeniz gereken her şeyi sunuyoruz. İyileşme sürecinden günlük rutinlere kadar, dövmenizin canlılığını koruyun.",
+      en: "The longevity of tattoo art begins with proper aftercare. At Cyprus Tattoo Ink, we provide everything you need to know about tattoo aftercare. From the healing process to daily routines, preserve the vibrancy of your tattoo."
+    },
+    date: "2026-03-07",
+    author: "Cyprus Tattoo Specialist",
+    category: { tr: "Bakım", en: "Care" },
+    readTime: { tr: "30 dk", en: "30 min" },
+    image: "/blog/fineline-care-hero.png",
+    imageAlt: {
+      tr: "Dövme bakımı ve Cyprus Tattoo Ink logosu",
+      en: "Tattoo aftercare and Cyprus Tattoo Ink logo"
+    },
+    content: {
+      tr: `## Dövme Bakımının Önemi: Sanatın Kalıcılığını Sağlamak
+
+Dövme yaptırmak, vücudunuzda taşıyacağınız kalıcı bir sanat eserine sahip olmak demektir. Ancak bu sanatın güzelliğini ve canlılığını korumak, doğru bakım yöntemlerini uygulamaktan geçer. Cyprus Tattoo Ink olarak, dövmenizin ilk günkü gibi göz alıcı kalması için kapsamlı bir bakım rehberi sunuyoruz. Unutmayın, dövme bakımı sadece iyileşme sürecinde değil, dövmenizin ömrü boyunca devam etmelidir.
+
+### İyileşme Süreci: İlk Adımlar
+
+Dövme yapıldıktan sonraki ilk birkaç hafta, iyileşme sürecinin en kritik aşamasıdır. Bu dönemde dikkat edilmesi gerekenler şunlardır:
+
+*   **Bandajı Koruma:** Dövmeniz yapıldıktan sonra, dövme sanatçısı tarafından steril bir bandajla kapatılacaktır. Bu bandajı, sanatçının önerdiği süre boyunca (genellikle 2-24 saat) çıkarmayın. Bandaj, dövmeyi dış etkenlerden korur ve enfeksiyon riskini azaltır.
+*   **Nazikçe Temizleme:** Bandajı çıkardıktan sonra, dövmeyi ılık su ve parfüm içermeyen, nazik bir sabunla nazikçe temizleyin. Temizleme işlemi sırasında dövmeyi ovalamaktan kaçının. Temizledikten sonra, temiz bir havluyla nazikçe kurulayın.
+*   **Nemlendirme:** Dövme temizlendikten ve kurulandıktan sonra, doktorunuzun veya dövme sanatçınızın önerdiği bir nemlendirici krem uygulayın. Nemlendirici, dövmenin kurumamasını ve kabuklanmasını önler. Ancak, çok fazla nemlendirici kullanmaktan kaçının, çünkü bu da enfeksiyon riskini artırabilir.
+*   **Güneşten Koruma:** İyileşme sürecinde dövmeyi doğrudan güneş ışığından koruyun. Güneş ışığı, dövmenin renginin solmasına ve cildin zarar görmesine neden olabilir. Dışarı çıkarken dövmenizi giysilerle veya yüksek faktörlü bir güneş kremiyle koruyun.
+
+### Günlük Bakım Rutinleri
+
+Dövmeniz iyileştikten sonra, günlük bakım rutininize dahil etmeniz gereken bazı adımlar vardır:
+
+*   **Düzenli Temizlik:** Dövmenizi her gün nazik bir sabun ve ılık suyla temizleyin. Bu, dövmenizin temiz kalmasını ve enfeksiyon riskini azaltır.
+*   **Nemlendirme:** Dövmenizi her gün nemlendirici bir kremle nemlendirin. Bu, dövmenizin canlı ve parlak kalmasını sağlar.
+*   **Güneş Koruması:** Dövmenizi her zaman güneşten koruyun. Güneş kremi kullanmak, dövmenizin renginin solmasını ve cildin zarar görmesini önler.
+*   **Bol Su İçmek:** Cildinizin nemli kalması için bol su için. Bu, dövmenizin daha sağlıklı ve canlı görünmesine yardımcı olur.
+
+### Dövme Bakımında Yapılmaması Gerekenler
+
+Dövmenizin sağlığı ve görünümü için kaçınmanız gereken bazı davranışlar vardır:
+
+*   **Dövmeyi Kaşımak veya Soymak:** İyileşme sürecinde dövmede kabuklanma olabilir. Ancak, bu kabukları kaşımak veya soymak, enfeksiyona ve dövmenin zarar görmesine neden olabilir.
+*   **Havuz veya Denize Girmek:** İyileşme sürecinde havuz veya denize girmek, enfeksiyon riskini artırabilir. Dövmeniz tamamen iyileşene kadar bu aktivitelerden kaçının.
+*   **Dar Giysiler Giymek:** İyileşme sürecinde dövmenin üzerini sıkan dar giysiler giymek, dövmenin tahriş olmasına ve iyileşme sürecinin uzamasına neden olabilir. Bol ve rahat giysiler tercih edin.
+*   **Parfümlü veya Alkol İçeren Ürünler Kullanmak:** Dövme bakımında parfümlü veya alkol içeren ürünler kullanmak, cildin tahriş olmasına ve dövmenin zarar görmesine neden olabilir. Nazik ve doğal ürünler tercih edin.
+
+## Dövme Stillerine Göre Bakım İpuçları
+
+Dövme stiliniz, bakım rutininizi etkileyebilir. İşte farklı dövme stilleri için bazı bakım ipuçları:
+
+*   **İnce Çizgi (Fine Line) Dövmeler:** İnce çizgi dövmeler, daha hızlı iyileşir, ancak renklerinin solması daha kolaydır. Bu nedenle, güneş korumasına özellikle dikkat etmek önemlidir.
+*   **Renkli Dövmeler:** Renkli dövmeler, siyah dövmelere göre daha fazla bakım gerektirebilir. Renklerin canlılığını korumak için, nemlendirici kullanmak ve güneşten korumak önemlidir.
+*   **Siyah ve Gri Dövmeler:** Siyah ve gri dövmeler, genellikle daha az bakım gerektirir. Ancak, cildin nemli kalması ve güneşten korunması yine de önemlidir.
+*   **Dövme Kapatma (Cover-Up) Dövmeler:** Dövme kapatma dövmeleri, daha fazla tahrişe neden olabilir. Bu nedenle, iyileşme sürecinde ekstra dikkatli olmak ve doktorunuzun veya dövme sanatçınızın önerilerini takip etmek önemlidir.
+
+## Pro İpuçları
+
+*   **Dövme Sanatçınızla İletişimde Kalın:** Dövme bakımıyla ilgili herhangi bir sorunuz veya endişeniz varsa, dövme sanatçınızla iletişime geçmekten çekinmeyin. Onlar, size en iyi tavsiyeleri verebilirler.
+*   **Cildinizi Tanıyın:** Herkesin cildi farklıdır. Dövme bakımında, cildinizin ihtiyaçlarını anlamak ve buna göre bir bakım rutini oluşturmak önemlidir.
+*   **Kaliteli Ürünler Kullanın:** Dövme bakımında kullanılan ürünlerin kalitesi, dövmenizin sağlığı ve görünümü için önemlidir. Parfümsüz, alkolsüz ve doğal içerikli ürünler tercih edin.
+*   **Sabırlı Olun:** Dövme iyileşme süreci zaman alabilir. Sabırlı olun ve dövmenize iyi bakmaya devam edin.
+
+## Sıkça Sorulan Sorular
+
+**Dövmemi ne sıklıkla nemlendirmeliyim?**
+
+Dövmenizi günde en az iki kez nemlendirmelisiniz. Cildiniz kuru hissediyorsa, daha sık nemlendirebilirsiniz.
+
+**Dövmemi güneşten nasıl koruyabilirim?**
+
+Dövmenizi güneşten korumak için, dışarı çıkmadan önce yüksek faktörlü bir güneş kremi kullanın. Ayrıca, dövmenizi giysilerle de koruyabilirsiniz.
+
+**Dövmem kaşınıyor, ne yapmalıyım?**
+
+Dövmeniz kaşınıyorsa, kaşımaktan kaçının. Kaşıntıyı hafifletmek için, dövmenize hafifçe vurabilir veya soğuk kompres uygulayabilirsiniz.
+
+**Dövmemde kabuklanma var, normal mi?**
+
+Dövmede kabuklanma, iyileşme sürecinin normal bir parçasıdır. Kabukları kaşımaktan veya soymaktan kaçının.
+
+**Dövmemde enfeksiyon belirtileri var, ne yapmalıyım?**
+
+Dövmenizde kızarıklık, şişlik, ağrı, irin veya ateş gibi enfeksiyon belirtileri varsa, hemen bir doktora başvurun.
+
+## Cyprus Tattoo Ink: Dövme Sanatında Güvenilir Adresiniz
+
+Cyprus Tattoo Ink olarak, dövme sanatının sadece bir vücut süslemesi değil, aynı zamanda bir ifade biçimi olduğuna inanıyoruz. Bu nedenle, her bir dövmeyi özenle tasarlıyor ve en yüksek hijyen standartlarında uyguluyoruz. Dövme bakımında da aynı özeni gösteriyor ve müşterilerimize en iyi tavsiyeleri sunuyoruz.
+
+Eğer siz de kalıcı bir sanat eserine sahip olmak ve dövmenizin uzun yıllar boyunca güzelliğini korumak isterseniz, Cyprus Tattoo Ink'e bekliyoruz. Girne'de bulunan stüdyomuzda, hayallerinizdeki dövmeyi gerçeğe dönüştürmek için sabırsızlanıyoruz.
+
+**Bize Ulaşın:**
+
+*   **Adres:** Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000
+*   **Telefon/WhatsApp:** +90 548 891 0673
+*   **Web Sitesi:** [https://cyprustattoo.ink](https://cyprustattoo.ink)
+*   **Instagram:** [https://www.instagram.com/cyprustattoo](https://www.instagram.com/cyprustattoo)
+`,
+      en: `## The Importance of Tattoo Aftercare: Ensuring the Longevity of Art
+
+Getting a tattoo means owning a permanent work of art on your body. However, maintaining the beauty and vibrancy of this art requires applying the correct aftercare methods. At Cyprus Tattoo Ink, we offer a comprehensive aftercare guide to ensure your tattoo remains as stunning as the first day. Remember, tattoo aftercare should continue not only during the healing process but throughout the life of your tattoo.
+
+### The Healing Process: First Steps
+
+The first few weeks after getting a tattoo are the most critical phase of the healing process. Here's what to pay attention to during this period:
+
+*   **Protect the Bandage:** After your tattoo is done, it will be covered with a sterile bandage by the tattoo artist. Do not remove this bandage for the duration recommended by the artist (usually 2-24 hours). The bandage protects the tattoo from external factors and reduces the risk of infection.
+*   **Clean Gently:** After removing the bandage, gently clean the tattoo with lukewarm water and a fragrance-free, mild soap. Avoid rubbing the tattoo during the cleaning process. After cleaning, gently pat dry with a clean towel.
+*   **Moisturize:** After cleaning and drying the tattoo, apply a moisturizing cream recommended by your doctor or tattoo artist. The moisturizer prevents the tattoo from drying out and scabbing. However, avoid using too much moisturizer, as this can also increase the risk of infection.
+*   **Protect from the Sun:** Protect the tattoo from direct sunlight during the healing process. Sunlight can cause the tattoo's color to fade and damage the skin. Protect your tattoo with clothing or a high-factor sunscreen when going outside.
+
+### Daily Care Routines
+
+After your tattoo has healed, there are some steps you need to include in your daily care routine:
+
+*   **Regular Cleaning:** Clean your tattoo every day with a mild soap and lukewarm water. This keeps your tattoo clean and reduces the risk of infection.
+*   **Moisturizing:** Moisturize your tattoo every day with a moisturizing cream. This ensures your tattoo remains vibrant and bright.
+*   **Sun Protection:** Always protect your tattoo from the sun. Using sunscreen prevents the tattoo's color from fading and protects the skin from damage.
+*   **Drink Plenty of Water:** Drink plenty of water to keep your skin hydrated. This helps your tattoo look healthier and more vibrant.
+
+### What Not to Do in Tattoo Aftercare
+
+There are certain behaviors you should avoid for the health and appearance of your tattoo:
+
+*   **Scratching or Peeling the Tattoo:** Scabbing may occur on the tattoo during the healing process. However, scratching or peeling these scabs can cause infection and damage to the tattoo.
+*   **Going to the Pool or Sea:** Going to the pool or sea during the healing process can increase the risk of infection. Avoid these activities until your tattoo is completely healed.
+*   **Wearing Tight Clothing:** Wearing tight clothing that squeezes the tattoo during the healing process can cause irritation to the tattoo and prolong the healing process. Prefer loose and comfortable clothing.
+*   **Using Perfumed or Alcohol-Containing Products:** Using perfumed or alcohol-containing products in tattoo aftercare can cause skin irritation and damage to the tattoo. Prefer gentle and natural products.
+
+## Aftercare Tips by Tattoo Style
+
+Your tattoo style can affect your aftercare routine. Here are some aftercare tips for different tattoo styles:
+
+*   **Fine Line Tattoos:** Fine line tattoos heal faster, but their colors fade more easily. Therefore, it is especially important to pay attention to sun protection.
+*   **Color Tattoos:** Color tattoos may require more care than black tattoos. To maintain the vibrancy of the colors, it is important to use moisturizer and protect from the sun.
+*   **Black and Gray Tattoos:** Black and gray tattoos generally require less care. However, it is still important to keep the skin moisturized and protected from the sun.
+*   **Cover-Up Tattoos:** Cover-up tattoos can cause more irritation. Therefore, it is important to be extra careful during the healing process and follow the recommendations of your doctor or tattoo artist.
+
+## Pro Tips
+
+*   **Stay in Touch with Your Tattoo Artist:** If you have any questions or concerns about tattoo aftercare, don't hesitate to contact your tattoo artist. They can give you the best advice.
+*   **Know Your Skin:** Everyone's skin is different. In tattoo aftercare, it is important to understand your skin's needs and create a care routine accordingly.
+*   **Use Quality Products:** The quality of the products used in tattoo aftercare is important for the health and appearance of your tattoo. Prefer fragrance-free, alcohol-free, and natural ingredient products.
+*   **Be Patient:** The tattoo healing process can take time. Be patient and continue to take good care of your tattoo.
+
+## Frequently Asked Questions
+
+**How often should I moisturize my tattoo?**
+
+You should moisturize your tattoo at least twice a day. If your skin feels dry, you can moisturize more often.
+
+**How can I protect my tattoo from the sun?**
+
+To protect your tattoo from the sun, use a high-factor sunscreen before going outside. You can also protect your tattoo with clothing.
+
+**My tattoo is itchy, what should I do?**
+
+If your tattoo is itchy, avoid scratching it. To relieve the itching, you can gently pat your tattoo or apply a cold compress.
+
+**There is scabbing on my tattoo, is it normal?**
+
+Scabbing on the tattoo is a normal part of the healing process. Avoid scratching or peeling the scabs.
+
+**I have signs of infection on my tattoo, what should I do?**
+
+If you have signs of infection on your tattoo, such as redness, swelling, pain, pus, or fever, see a doctor immediately.
+
+## Cyprus Tattoo Ink: Your Trusted Address in Tattoo Art
+
+At Cyprus Tattoo Ink, we believe that tattoo art is not just a body decoration but also a form of expression. Therefore, we carefully design each tattoo and apply it to the highest hygiene standards. We show the same care in tattoo aftercare and provide our customers with the best advice.
+
+If you want to own a permanent work of art and preserve the beauty of your tattoo for many years, we welcome you to Cyprus Tattoo Ink. We look forward to turning your dream tattoo into reality in our studio in Kyrenia.
+
+**Contact Us:**
+
+*   **Address:** Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000
+*   **Phone/WhatsApp:** +90 548 891 0673
+*   **Website:** [https://cyprustattoo.ink](https://cyprustattoo.ink)
+*   **Instagram:** [https://www.instagram.com/cyprustattoo](https://www.instagram.com/cyprustattoo)`
+    }
+  },
 ];
