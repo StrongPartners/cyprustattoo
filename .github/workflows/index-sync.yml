@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wait for Vercel Deployment
-        run: sleep 60 # Vercel'in deploy olması için 1 dakika bekle
+        run: sleep 120 # Vercel'in deploy olması için 2 dakika bekle
 
       - name: Ping Indexing API
         run: |

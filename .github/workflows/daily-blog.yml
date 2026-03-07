@@ -1,0 +1,33 @@
+name: AI Daily Blogger
+
+on:
+  schedule:
+    - cron: "0 0,6,12,18 * * *" # Every 6 hours
+  workflow_dispatch: # Manual run
+
+jobs:
+  write-and-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # To push the new blog post
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate AI Blog Post
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node scripts/generate-blog.mjs
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "AI Blogger Bot"
+          git config --global user.email "ai-blogger@cyprustattoo.ink"
+          git add src/data/blog-posts.ts
+          git commit -m "feat: auto-generate daily blog post" || echo "No changes to commit"
+          git push origin main
