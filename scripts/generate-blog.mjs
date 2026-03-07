@@ -51,8 +51,8 @@ Return ONLY a valid JSON object matching this structure:
 IMPORTANT: The "content" must be rich, using ## for headers and properly formatted. Focus on high-value keywords like "Kuzey Kıbrıs dövme", "Girne tattoo", "KKTC dövme salonu".`;
 
   // 3. Call Gemini
-  console.log('Requesting content from Gemini (1.5 Flash)...');
-  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${API_KEY}`, {
+  console.log('Requesting content from Gemini (2.0 Flash)...');
+  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
