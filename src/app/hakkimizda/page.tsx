@@ -13,7 +13,7 @@ export default function HakkimizdaPage() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-24">
-          <p className="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4">{isEn ? "Who We Are" : "Biz Kimiz?"}</p>
+          <p className="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4">{t.about_page.subtitle}</p>
           <h1 className="text-5xl sm:text-7xl font-black text-white mb-6 uppercase tracking-tighter">{t.nav.about}</h1>
           <div className="w-16 h-1 bg-primary mx-auto" />
         </div>
@@ -39,21 +39,13 @@ export default function HakkimizdaPage() {
           </div>
           <div>
             <h2 className="text-4xl sm:text-6xl font-black text-white mb-8 leading-[1.1] tracking-tight uppercase">
-              {isEn ? "Pioneering" : "Kuzey Kıbrıs'ın"}
+              {t.about_page.story_title_1}
               <br />
-              <span className="text-primary italic">{isEn ? "Tattoo Culture" : "Dövme Kültürüne"}</span> {isEn ? "in North Cyprus" : "Yön Veriyoruz"}
+              <span className="text-primary italic">{t.about_page.story_title_2}</span> {t.about_page.story_title_3}
             </h2>
             <div className="space-y-8 text-white/50 text-lg sm:text-xl font-light leading-relaxed">
-              <p>
-                {isEn
-                  ? "Cyprus Tattoo was founded in the heart of Kyrenia by professionals who see tattoo art as a way of life."
-                  : "Cyprus Tattoo, Girne'nin kalbinde, dövme sanatını bir yaşam biçimi olarak gören profesyoneller tarafından kuruldu."}
-              </p>
-              <p>
-                {isEn
-                  ? "For us, every tattoo is a signature. Every line we ink on your skin is a combination of years of technical accumulation, artistic vision, and most importantly, your story. We are proud to be the most reliable studio in the TRNC with our expert artists in every style, from realistic works to fine line art."
-                  : "Bizim için her dövme bir imzadır. Cildinize işlediğimiz her çizgi, yıllar süren teknik birikimin, sanatsal vizyonun ve en önemlisi sizin hikayenizin birleşimidir. Realistik çalışmalardan ince çizgi sanatına kadar her stilde uzman sanatçılarımızla, KKTC'nin en güvenilir stüdyosu olmanın gururunu yaşıyoruz."}
-              </p>
+              <p>{t.about_page.story_p1}</p>
+              <p>{t.about_page.story_p2}</p>
             </div>
           </div>
         </div>
@@ -61,26 +53,10 @@ export default function HakkimizdaPage() {
         {/* Quality Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-32">
           {[
-            {
-              title: isEn ? "Global Standards" : "Dünya Standartları",
-              desc: isEn ? "We use top-quality pigments matching EU standards." : "AB standartlarında en iyi pigment ve ekipmanları kullanıyoruz.",
-              icon: "🌍"
-            },
-            {
-              title: isEn ? "Full Hygiene" : "Tam Hijyen",
-              desc: isEn ? "Medical grade sterilization for your safety." : "Medikal seviyede sterilizasyon ve tek kullanımlık malzemeler.",
-              icon: "🛡️"
-            },
-            {
-              title: isEn ? "Custom Art" : "Özgün Sanat",
-              desc: isEn ? "Unique designs created specifically for you." : "Sadece size özel, bir eşi daha olmayan tasarımlar.",
-              icon: "🎨"
-            },
-            {
-              title: isEn ? "Free Consult" : "Ücretsiz Danışmanlık",
-              desc: isEn ? "Expert advice for your next masterpiece." : "Hayalindeki dövme için profesyonel görüş alanı.",
-              icon: "🤝"
-            },
+            { ...t.about_page.cards.quality, icon: "🌍" },
+            { ...t.about_page.cards.hygiene, icon: "🛡️" },
+            { ...t.about_page.cards.custom, icon: "🎨" },
+            { ...t.about_page.cards.consult, icon: "🤝" },
           ].map((item, i) => (
             <div key={i} className="bg-surface p-10 rounded-[2.5rem] border border-white/5 hover:border-primary/20 transition-all group shadow-xl">
               <div className="text-4xl mb-6 grayscale group-hover:grayscale-0 transition-all">{item.icon}</div>
@@ -97,14 +73,14 @@ export default function HakkimizdaPage() {
 
           <div className="relative z-10">
             <h2 className="text-4xl sm:text-6xl font-black text-white mb-20 uppercase text-center tracking-tight">
-              {isEn ? "Our Core Values" : "Temel Değerlerimiz"}
+              {t.about_page.values_title}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
               {[
-                { title: isEn ? "Quality" : "Kalite", desc: isEn ? "Only the best reach our studio." : "En iyi mürekkep ve modern ekipman kullanımı." },
-                { title: isEn ? "Authenticity" : "Özgünlük", desc: isEn ? "No copy-paste, only original art." : "Kopya değil, kişiye özel sanatsal yaklaşım." },
-                { title: isEn ? "Trust" : "Güven", desc: isEn ? "Transparent pricing, honest work." : "Şeffaf süreçler ve dürüst iletişim." }
+                t.about_page.values.quality,
+                t.about_page.values.auth,
+                t.about_page.values.trust
               ].map((v, i) => (
                 <div key={i} className="text-center">
                   <h3 className="text-2xl font-black text-primary mb-6 uppercase tracking-widest">— {v.title} —</h3>
@@ -119,20 +95,18 @@ export default function HakkimizdaPage() {
         <div className="mt-32">
           <div className="bg-surface rounded-[3rem] p-12 sm:p-24 border border-primary/10 text-center relative overflow-hidden shadow-2xl">
             <h3 className="text-4xl sm:text-7xl font-black text-white mb-8 tracking-tighter uppercase">
-              {isEn ? "Ready for your" : "Sanatla Buluşmaya"}
+              {t.about_page.cta_title_1}
               <br />
-              <span className="text-primary">{isEn ? "First Session?" : "Hazır Mısın?"}</span>
+              <span className="text-primary">{t.about_page.cta_title_2}</span>
             </h3>
             <p className="text-white/40 text-lg mb-12 max-w-xl mx-auto font-light leading-relaxed">
-              {isEn
-                ? "Contact us now to discuss your ideas and book your slot in the best tattoo studio of North Cyprus."
-                : "Hayalindeki dövme için bugün ilk adımı at. WhatsApp üzerinden bize ulaş ve randevunu oluştur."}
+              {t.about_page.cta_desc}
             </p>
             <a
               href="https://wa.me/9005488910673"
               className="inline-flex items-center gap-4 bg-primary text-black font-black px-12 py-6 rounded-2xl text-sm uppercase tracking-widest transition-all hover:bg-secondary hover:scale-105 shadow-2xl shadow-primary/20"
             >
-              {isEn ? "Start with WhatsApp" : "WhatsApp ile Başla"}
+              {t.about_page.cta_button}
             </a>
           </div>
         </div>

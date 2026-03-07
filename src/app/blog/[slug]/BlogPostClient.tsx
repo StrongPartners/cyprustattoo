@@ -68,10 +68,10 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                 <div className="mt-24 p-12 sm:p-20 bg-surface border border-primary/10 rounded-[3rem] text-center relative overflow-hidden">
                     <div className="absolute -top-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
                     <h3 className="text-3xl sm:text-5xl font-black text-white mb-6 uppercase tracking-tight">
-                        Hayalindeki Dövme İçin
+                        {t.cta_banner.title}
                     </h3>
                     <p className="text-white/40 text-lg mb-12 max-w-lg mx-auto font-light leading-relaxed">
-                        Hemen WhatsApp üzerinden bize ulaşın, hayalinizdeki dövmeyi birlikte planlayalım.
+                        {t.cta_banner.desc}
                     </p>
                     <a
                         href="https://wa.me/9005488910673"
@@ -79,7 +79,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-4 bg-primary text-black font-black px-12 py-6 rounded-2xl text-sm uppercase tracking-widest transition-all hover:bg-secondary hover:scale-105 shadow-2xl shadow-primary/20"
                     >
-                        WhatsApp İle İletişime Geç
+                        {t.cta_banner.button}
                     </a>
                 </div>
             </div>

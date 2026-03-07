@@ -25,8 +25,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/40 text-sm leading-relaxed mb-8">
-              Cyprus Tattoo Studio — Kuzey Kıbrıs&apos;ın kalbinde sanatı cildinize işliyoruz.
-              Profesyonellik, hijyen ve özgünlük bir arada.
+              {t.footer.desc}
             </p>
             {/* Social */}
             <div className="flex items-center gap-4">
@@ -69,11 +68,18 @@ export default function Footer() {
 
           {/* Locations */}
           <div>
-            <h4 className="text-white text-sm font-bold uppercase tracking-[0.2em] mb-8">LOKASYON</h4>
-            <ul className="space-y-4">
-              <li className="text-white/40 text-sm">Girne / Kyrenia</li>
-              <li className="text-white/40 text-sm italic">Kuzey Kıbrıs</li>
-            </ul>
+            <h4 className="text-white text-sm font-bold uppercase tracking-[0.2em] mb-8">{t.footer.location}</h4>
+            <a
+              href="https://maps.app.goo.gl/ZuaX3EaQKwaTyrmbA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group/link block space-y-4"
+            >
+              <li className="list-none text-white/40 text-sm group-hover/link:text-primary transition-colors leading-relaxed">
+                Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000
+              </li>
+              <li className="list-none text-white/40 text-sm italic group-hover/link:text-primary transition-colors">{t.footer.country}</li>
+            </a>
           </div>
 
           {/* Contact */}

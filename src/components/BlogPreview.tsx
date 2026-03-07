@@ -45,7 +45,7 @@ export default function BlogPreview() {
                                     <div className="flex items-center gap-4 text-white/20 text-[10px] font-bold uppercase tracking-widest mb-4">
                                         <span>{post.date}</span>
                                         <span className="w-1 h-1 rounded-full bg-primary/30" />
-                                        <span>{post.readTime}</span>
+                                        <span>{post.readTime[language]}</span>
                                     </div>
                                     <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary transition-colors line-clamp-2">
                                         {post.title[language]}

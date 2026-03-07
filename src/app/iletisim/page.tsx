@@ -11,13 +11,11 @@ export default function IletisimPage() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-24">
-          <p className="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4">{isEn ? "Contact Us" : "Ulaşın"}</p>
+          <p className="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4">{t.contact_page.quick_response}</p>
           <h1 className="text-5xl sm:text-7xl font-black text-white mb-6 uppercase tracking-tighter">{t.nav.contact}</h1>
           <div className="w-16 h-1 bg-primary mx-auto mb-8" />
           <p className="text-white/50 text-lg max-w-2xl mx-auto font-light leading-relaxed">
-            {isEn
-              ? "Contact us via WhatsApp for bookings or information. We usually respond within 10 minutes."
-              : "Rezervasyon veya bilgi için WhatsApp'tan bize ulaşın. Ortalama 10 dakika içinde yanıt veriyoruz."}
+            {t.cta_banner.desc}
           </p>
         </div>
 
@@ -37,9 +35,9 @@ export default function IletisimPage() {
             </div>
             <h2 className="text-white font-black text-2xl mb-2 uppercase tracking-tight">WhatsApp</h2>
             <p className="text-[#25d366] font-black text-xl mb-4 tracking-wider">+90 548 891 0673</p>
-            <p className="text-white/20 text-xs uppercase font-bold tracking-[0.2em]">{isEn ? "⚡ Quick Response · Booking" : "⚡ Hızlı Yanıt · Rezervasyon"}</p>
+            <p className="text-white/20 text-xs uppercase font-bold tracking-[0.2em]">{t.contact_page.quick_response}</p>
             <div className="mt-8 bg-[#25d366] text-black font-black text-xs uppercase tracking-widest px-10 py-4 rounded-xl inline-block group-hover:scale-105 transition-transform">
-              {isEn ? "Message Now" : "Şimdi Yaz"}
+              {t.contact_page.write_now}
             </div>
           </a>
 
@@ -54,27 +52,27 @@ export default function IletisimPage() {
                 <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             </div>
-            <h2 className="text-white font-black text-2xl mb-2 uppercase tracking-tight">{isEn ? "Line" : "Telefon"}</h2>
+            <h2 className="text-white font-black text-2xl mb-2 uppercase tracking-tight">{t.contact_page.phone_label}</h2>
             <p className="text-primary font-black text-xl mb-4 tracking-wider">+90 548 891 0673</p>
-            <p className="text-white/20 text-xs uppercase font-bold tracking-[0.2em]">{isEn ? "Mon-Sat: 10:00 – 21:00" : "Pzt-Cts: 10:00 – 21:00"}</p>
+            <p className="text-white/20 text-xs uppercase font-bold tracking-[0.2em]">{t.contact_page.work_days}: 10:00 – 21:00</p>
             <div className="mt-8 border border-primary/30 text-primary font-black text-xs uppercase tracking-widest px-10 py-4 rounded-xl inline-block group-hover:bg-primary group-hover:text-black transition-all group-hover:scale-105">
-              {isEn ? "Call Now" : "Şimdi Ara"}
+              {t.contact_page.call_now}
             </div>
           </a>
         </div>
 
         {/* Info Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-20">
           {[
             {
-              title: isEn ? "Address" : "Adres",
-              value: isEn ? "Kyrenia / Girne" : "Girne / Kyrenia",
+              title: t.contact_page.address_label,
+              value: t.contact_page.address_full,
               sub: isEn ? "North Cyprus" : "Kuzey Kıbrıs"
             },
             {
-              title: isEn ? "Hours" : "Saatler",
+              title: t.contact_page.work_hours,
               value: "10:00 – 21:00",
-              sub: isEn ? "Monday – Saturday" : "Pazartesi – Cumartesi"
+              sub: t.contact_page.work_days
             },
             {
               title: isEn ? "Email" : "E-posta",
@@ -88,6 +86,34 @@ export default function IletisimPage() {
               <p className="text-white/20 text-xs font-medium">{info.sub}</p>
             </div>
           ))}
+        </div>
+
+        {/* Map Section */}
+        <div className="mb-20">
+          <div className="flex items-center gap-4 mb-12">
+            <h2 className="text-white text-xl font-bold uppercase tracking-widest">{t.contact_page.map_title}</h2>
+            <div className="flex-1 h-[1px] bg-white/5" />
+          </div>
+          <div className="bg-surface rounded-[2.5rem] overflow-hidden border border-white/5 p-4 relative group">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.930524340236!2d33.3302902!3d35.3325467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de6d94d782f5f1%3A0x8c4891732248d741!2sCyprus%20Tattoo%20Ink!5e0!3m2!1str!2s!4v1772868019463!5m2!1str!2s"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-2xl grayscale invert h-[300px] sm:h-[450px]"
+            ></iframe>
+            <a
+              href="https://maps.app.goo.gl/ZuaX3EaQKwaTyrmbA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-10 right-10 bg-primary text-black font-black text-xs uppercase tracking-widest px-8 py-4 rounded-xl shadow-2xl hover:bg-secondary transition-all hover:scale-105 active:scale-95"
+            >
+              {t.contact_page.get_directions}
+            </a>
+          </div>
         </div>
       </div>
     </div>

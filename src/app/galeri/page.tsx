@@ -12,19 +12,18 @@ export default function GaleriPage() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-20">
-          <p className="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4">Portfolio</p>
-          <h1 className="text-5xl sm:text-7xl font-black text-white mb-6 uppercase tracking-tighter">GALERİ</h1>
+          <p className="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4">{t.gallery.subtitle}</p>
+          <h1 className="text-5xl sm:text-7xl font-black text-white mb-6 uppercase tracking-tighter">{t.gallery.title}</h1>
           <div className="w-16 h-1 bg-primary mx-auto mb-8" />
           <p className="text-white/50 max-w-2xl mx-auto text-lg leading-relaxed font-light">
-            Kuzey Kıbrıs&apos;ta gerçekleştirdiğimiz en güncel ve özgün dövme çalışmaları.
-            Her çizgi bir hikâye anlatır, her tasarım bir karakteri yansıtır.
+            {t.gallery.desc}
           </p>
         </div>
 
         {/* Video grid - Featured */}
         <div className="mb-24">
           <div className="flex items-center gap-4 mb-12">
-            <h2 className="text-white text-xl font-bold uppercase tracking-widest">Süreç Videoları</h2>
+            <h2 className="text-white text-xl font-bold uppercase tracking-widest">{t.gallery.process_videos}</h2>
             <div className="flex-1 h-[1px] bg-white/5" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -33,21 +32,12 @@ export default function GaleriPage() {
                 <div className="aspect-[9/16] sm:aspect-video relative bg-black">
                   <video
                     src={vid}
+                    autoPlay
                     loop
                     muted
                     playsInline
                     className="w-full h-full object-cover"
-                    onMouseEnter={(e) => e.currentTarget.play()}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.pause();
-                      e.currentTarget.currentTime = 0;
-                    }}
                   />
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none group-hover:opacity-0 transition-opacity">
-                    <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20">
-                      <span className="text-white text-2xl ml-1">▶</span>
-                    </div>
-                  </div>
                 </div>
               </div>
             ))}
@@ -57,7 +47,7 @@ export default function GaleriPage() {
         {/* Photo masonry grid */}
         <div>
           <div className="flex items-center gap-4 mb-12">
-            <h2 className="text-white text-xl font-bold uppercase tracking-widest">Çalışmalarımız</h2>
+            <h2 className="text-white text-xl font-bold uppercase tracking-widest">{t.gallery.our_works}</h2>
             <div className="flex-1 h-[1px] bg-white/5" />
           </div>
           <div className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6">
@@ -85,10 +75,10 @@ export default function GaleriPage() {
         <div className="mt-24 text-center bg-surface border border-primary/10 rounded-[3rem] p-12 sm:p-20 relative overflow-hidden">
           <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
           <h3 className="text-3xl sm:text-5xl font-black text-white mb-6 uppercase tracking-tight">
-            Kendi Hikâyeni Yazmaya Hazır Mısın?
+            {t.gallery.cta_title}
           </h3>
           <p className="text-white/40 text-lg mb-12 max-w-xl mx-auto font-light leading-relaxed">
-            WhatsApp üzerinden bize ulaş, hayalindeki tasarımı birlikte gerçeğe dönüştürelim.
+            {t.gallery.cta_desc}
           </p>
           <a
             href="https://wa.me/9005488910673"
