@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Hero() {
     const [videoIndex, setVideoIndex] = useState(0);
-    const { t } = useLanguage();
+    const { t, localePath } = useLanguage();
 
     useEffect(() => {
         const nextVideo = () => {
@@ -72,7 +72,7 @@ export default function Hero() {
                         {t.hero.cta_whatsapp}
                     </a>
                     <Link
-                        href="/galeri"
+                        href={localePath("/galeri")}
                         className="w-full sm:w-auto px-10 py-5 bg-white/5 text-white border border-white/10 font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all backdrop-blur-md text-center"
                     >
                         {t.hero.cta_gallery}

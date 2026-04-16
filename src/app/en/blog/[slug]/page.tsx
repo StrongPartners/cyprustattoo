@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blog-posts";
-import BlogPostClient from "./BlogPostClient";
+import BlogPostClient from "@/app/blog/[slug]/BlogPostClient";
 import { buildBlogPostingJsonLd } from "@/lib/seo-schema";
 
 const siteUrl = "https://cyprustattoo.ink";
@@ -14,13 +14,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
     const post = blogPosts.find((p) => p.slug === slug);
 
-    if (!post) return { title: "Yazı Bulunamadı" };
+    if (!post) return { title: "Post Not Found" };
 
     return {
-        title: `${post.title.tr} | Cyprus Tattoo Blog`,
-        description: post.description.tr,
+        title: `${post.title.en} | Cyprus Tattoo Blog`,
+        description: post.description.en,
         alternates: {
-            canonical: `${siteUrl}/blog/${post.slug}`,
+            canonical: `${siteUrl}/en/blog/${post.slug}`,
             languages: {
                 "tr-TR": `${siteUrl}/blog/${post.slug}`,
                 "en-US": `${siteUrl}/en/blog/${post.slug}`,
@@ -29,29 +29,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         },
         openGraph: {
             type: "article",
-            locale: "tr_TR",
-            url: `${siteUrl}/blog/${post.slug}`,
-            title: post.title.tr,
-            description: post.description.tr,
+            locale: "en_US",
+            url: `${siteUrl}/en/blog/${post.slug}`,
+            title: post.title.en,
+            description: post.description.en,
             publishedTime: post.date,
             authors: [post.author],
             images: [
                 {
                     url: post.image,
-                    alt: post.imageAlt.tr,
+                    alt: post.imageAlt.en,
                 },
             ],
         },
     };
 }
 
-export default async function BlogPostPage({ params }: Props) {
+export default async function EnBlogPostPage({ params }: Props) {
     const { slug } = await params;
     const post = blogPosts.find((p) => p.slug === slug);
 
     if (!post) notFound();
 
-    const jsonLd = buildBlogPostingJsonLd(post, "tr");
+    const jsonLd = buildBlogPostingJsonLd(post, "en");
 
     return (
         <>

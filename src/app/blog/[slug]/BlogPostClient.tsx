@@ -6,14 +6,14 @@ import { useLanguage } from "@/components/LanguageContext";
 import { BlogPost } from "@/data/blog-posts";
 
 export default function BlogPostClient({ post }: { post: BlogPost }) {
-    const { t, language } = useLanguage();
+    const { t, language, localePath } = useLanguage();
 
     return (
         <article className="min-h-screen bg-background pt-32 pb-20 px-4">
             <div className="max-w-4xl mx-auto">
                 {/* Back Link */}
                 <Link
-                    href="/blog"
+                    href={localePath("/blog")}
                     className="inline-flex items-center gap-2 text-white/40 hover:text-primary text-[10px] uppercase font-bold tracking-[0.2em] mb-12 transition-colors"
                 >
                     <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">

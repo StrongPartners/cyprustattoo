@@ -6,7 +6,7 @@ import { blogPosts } from "@/data/blog-posts";
 import { useLanguage } from "@/components/LanguageContext";
 
 export default function BlogPreview() {
-    const { t, language } = useLanguage();
+    const { t, language, localePath } = useLanguage();
     // Get latest 3 posts
     const latestPosts = blogPosts.slice(0, 3);
 
@@ -19,7 +19,7 @@ export default function BlogPreview() {
                         <h2 className="text-4xl sm:text-6xl font-black text-white uppercase leading-none">{t.blog_preview.title}</h2>
                     </div>
                     <Link
-                        href="/blog"
+                        href={localePath("/blog")}
                         className="text-primary font-bold uppercase tracking-widest text-xs border-b border-primary pb-1 hover:text-white hover:border-white transition-all"
                     >
                         {t.blog_preview.view_all} →
@@ -28,7 +28,7 @@ export default function BlogPreview() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {latestPosts.map((post) => (
-                        <Link key={post.slug} href={`/blog/${post.slug}`} className="group">
+                        <Link key={post.slug} href={localePath(`/blog/${post.slug}`)} className="group">
                             <div className="bg-surface rounded-3xl border border-white/5 overflow-hidden transition-all group-hover:border-primary/20 hover:-translate-y-2 duration-500">
                                 <div className="aspect-video relative overflow-hidden">
                                     <Image

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import HakkimizdaClient from "./HakkimizdaClient";
+import HakkimizdaClient from "@/app/hakkimizda/HakkimizdaClient";
 
 const siteUrl = "https://cyprustattoo.ink";
 
 export const metadata: Metadata = {
-    title: "Hakkımızda | Cyprus Tattoo Ink - Girne, Kuzey Kıbrıs",
+    title: "About | Cyprus Tattoo Ink - Kyrenia, North Cyprus",
     description:
-        "Cyprus Tattoo Ink: Girne'de 12+ yıllık profesyonel dövme deneyimi. Hijyen öncelikli, sanatçı odaklı, özel tasarımlar.",
+        "Cyprus Tattoo Ink: 12+ years of professional tattoo experience in Kyrenia, North Cyprus. Hygiene-first, artist-led, custom designs.",
     alternates: {
-        canonical: `${siteUrl}/hakkimizda`,
+        canonical: `${siteUrl}/en/hakkimizda`,
         languages: {
             "tr-TR": `${siteUrl}/hakkimizda`,
             "en-US": `${siteUrl}/en/hakkimizda`,
@@ -17,6 +17,6 @@ export const metadata: Metadata = {
     },
 };
 
-export default function HakkimizdaPage() {
+export default function EnHakkimizdaPage() {
     return <HakkimizdaClient />;
 }
