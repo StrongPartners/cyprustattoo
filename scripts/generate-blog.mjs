@@ -44,8 +44,8 @@ Return ONLY a valid JSON object matching this structure:
 
 IMPORTANT: Ensure the closing section is natural and invites the reader to the studio in Girne using the real contact info.`;
 
-  console.log(`Requesting content for post ID ${nextId} from Gemini (2.0 Flash)...`);
-  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`, {
+  console.log(`Requesting content for post ID ${nextId} from Gemini (2.5 Flash)...`);
+  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -58,6 +58,11 @@ IMPORTANT: Ensure the closing section is natural and invites the reader to the s
       }
     })
   });
+
+  if (!response.ok) {
+    const errorBody = await response.text();
+    throw new Error(`Gemini API HTTP ${response.status} ${response.statusText}: ${errorBody}`);
+  }
 
   const data = await response.json();
   if (!data.candidates?.[0]?.content?.parts?.[0]?.text) {
