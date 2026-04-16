@@ -1,14 +1,40 @@
 @import "tailwindcss";
 
 @theme {
+  /* Color scale — dark editorial palette */
   --color-primary: #c9a96e;
+  --color-primary-soft: #e2c88a;
   --color-secondary: #e2c88a;
   --color-accent: #8b6b3d;
   --color-background: #0a0a0a;
   --color-surface: #111111;
   --color-surface-light: #1a1a1a;
+  --color-surface-raised: #1f1f1f;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-strong: rgba(255, 255, 255, 0.12);
+  --color-whatsapp: #25d366;
 
   --font-outfit: 'Outfit', sans-serif;
+
+  /* Radius scale */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-3xl: 2.5rem;
+  --radius-4xl: 3rem;
+
+  /* Elevation / shadow scale */
+  --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  --shadow-gold: 0 20px 60px -20px rgba(201, 169, 110, 0.35);
+  --shadow-gold-sm: 0 8px 24px -8px rgba(201, 169, 110, 0.25);
+
+  /* Typography scale (display + body) */
+  --text-display-sm: clamp(2rem, 4vw, 3rem);
+  --text-display: clamp(2.5rem, 6vw, 4.5rem);
+  --text-display-lg: clamp(3rem, 8vw, 6rem);
+  --text-display-xl: clamp(3.5rem, 10vw, 8rem);
 
   --breakpoint-xs: 480px;
   --breakpoint-sm: 640px;
@@ -21,6 +47,17 @@
 @layer base {
   body {
     @apply bg-background text-white font-outfit overflow-x-hidden;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: #000;
   }
 }
 
@@ -44,6 +81,30 @@
 
   .btn-gold {
     @apply bg-primary text-black font-black uppercase tracking-widest px-8 py-4 rounded-xl transition-all duration-300 hover:bg-secondary hover:scale-105 shadow-2xl shadow-primary/20;
+  }
+
+  .btn-outline {
+    @apply border border-white/10 bg-white/5 text-white font-black uppercase tracking-widest px-8 py-4 rounded-xl transition-all duration-300 hover:bg-white/10 hover:border-primary/30;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-[10px] font-black uppercase tracking-[0.2em] text-white/60 transition-all hover:border-primary/30 hover:text-primary;
+  }
+
+  .chip-active {
+    @apply border-primary bg-primary text-black;
+  }
+
+  .reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    z-index: 60;
+    transform-origin: 0 50%;
+    pointer-events: none;
+    box-shadow: 0 0 10px rgba(201, 169, 110, 0.5);
   }
 }
 
@@ -72,4 +133,14 @@
   background-image:
     radial-gradient(at 0% 0%, hsla(40, 50%, 40%, 0.1) 0, transparent 50%),
     radial-gradient(at 100% 100%, hsla(40, 50%, 40%, 0.1) 0, transparent 50%);
+}
+
+/* Prevent layout shift while fonts load */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

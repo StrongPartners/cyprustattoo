@@ -1,11 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { galleryImages, galleryVideos } from "@/data/assets-data";
 import { useLanguage } from "@/components/LanguageContext";
+import ImageLightbox from "@/components/ImageLightbox";
 
-export default function GaleriPage() {
+export default function GaleriClient() {
   const { t } = useLanguage();
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen bg-background pt-32 pb-20 px-4">
@@ -36,6 +39,7 @@ export default function GaleriPage() {
                     loop
                     muted
                     playsInline
+                    preload="metadata"
                     title={`Cyprus Tattoo Process Video ${i + 1}`}
                     className="w-full h-full object-cover"
                   />
@@ -53,21 +57,26 @@ export default function GaleriPage() {
           </div>
           <div className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6">
             {galleryImages.map((img, i) => (
-              <div
+              <button
                 key={i}
-                className="relative group overflow-hidden rounded-2xl border border-white/5 hover:border-primary/20 transition-all break-inside-avoid"
+                type="button"
+                onClick={() => setActiveIndex(i)}
+                className="relative group overflow-hidden rounded-2xl border border-white/5 hover:border-primary/20 transition-all break-inside-avoid block w-full text-left cursor-zoom-in"
+                aria-label={`Open portfolio image ${i + 1}`}
               >
                 <Image
                   src={img}
                   alt={`Cyprus Tattoo Portfolio ${i + 1}`}
                   width={500}
                   height={500}
+                  loading="lazy"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                   <p className="text-primary text-[10px] font-black uppercase tracking-widest">@cyprustatt00</p>
                 </div>
-              </div>
+              </button>
             ))}
           </div>
         </div>
@@ -91,6 +100,14 @@ export default function GaleriPage() {
           </a>
         </div>
       </div>
+
+      <ImageLightbox
+        images={galleryImages}
+        index={activeIndex}
+        onClose={() => setActiveIndex(null)}
+        onNavigate={setActiveIndex}
+        alt={(i) => `Cyprus Tattoo portfolio ${i + 1}`}
+      />
     </div>
   );
 }
