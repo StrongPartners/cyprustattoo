@@ -6,7 +6,7 @@ import { blogPosts } from "@/data/blog-posts";
 import { useLanguage } from "@/components/LanguageContext";
 
 export default function BlogClient() {
-    const { t, language } = useLanguage();
+    const { t, language, localePath } = useLanguage();
 
     return (
         <div className="min-h-screen bg-background pt-32 pb-20 px-4">
@@ -22,7 +22,7 @@ export default function BlogClient() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {blogPosts.map((post) => (
                         <article key={post.id} className="group bg-surface rounded-3xl overflow-hidden border border-white/5 hover:border-primary/20 transition-all duration-500 hover:-translate-y-2">
-                            <Link href={`/blog/${post.slug}`}>
+                            <Link href={localePath(`/blog/${post.slug}`)}>
                                 <div className="aspect-[16/9] overflow-hidden relative">
                                     <Image
                                         src={post.image}

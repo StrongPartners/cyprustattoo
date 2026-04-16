@@ -42,6 +42,8 @@ export const metadata: Metadata = {
     "cyprustattoo",
     "dövme KKTC",
     "North Cyprus piercing",
+    "tattoo studio Kyrenia",
+    "Girne dövme",
   ],
   authors: [{ name: "Cyprus Tattoo Studio" }],
   creator: "Cyprus Tattoo",
@@ -88,13 +90,11 @@ export const metadata: Metadata = {
     languages: {
       "tr-TR": siteUrl,
       "en-US": `${siteUrl}/en`,
+      "x-default": siteUrl,
     },
   },
   verification: {
     google: "20b924f3fcd680cd",
-    other: {
-      "pinterst-site-verification": ["PLACEHOLDER_FOR_PINTEREST"], // Kullanıcı burayı güncelleyebilir
-    },
   },
   appleWebApp: {
     capable: true,
@@ -103,26 +103,30 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
+const organizationLd = {
   "@context": "https://schema.org",
-  "@type": "TattooParlor",
+  "@type": ["LocalBusiness", "TattooParlor"],
   "@id": `${siteUrl}/#organization`,
   name: "Cyprus Tattoo",
+  alternateName: ["Cyprus Tattoo Ink", "Cyprus Tattoo Studio"],
   description:
-    "Kuzey Kıbrıs'ta profesyonel dövme salonu. Custom tasarım, geleneksel ve modern dövme stilleri.",
+    "Professional tattoo studio in Kyrenia, North Cyprus. Custom designs, realism, fine line, traditional and cover-up tattoos by award-winning artists.",
   url: siteUrl,
   telephone: "+9005488910673",
   priceRange: "$$",
-  image: `${siteUrl}/og-image.png`,
+  currenciesAccepted: "EUR, GBP, TRY, USD",
+  paymentAccepted: "Cash, Credit Card",
+  image: [`${siteUrl}/og-image.png`, `${siteUrl}/logo.png`],
   logo: {
     "@type": "ImageObject",
     url: `${siteUrl}/logo.png`,
   },
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1",
+    streetAddress:
+      "Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1",
     addressLocality: "Girne",
-    addressRegion: "Girne",
+    addressRegion: "Kyrenia",
     addressCountry: "CY",
     postalCode: "9000",
   },
@@ -131,28 +135,130 @@ const jsonLd = {
     latitude: "35.3325467",
     longitude: "33.3302902",
   },
+  hasMap: "https://maps.app.goo.gl/ZuaX3EaQKwaTyrmbA",
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ],
       opens: "10:00",
       closes: "21:00",
     },
   ],
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+9005488910673",
-    contactType: "customer service",
-    availableLanguage: ["Turkish", "English"],
-  },
-  sameAs: [
-    `https://wa.me/9005488910673`,
-    "https://www.instagram.com/cyprustattoo", // Varsayılan/Örnek
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+9005488910673",
+      contactType: "customer service",
+      availableLanguage: ["Turkish", "English"],
+      areaServed: ["CY", "TR", "GB"],
+    },
   ],
+  sameAs: [
+    "https://wa.me/9005488910673",
+    "https://www.instagram.com/cyprustatt00",
+    "https://maps.app.goo.gl/ZuaX3EaQKwaTyrmbA",
+  ],
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Girne",
+      alternateName: "Kyrenia",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "North Cyprus",
+    },
+  ],
+  knowsLanguage: ["tr", "en"],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5",
     reviewCount: "47",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Tattoo & Piercing Services",
+    itemListElement: [
+      {
+        "@type": "OfferCatalog",
+        name: "Tattoo Styles",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Custom Design Tattoo",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Realism Tattoo",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Minimalist & Fine Line Tattoo",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Traditional & Neo-Traditional Tattoo",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Blackwork & Tribal Tattoo",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Cover-Up Tattoo",
+            },
+          },
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Service",
+              name: "Piercing",
+            },
+          },
+        ],
+      },
+    ],
+  },
+};
+
+const websiteLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  url: siteUrl,
+  name: "Cyprus Tattoo",
+  inLanguage: ["tr-TR", "en-US"],
+  publisher: { "@id": `${siteUrl}/#organization` },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: `${siteUrl}/blog?q={search_term_string}`,
+    "query-input": "required name=search_term_string",
   },
 };
 
@@ -180,11 +286,20 @@ export default function RootLayout({
         </Script>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="alternate" hrefLang="tr-TR" href={siteUrl} />
+        <link rel="alternate" hrefLang="en-US" href={`${siteUrl}/en`} />
+        <link rel="alternate" hrefLang="x-default" href={siteUrl} />
         <meta name="geo.region" content="CY-01" />
-        <meta name="geo.placename" content="Girne" />
+        <meta name="geo.placename" content="Girne, Kyrenia" />
+        <meta name="geo.position" content="35.3325467;33.3302902" />
+        <meta name="ICBM" content="35.3325467, 33.3302902" />
         <meta name="language" content="Turkish, English" />
       </head>
       <body className={`${inter.variable} antialiased bg-[#0a0a0a]`}>

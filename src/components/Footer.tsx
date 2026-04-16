@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useLanguage } from "./LanguageContext";
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { t, localePath } = useLanguage();
 
   return (
     <footer className="bg-surface py-20 px-4 mt-20 relative overflow-hidden">
@@ -58,11 +58,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white text-sm font-bold uppercase tracking-[0.2em] mb-8">{t.nav.home}</h4>
             <ul className="space-y-4">
-              <li><Link href="/" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.home}</Link></li>
-              <li><Link href="/blog" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.blog}</Link></li>
-              <li><Link href="/galeri" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.gallery}</Link></li>
-              <li><Link href="/hakkimizda" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.about}</Link></li>
-              <li><Link href="/iletisim" className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.contact}</Link></li>
+              <li><Link href={localePath("/")} className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.home}</Link></li>
+              <li><Link href={localePath("/blog")} className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.blog}</Link></li>
+              <li><Link href={localePath("/galeri")} className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.gallery}</Link></li>
+              <li><Link href={localePath("/hakkimizda")} className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.about}</Link></li>
+              <li><Link href={localePath("/iletisim")} className="text-white/40 hover:text-primary transition-colors text-sm">{t.nav.contact}</Link></li>
             </ul>
           </div>
 

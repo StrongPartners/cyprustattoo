@@ -6,7 +6,7 @@ import { galleryImages, galleryVideos } from "@/data/assets-data";
 import { useLanguage } from "@/components/LanguageContext";
 
 export default function GalleryPreview() {
-    const { t } = useLanguage();
+    const { t, localePath } = useLanguage();
     // Show first 8 images as preview
     const previewImages = galleryImages.slice(0, 8);
 
@@ -19,7 +19,7 @@ export default function GalleryPreview() {
                         <h2 className="text-4xl sm:text-6xl font-black text-white uppercase leading-none">{t.gallery.title}</h2>
                     </div>
                     <Link
-                        href="/galeri"
+                        href={localePath("/galeri")}
                         className="text-primary font-bold uppercase tracking-widest text-xs border-b border-primary pb-1 hover:text-white hover:border-white transition-all"
                     >
                         {t.hero.cta_gallery} →

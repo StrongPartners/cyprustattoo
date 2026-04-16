@@ -8,7 +8,7 @@ import { useLanguage } from "./LanguageContext";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const { language, setLanguage, t } = useLanguage();
+  const { language, setLanguage, t, localePath } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -17,11 +17,11 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { href: "/", label: t.nav.home },
-    { href: "/blog", label: t.nav.blog },
-    { href: "/galeri", label: t.nav.gallery },
-    { href: "/hakkimizda", label: t.nav.about },
-    { href: "/iletisim", label: t.nav.contact },
+    { href: localePath("/"), label: t.nav.home },
+    { href: localePath("/blog"), label: t.nav.blog },
+    { href: localePath("/galeri"), label: t.nav.gallery },
+    { href: localePath("/hakkimizda"), label: t.nav.about },
+    { href: localePath("/iletisim"), label: t.nav.contact },
   ];
 
   return (
@@ -33,7 +33,7 @@ export default function Header() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center group">
+        <Link href={localePath("/")} className="flex items-center group">
           <Image
             src="/logo.png"
             alt="Cyprus Tattoo Logo"
