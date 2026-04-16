@@ -1,40 +1,69 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { galleryVideos } from "@/data/assets-data";
 import { useLanguage } from "@/components/LanguageContext";
 import Link from "next/link";
 
 export default function Hero() {
     const [videoIndex, setVideoIndex] = useState(0);
+    const [videoReady, setVideoReady] = useState(false);
     const { t, localePath } = useLanguage();
+    const containerRef = useRef<HTMLElement | null>(null);
 
     useEffect(() => {
-        const nextVideo = () => {
-            setVideoIndex((prev) => (prev + 1) % galleryVideos.length);
-        };
+        if (typeof window === "undefined") return;
 
-        // Change video every 8 seconds
-        const interval = setInterval(nextVideo, 8000);
-        return () => clearInterval(interval);
+        const prefersReduced =
+            window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+        if (prefersReduced) return;
+
+        const el = containerRef.current;
+        if (!el) return;
+
+        const io = new IntersectionObserver(
+            (entries) => {
+                if (entries.some((e) => e.isIntersecting)) {
+                    setVideoReady(true);
+                    io.disconnect();
+                }
+            },
+            { rootMargin: "200px" }
+        );
+
+        io.observe(el);
+        return () => io.disconnect();
     }, []);
 
+    useEffect(() => {
+        if (!videoReady) return;
+        const interval = setInterval(() => {
+            setVideoIndex((prev) => (prev + 1) % galleryVideos.length);
+        }, 8000);
+        return () => clearInterval(interval);
+    }, [videoReady]);
+
     return (
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#0a0a0a]">
-            {/* Optimized Video Background Layer */}
-            <div
-                key={videoIndex}
-                className="absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-30"
-            >
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="w-full h-full object-cover"
-                    src={galleryVideos[videoIndex]}
-                />
-            </div>
+        <section
+            ref={containerRef}
+            className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#0a0a0a]"
+        >
+            {videoReady && (
+                <div
+                    key={videoIndex}
+                    className="absolute inset-0 w-full h-full transition-opacity duration-1000 opacity-30"
+                >
+                    <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="none"
+                        className="w-full h-full object-cover"
+                        src={galleryVideos[videoIndex]}
+                    />
+                </div>
+            )}
 
             {/* Modern Overlays */}
             <div className="absolute inset-0 bg-gradient-to-b from-background via-background/40 to-background z-10" />
@@ -73,7 +102,7 @@ export default function Hero() {
                     </a>
                     <Link
                         href={localePath("/galeri")}
-                        className="w-full sm:w-auto px-10 py-5 bg-white/5 text-white border border-white/10 font-black uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all backdrop-blur-md text-center"
+                        className="btn-outline w-full sm:w-auto text-center"
                     >
                         {t.hero.cta_gallery}
                     </Link>

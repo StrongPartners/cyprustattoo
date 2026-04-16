@@ -4,12 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageContext";
 import { BlogPost } from "@/data/blog-posts";
+import ReadingProgress from "@/components/ReadingProgress";
+import RelatedPosts from "@/components/RelatedPosts";
 
 export default function BlogPostClient({ post }: { post: BlogPost }) {
     const { t, language, localePath } = useLanguage();
 
     return (
         <article className="min-h-screen bg-background pt-32 pb-20 px-4">
+            <ReadingProgress />
             <div className="max-w-4xl mx-auto">
                 {/* Back Link */}
                 <Link
@@ -63,6 +66,12 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                         );
                     })}
                 </div>
+
+                {/* Related Posts */}
+                <RelatedPosts
+                    currentSlug={post.slug}
+                    categoryTr={post.category?.tr}
+                />
 
                 {/* Footer CTA */}
                 <div className="mt-24 p-12 sm:p-20 bg-surface border border-primary/10 rounded-[3rem] text-center relative overflow-hidden">
