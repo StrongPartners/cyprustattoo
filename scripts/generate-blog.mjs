@@ -4,8 +4,12 @@ import path from 'path';
 const API_KEY = process.env.GEMINI_API_KEY;
 const BLOG_DATA_PATH = path.resolve('src/data/blog-posts.ts');
 const POST_COUNT = parseInt(process.env.POST_COUNT || '1');
+const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 
-async function generateSinglePost(existingSlugs, nextId) {
+const REQUIRED_FIELDS = ['slug', 'title', 'description', 'category', 'readTime', 'content', 'imageAlt'];
+const REQUIRED_LOCALES = ['tr', 'en'];
+
+function buildPrompt(existingSlugs) {
   const studioInfo = `
 - Studio Name: Cyprus Tattoo Ink
 - Address: Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000
@@ -15,7 +19,7 @@ async function generateSinglePost(existingSlugs, nextId) {
 - Location: Girne (Kyrenia), North Cyprus
 `;
 
-  const prompt = `You are an expert tattoo culture blogger and SEO specialist for "Cyprus Tattoo Ink".
+  return `You are an expert tattoo culture blogger and SEO specialist for "Cyprus Tattoo Ink".
 Your goal is to write a highly engaging, 1500+ word, professional, and informative blog post.
 
 STUDIO DETAILS (USE THESE - NEVER USE PLACEHOLDERS):
@@ -43,18 +47,47 @@ Return ONLY a valid JSON object matching this structure:
 }
 
 IMPORTANT: Ensure the closing section is natural and invites the reader to the studio in Girne using the real contact info.`;
+}
 
-  console.log(`Requesting content for post ID ${nextId} from Gemini (2.5 Flash)...`);
-  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`, {
+function extractText(data) {
+  const candidate = data?.candidates?.[0];
+  if (!candidate) return null;
+  const parts = candidate.content?.parts || [];
+  // Iterate all parts and concatenate text fields, skipping thought-only parts.
+  const text = parts
+    .filter((p) => typeof p?.text === 'string' && p.text.trim().length > 0 && !p.thought)
+    .map((p) => p.text)
+    .join('');
+  return text || null;
+}
+
+function validatePost(post) {
+  for (const field of REQUIRED_FIELDS) {
+    if (post[field] == null) {
+      throw new Error(`Generated post missing required field "${field}"`);
+    }
+    if (field === 'slug') continue;
+    for (const locale of REQUIRED_LOCALES) {
+      if (typeof post[field][locale] !== 'string' || post[field][locale].trim().length === 0) {
+        throw new Error(`Generated post missing/empty "${field}.${locale}"`);
+      }
+    }
+  }
+}
+
+async function callGemini(prompt) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${API_KEY}`;
+  const response = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       contents: [{ parts: [{ text: prompt }] }],
       generationConfig: {
-        response_mime_type: 'application/json',
-        candidate_count: 1,
-        max_output_tokens: 8192,
-        temperature: 0.85
+        responseMimeType: 'application/json',
+        candidateCount: 1,
+        maxOutputTokens: 16384,
+        temperature: 0.85,
+        thinkingConfig: { thinkingBudget: 0 }
       }
     })
   });
@@ -65,11 +98,48 @@ IMPORTANT: Ensure the closing section is natural and invites the reader to the s
   }
 
   const data = await response.json();
-  if (!data.candidates?.[0]?.content?.parts?.[0]?.text) {
-    throw new Error('Gemini API Error: ' + JSON.stringify(data, null, 2));
+  const candidate = data?.candidates?.[0];
+  const finishReason = candidate?.finishReason;
+
+  if (finishReason && finishReason !== 'STOP') {
+    throw new Error(`Gemini finishReason="${finishReason}" — output not usable. Full response: ${JSON.stringify(data, null, 2)}`);
   }
 
-  const generatedPost = JSON.parse(data.candidates[0].content.parts[0].text);
+  const text = extractText(data);
+  if (!text) {
+    throw new Error(`Gemini returned no text content. Full response: ${JSON.stringify(data, null, 2)}`);
+  }
+
+  let parsed;
+  try {
+    parsed = JSON.parse(text);
+  } catch (e) {
+    throw new Error(`Gemini returned non-JSON despite responseMimeType=application/json. First 500 chars: ${text.slice(0, 500)}`);
+  }
+  return parsed;
+}
+
+async function generateSinglePost(existingSlugs, nextId) {
+  const prompt = buildPrompt(existingSlugs);
+  console.log(`Requesting content for post ID ${nextId} from ${MODEL}...`);
+
+  let generatedPost;
+  let lastError;
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    try {
+      generatedPost = await callGemini(prompt);
+      validatePost(generatedPost);
+      if (existingSlugs.includes(generatedPost.slug)) {
+        throw new Error(`Generated slug "${generatedPost.slug}" already exists`);
+      }
+      break;
+    } catch (err) {
+      lastError = err;
+      console.warn(`Attempt ${attempt} failed: ${err.message}`);
+      if (attempt < 2) await new Promise((r) => setTimeout(r, 2000));
+    }
+  }
+  if (!generatedPost) throw lastError;
 
   const imagePool = [
     "/blog/studio-guide-hero.png",
@@ -100,7 +170,7 @@ IMPORTANT: Ensure the closing section is natural and invites the reader to the s
 }
 
 async function run() {
-  console.log(`--- AI Blog Generator Started (Count: ${POST_COUNT}) ---`);
+  console.log(`--- AI Blog Generator Started (Count: ${POST_COUNT}, Model: ${MODEL}) ---`);
 
   if (!API_KEY) {
     console.error('Error: GEMINI_API_KEY is not set');
@@ -145,13 +215,11 @@ async function run() {
   },
 `;
 
-      // Check if we need to add a comma to the previous item
       let updatedContent = fileContent.trim();
       const lastBracketIndex = updatedContent.lastIndexOf('];');
 
       if (lastBracketIndex !== -1) {
         const leadingContent = updatedContent.substring(0, lastBracketIndex).trim();
-        // If the leading content doesn't end with a comma and it's not the start of the array
         const endsWithComma = leadingContent.endsWith(',') || leadingContent.endsWith('[');
         const joiner = endsWithComma ? '' : ',';
 
