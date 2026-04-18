@@ -16,7 +16,9 @@ function pickRelated(
     categoryTr: string | undefined,
     limit: number
 ): BlogPost[] {
-    const pool = blogPosts.filter((p) => p.slug !== currentSlug);
+    const pool = [...blogPosts]
+        .filter((p) => p.slug !== currentSlug)
+        .sort((a, b) => b.date.localeCompare(a.date));
     const sameCategory = categoryTr
         ? pool.filter((p) => p.category?.tr === categoryTr)
         : [];

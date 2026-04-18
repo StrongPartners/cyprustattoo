@@ -7,8 +7,10 @@ import { useLanguage } from "@/components/LanguageContext";
 
 export default function BlogPreview() {
     const { t, language, localePath } = useLanguage();
-    // Get latest 3 posts
-    const latestPosts = blogPosts.slice(0, 3);
+    // Get the 3 newest posts by date
+    const latestPosts = [...blogPosts]
+        .sort((a, b) => b.date.localeCompare(a.date))
+        .slice(0, 3);
 
     return (
         <section className="py-24 px-4 bg-surface/30">
