@@ -5,6 +5,8 @@ import Image from "next/image";
 import { blogPosts } from "@/data/blog-posts";
 import { useLanguage } from "@/components/LanguageContext";
 
+const orderedPosts = [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
+
 export default function BlogClient() {
     const { t, language, localePath } = useLanguage();
 
@@ -20,7 +22,7 @@ export default function BlogClient() {
 
                 {/* Blog Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {blogPosts.map((post) => (
+                    {orderedPosts.map((post) => (
                         <article key={post.id} className="group bg-surface rounded-3xl overflow-hidden border border-white/5 hover:border-primary/20 transition-all duration-500 hover:-translate-y-2">
                             <Link href={localePath(`/blog/${post.slug}`)}>
                                 <div className="aspect-[16/9] overflow-hidden relative">
