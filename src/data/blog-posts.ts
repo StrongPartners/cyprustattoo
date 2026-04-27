@@ -30351,4 +30351,189 @@ We look forward to guiding you on your tattoo journey at our studio located at E
 `
     }
   },
+  {
+    id: "254",
+    slug: "dovme-sanatinda-geleneksel-motiflermodern-yorumlar-ve-cyprus-tattoo-ink-farki",
+    title: {
+      tr: "Dövme Sanatında Geleneksel Motifler: Modern Yorumlar ve Cyprus Tattoo Ink Farkı",
+      en: "Traditional Motifs in Tattoo Art: Modern Interpretations and the Cyprus Tattoo Ink Difference"
+    },
+    description: {
+      tr: "Girne'deki Cyprus Tattoo Ink'te geleneksel dövme motiflerinin kökenlerini, evrimini ve modern yorumlarını keşfedin. Sanatsal derinlik ve kişisel ifadeyi birleştiren eşsiz dövmeler için uzman ekibimizle tanışın.",
+      en: "Explore the origins, evolution, and modern interpretations of traditional tattoo motifs at Cyprus Tattoo Ink in Girne. Discover unique tattoos that blend artistic depth with personal expression, crafted by our expert team."
+    },
+    date: "2026-04-27",
+    author: "Cyprus Tattoo Specialist",
+    category: { tr: "Sanat", en: "Art" },
+    readTime: { tr: "25 dk", en: "25 min" },
+    image: "/blog/city-guide-hero.png",
+    imageAlt: {
+      tr: "Geleneksel dövme motifleri ve modern yorumları, Cyprus Tattoo Ink stüdyosunda ustalıkla işlenmiş bir dövme.",
+      en: "Traditional tattoo motifs and their modern interpretations, a masterfully crafted tattoo at Cyprus Tattoo Ink studio."
+    },
+    content: {
+      tr: `## Dövme Sanatında Geleneksel Motifler: Modern Yorumlar ve Cyprus Tattoo Ink Farkı
+
+Dövme sanatı, insanlık tarihi kadar eski, derin ve büyüleyici bir ifade biçimidir. Bedenimizi bir tuval olarak kullanarak kişisel hikayelerimizi, inançlarımızı ve kültürel mirasımızı yansıtan dövmeler, binlerce yıldır varlığını sürdürmektedir. Özellikle geleneksel motifler, köklü anlamları ve estetik çekicilikleriyle dövme dünyasında her zaman özel bir yere sahip olmuştur. Girne'nin kalbinde yer alan **Cyprus Tattoo Ink** olarak, bu geleneksel motifleri modern sanat anlayışımızla birleştirerek sizlere eşsiz ve anlamlı dövme deneyimleri sunmaktan gurur duyuyoruz.
+
+### Geleneksel Dövme Motiflerinin Kökenleri ve Evrimi
+
+Geleneksel dövmeler, dünyanın dört bir yanındaki farklı kültürlerin kendine özgü inançlarını, mitolojilerini ve yaşam biçimlerini yansıtan sembollerle doludur. Her motifin ardında derin bir hikaye, bir anlam katmanı ve çoğu zaman kutsal bir çağrışım bulunur. Bu motifler, zamanla evrilerek günümüz dövme sanatında da popülerliğini korumaktadır.
+
+#### Japon Geleneksel Dövmeleri (Irezumi)
+
+Japon dövme sanatı, özellikle **Irezumi**, zengin renkleri, epik sahneleri ve karmaşık kompozisyonlarıyla bilinir. Ejderhalar, Koi balıkları, samuraylar, kiraz çiçekleri (sakura) ve mitolojik yaratıklar gibi motifler, güç, bilgelik, cesaret, güzellik ve yaşamın geçiciliği gibi derin anlamlar taşır. Bu dövmeler genellikle büyük ölçekli olup, tüm sırtı, kolları veya bacakları kaplayabilir. Cyprus Tattoo Ink'te, Japon geleneksel dövmelerinin inceliklerini ve estetiğini modern yorumlarla birleştirerek, her bir detayın anlamını koruyoruz.
+
+#### Amerikan Geleneksel Dövmeleri (Old School)
+
+**Old School** veya Amerikan geleneksel dövmeleri, denizcilik kültürüyle özdeşleşmiş, kalın çizgileri, sınırlı renk paleti (genellikle kırmızı, siyah, yeşil, sarı) ve belirgin gölgelendirmeleriyle tanınır. Kartallar, çıpa, kalpler, gül, deniz kızları ve hançerler gibi motifler, aşk, sadakat, özgürlük, tehlike ve anımsama gibi temaları işler. Bu tarz, minimalist ancak çarpıcı görselliğiyle zamansız bir çekiciliğe sahiptir. Cyprus Tattoo Ink'teki sanatçılarımız, bu klasik tarzı güncel tekniklerle harmanlayarak, Old School dövmelerin ruhunu modern bir dokunuşla yeniden yaratıyor.
+
+#### Polinezya ve Maori Dövme Sanatı (Ta Moko)
+
+Pasifik adalarında, özellikle Maori kültüründe **Ta Moko** olarak bilinen dövme sanatı, sadece bir süsleme değil, aynı zamanda kişisel kimliğin, soy ağacının ve sosyal statünün bir göstergesidir. Yüz dövmeleri, karmaşık spiral ve kavisli desenlerle doludur ve her çizginin bir anlamı vardır. Polinezya dövmeleri ise geometrik şekiller, hayvan figürleri (kaplumbağa, kertenkele, köpekbalığı) ve doğal unsurları bir araya getirerek koruma, güç, bereket ve ruhsal bağlantılar gibi temaları işler. Bu dövmeler, özgür ruhlu ve güçlü bir duruş sergiler. Cyprus Tattoo Ink'te, bu kültürel mirasın derinliğini saygıyla ele alıyor, otantik Polinezya ve Maori esintilerini modern tasarım ilkeleriyle harmanlıyoruz.
+
+#### Kelt Dövme Motifleri
+
+Kelt dövmeleri, karmaşık düğüm desenleri, spiral ve hayvan figürleriyle bilinir. Kelt düğümleri (Celtic knots) genellikle sonsuzluğu, yaşam döngüsünü ve birbirine bağlılığı sembolize ederken, haçlar, ağaçlar ve hayvanlar (kartal, kurt, geyik) güç, bilgelik ve doğayla bağlantıyı temsil eder. Bu motifler, estetik açıdan büyüleyici olmasının yanı sıra, derin felsefi anlamlar da taşır. Sanatçılarımız, Kelt motiflerinin karmaşık yapısını ve estetiğini titizlikle işleyerek, size anlamlı ve kalıcı bir sanat eseri sunar.
+
+### Geleneksel Motiflere Modern Yorumlar: Cyprus Tattoo Ink Yaklaşımı
+
+Cyprus Tattoo Ink olarak, geleneksel dövme motiflerinin zengin mirasına saygı duyarken, aynı zamanda onları çağdaş sanat anlayışımızla yeniden yorumluyoruz. Amacımız, geçmişin bilgeliğini ve estetiğini günümüzün teknikleri ve yaratıcılığıyla birleştirerek, sizlere sadece bir dövme değil, aynı zamanda kişisel bir ifade ve sanat eseri sunmaktır. Peki bu nasıl başarıyoruz?
+
+*   **Kişiselleştirilmiş Tasarımlar:** Her müşterinin hikayesi ve isteği benzersizdir. Geleneksel bir motifi seçseniz bile, onu sizin kişisel anlamlarınızla harmanlayarak tamamen size özel bir tasarıma dönüştürüyoruz. Örneğin, geleneksel bir Koi balığı tasarımına, sizin için önemli olan renkleri veya sembolleri ekleyebiliriz.
+*   **Teknik Mükemmellik:** Modern dövme ekipmanları ve ileri teknikler kullanarak, geleneksel motiflerin detaylarını ve renklerini daha canlı ve kalıcı hale getiriyoruz. İnce çizgilerden zengin gölgelendirmelere kadar her detayı büyük bir titizlikle uyguluyoruz.
+*   **Sanatsal Vizyon:** Sanatçılarımız, geleneksel motiflerin kökenlerini ve anlamlarını çok iyi bilirler. Bu bilgi birikimiyle, motifleri modern estetik anlayışıyla birleştirerek, zamana meydan okuyan ve güncel görünen tasarımlar ortaya çıkarırlar. Bu, gelenekselin ruhunu kaybetmeden yeniliği kucaklamak anlamına gelir.
+*   **Hijyen ve Güvenlik:** Sanatsal değer kadar, hijyen ve güvenlik de bizim için önceliktir. Cyprus Tattoo Ink, en yüksek sterilizasyon standartlarını uygulayarak, sizlere güvenli ve konforlu bir dövme deneyimi sunar. Tüm ekipmanlarımız tek kullanımlık ve sterilize edilmiş olup, sağlığınız bizim için esastır.
+
+### Cyprus Tattoo Ink'te Geleneksel Motiflerle Yaratıcılık
+
+Stüdyomuzda, geleneksel motiflerin geniş yelpazesini modern tekniklerle birleştirerek, her zevke ve anlama uygun tasarımlar yaratıyoruz. İşte bazı popüler geleneksel motifler ve Cyprus Tattoo Ink'teki yorumlarımız:
+
+*   **Ejderhalar:** Japon ve Çin mitolojisinin güçlü sembolleri olan ejderhalar, bilgelik, güç ve iyi şans temsil eder. Sanatçılarımız, ejderhaları akıcı hatlar, canlı renkler veya minimalist siyah mürekkep çalışmalarıyla modern bir dokunuşla yorumlar.
+*   **Koi Balıkları:** Azim, kararlılık ve başarıyı simgeleyen Koi balıkları, geleneksel olarak şelaleleri aşmaya çalışan balıkları tasvir eder. Cyprus Tattoo Ink'te, Koi'leri dinamik su elementleri ve zarif çiçeklerle birleştirerek estetik ve anlam dolu tasarımlar yaratıyoruz.
+*   **Güller:** Aşk, güzellik ve tutkunun evrensel sembolü olan güller, Old School tarzının vazgeçilmezidir. Gülleri gerçekçi dokunuşlarla, suluboya efektleriyle veya soyut yorumlarla birleştirerek, modern ve kişisel bir hava katıyoruz.
+*   **Aslanlar:** Güç, cesaret ve asaletin sembolü olan aslanlar, farklı kültürlerde önemli bir yere sahiptir. Aslan dövmelerini, detaylı tüyler, etkileyici ifadeler veya geometrik desenlerle harmanlayarak farklı stillerde sunuyoruz.
+*   **Kafatasları:** Ölüm ve yaşamın döngüsünü, geçiciliği veya bir anıyı temsil eden kafatasları, korkutucu olmaktan ziyade felsefi bir derinlik taşır. Kafataslarını, çiçekler, saatler veya diğer sembollerle birleştirerek, kişisel bir anlam yükleyebiliriz.
+
+### Pro İpuçları: Geleneksel Motif Dövmesi Yaptırmadan Önce
+
+Geleneksel bir motif dövmesi yaptırmayı düşünüyorsanız, işte size Cyprus Tattoo Ink uzmanlarından birkaç tavsiye:
+
+1.  **Araştırma Yapın:** Seçtiğiniz geleneksel motifin kökenlerini ve anlamlarını araştırın. Bu, dövmenizin sizin için daha derin bir anlam taşımasını sağlayacaktır.
+2.  **Sanatçı Portfolyosunu İnceleyin:** Sanatçının geleneksel motiflerdeki ustalığını ve modern yorumlarını görmek için portfolyosunu kontrol edin. Cyprus Tattoo Ink Instagram sayfamızda (@cyprustattoo) geniş bir portfolyo bulabilirsiniz.
+3.  **Açık İletişim Kurun:** İsteklerinizi, beklentilerinizi ve dövme hikayenizi sanatçınızla paylaşın. Ne kadar çok bilgi verirseniz, o kadar size özel bir tasarım ortaya çıkar.
+4.  **Konum ve Boyut:** Geleneksel motifler genellikle büyük ve detaylı olabilir. Dövmenizin bedeninizde nerede duracağını ve boyutunu sanatçınızla birlikte belirleyin. Bu, dövmenizin genel estetiği için önemlidir.
+5.  **Bakım Talimatlarına Uyun:** Dövmeniz tamamlandıktan sonra, sanatçınızın vereceği bakım talimatlarına titizlikle uyun. Doğru bakım, dövmenizin canlılığını ve kalıcılığını artıracaktır.
+
+### Sıkça Sorulan Sorular (SSS)
+
+**S: Geleneksel bir motifin anlamını değiştirmek mümkün müdür?**
+
+C: Geleneksel motiflerin köklü anlamları olsa da, kişisel yorumlar ve eklemelerle onlara yeni katmanlar eklemek mümkündür. Sanatçımızla bu konuyu detaylıca görüşerek size özel bir anlam yaratabilirsiniz.
+
+**S: Geleneksel dövmeler acı verir mi?**
+
+C: Dövme deneyimi kişiden kişiye değişir. Geleneksel dövmeler genellikle detaylı ve büyük ölçekli olabildiği için seanslar daha uzun sürebilir. Ancak Cyprus Tattoo Ink'te, deneyimi mümkün olduğunca konforlu hale getirmek için elimizden geleni yaparız.
+
+**S: Geleneksel motifleri modern stillerle birleştirebilir miyiz?**
+
+C: Kesinlikle! Cyprus Tattoo Ink'in uzmanlık alanlarından biri de budur. Geleneksel motifleri suluboya, minimalist veya gerçekçi gibi modern stillerle harmanlayarak size özgün bir tasarım sunabiliriz.
+
+**S: Dövme sonrası bakımda nelere dikkat etmeliyim?**
+
+C: Dövmenizi temiz tutmalı, nemlendirmeli ve güneşten korumalısınız. Sanatçınız size özel bakım talimatları verecektir. Bu talimatlara harfiyen uymak, dövmenizin iyileşme sürecini hızlandıracak ve kalitesini koruyacaktır.
+
+**S: Geleneksel dövmeler zamanla nasıl değişir?**
+
+C: Kaliteli mürekkep ve doğru tekniklerle yapılan geleneksel dövmeler, uzun yıllar canlılığını korur. Ancak tüm dövmeler gibi, zamanla hafifçe solma gösterebilirler. Güneşten korunma ve düzenli nemlendirme bu süreci yavaşlatmaya yardımcı olur.
+
+### Sonuç: Cyprus Tattoo Ink ile Sanatın Derinliklerine Yolculuk
+
+Dövme sanatı, sadece bir süsleme değil, aynı zamanda kişisel bir yolculuk ve bedensel bir hikaye anlatıcılığıdır. Geleneksel motifler, bu yolculuğa anlam ve derinlik katan, binlerce yıllık bilgelik ve estetikle dolu hazinelerdir. Girne'deki **Cyprus Tattoo Ink** olarak, bu değerli mirası modern sanat anlayışımızla birleştirerek, sizlere sadece bir dövme değil, ruhunuzu yansıtan, ömür boyu gururla taşıyacağınız bir sanat eseri sunuyoruz.
+
+Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000 adresindeki stüdyomuzu ziyaret ederek, sanatçılarımızla tanışabilir, fikirlerinizi paylaşabilir ve hayalinizdeki geleneksel motif dövmesini gerçeğe dönüştürmek için ilk adımı atabilirsiniz. Detaylı bilgi ve randevu için bizi +90 548 891 0673 numaralı telefondan arayabilir veya WhatsApp üzerinden ulaşabilirsiniz. Daha fazla ilham almak için web sitemizi https://cyprustattoo.ink adresinden veya Instagram sayfamızı https://www.instagram.com/cyprustattoo adresinden ziyaret edebilirsiniz. **Cyprus Tattoo Ink** ile bedeninizde yaşayacak olan sanatı keşfedin!
+`,
+      en: `## Traditional Motifs in Tattoo Art: Modern Interpretations and the Cyprus Tattoo Ink Difference
+
+Tattoo art is a form of expression as ancient, profound, and fascinating as human history itself. Using our bodies as canvases to reflect our personal stories, beliefs, and cultural heritage, tattoos have endured for thousands of years. Traditional motifs, in particular, have always held a special place in the tattoo world due to their deep meanings and aesthetic appeal. As **Cyprus Tattoo Ink**, located in the heart of Girne (Kyrenia), we are proud to combine these traditional motifs with our modern artistic approach to offer you unique and meaningful tattoo experiences.
+
+### Origins and Evolution of Traditional Tattoo Motifs
+
+Traditional tattoos are rich in symbols that reflect the unique beliefs, mythologies, and ways of life of different cultures around the world. Behind every motif lies a deep story, a layer of meaning, and often a sacred connotation. These motifs have evolved over time and continue to remain popular in contemporary tattoo art.
+
+#### Japanese Traditional Tattoos (Irezumi)
+
+Japanese tattoo art, especially **Irezumi**, is known for its rich colors, epic scenes, and complex compositions. Motifs such as dragons, Koi fish, samurai, cherry blossoms (sakura), and mythological creatures carry deep meanings like power, wisdom, courage, beauty, and the transience of life. These tattoos are often large-scale, covering entire backs, arms, or legs. At Cyprus Tattoo Ink, we combine the intricacies and aesthetics of Japanese traditional tattoos with modern interpretations, preserving the meaning of every detail.
+
+#### American Traditional Tattoos (Old School)
+
+**Old School** or American traditional tattoos are associated with maritime culture, characterized by thick lines, a limited color palette (usually red, black, green, yellow), and distinct shading. Motifs like eagles, anchors, hearts, roses, mermaids, and daggers address themes such as love, loyalty, freedom, danger, and remembrance. This style possesses a timeless appeal with its minimalist yet striking visuals. Our artists at Cyprus Tattoo Ink blend this classic style with contemporary techniques, recreating the spirit of Old School tattoos with a modern touch.
+
+#### Polynesian and Maori Tattoo Art (Ta Moko)
+
+In the Pacific Islands, particularly in Maori culture, tattoo art known as **Ta Moko** is not merely an adornment but also an indicator of personal identity, lineage, and social status. Facial tattoos are filled with complex spiral and curved patterns, and every line has a meaning. Polynesian tattoos, on the other hand, combine geometric shapes, animal figures (turtle, lizard, shark), and natural elements to convey themes like protection, strength, fertility, and spiritual connections. These tattoos exude a free-spirited and powerful presence. At Cyprus Tattoo Ink, we respectfully address the depth of this cultural heritage, blending authentic Polynesian and Maori inspirations with modern design principles.
+
+#### Celtic Tattoo Motifs
+
+Celtic tattoos are known for their intricate knot patterns, spirals, and animal figures. Celtic knots often symbolize eternity, the cycle of life, and interconnectedness, while crosses, trees, and animals (eagle, wolf, deer) represent strength, wisdom, and connection to nature. These motifs are not only aesthetically captivating but also carry deep philosophical meanings. Our artists meticulously craft the complex structure and aesthetics of Celtic motifs, offering you a meaningful and lasting work of art.
+
+### Modern Interpretations of Traditional Motifs: The Cyprus Tattoo Ink Approach
+
+At Cyprus Tattoo Ink, while respecting the rich heritage of traditional tattoo motifs, we also reinterpret them with our contemporary artistic understanding. Our goal is to combine the wisdom and aesthetics of the past with today's techniques and creativity, offering you not just a tattoo, but a personal expression and a work of art. How do we achieve this?
+
+*   **Personalized Designs:** Each client's story and wishes are unique. Even if you choose a traditional motif, we blend it with your personal meanings to create a design entirely unique to you. For example, we can add colors or symbols important to you to a traditional Koi fish design.
+*   **Technical Excellence:** Using modern tattoo equipment and advanced techniques, we make the details and colors of traditional motifs more vibrant and durable. We apply every detail, from fine lines to rich shading, with great precision.
+*   **Artistic Vision:** Our artists are well-versed in the origins and meanings of traditional motifs. With this knowledge, they combine motifs with a modern aesthetic, creating designs that are timeless and contemporary. This means embracing innovation without losing the spirit of tradition.
+*   **Hygiene and Safety:** As much as artistic value, hygiene and safety are our priorities. Cyprus Tattoo Ink applies the highest sterilization standards, offering you a safe and comfortable tattoo experience. All our equipment is single-use and sterilized; your health is paramount to us.
+
+### Creativity with Traditional Motifs at Cyprus Tattoo Ink
+
+In our studio, we combine a wide range of traditional motifs with modern techniques to create designs suitable for every taste and meaning. Here are some popular traditional motifs and our interpretations at Cyprus Tattoo Ink:
+
+*   **Dragons:** Powerful symbols in Japanese and Chinese mythology, dragons represent wisdom, strength, and good fortune. Our artists interpret dragons with fluid lines, vibrant colors, or minimalist black ink work with a modern touch.
+*   **Koi Fish:** Symbolizing perseverance, determination, and success, Koi fish traditionally depict fish striving to overcome waterfalls. At Cyprus Tattoo Ink, we combine Koi with dynamic water elements and elegant flowers to create aesthetic and meaningful designs.
+*   **Roses:** Universal symbols of love, beauty, and passion, roses are indispensable in the Old School style. We combine roses with realistic touches, watercolor effects, or abstract interpretations to add a modern and personal flair.
+*   **Lions:** Symbols of strength, courage, and nobility, lions hold an important place in different cultures. We blend lion tattoos with detailed fur, impressive expressions, or geometric patterns to offer them in various styles.
+*   **Skulls:** Representing the cycle of life and death, transience, or a memory, skulls carry a philosophical depth rather than being merely frightening. We can combine skulls with flowers, clocks, or other symbols to imbue them with personal meaning.
+
+### Pro Tips: Before Getting a Traditional Motif Tattoo
+
+If you're considering getting a traditional motif tattoo, here are some tips from the experts at Cyprus Tattoo Ink:
+
+1.  **Do Your Research:** Research the origins and meanings of the traditional motif you choose. This will ensure your tattoo carries deeper significance for you.
+2.  **Review the Artist's Portfolio:** Check the artist's portfolio to see their mastery of traditional motifs and modern interpretations. You can find an extensive portfolio on our Cyprus Tattoo Ink Instagram page (@cyprustattoo).
+3.  **Communicate Clearly:** Share your wishes, expectations, and tattoo story with your artist. The more information you provide, the more personalized the design will be.
+4.  **Placement and Size:** Traditional motifs can often be large and detailed. Determine the placement and size of your tattoo on your body with your artist. This is crucial for the overall aesthetic of your tattoo.
+5.  **Follow Aftercare Instructions:** After your tattoo is complete, diligently follow the aftercare instructions provided by your artist. Proper care will enhance the vibrancy and longevity of your tattoo.
+
+### Frequently Asked Questions (FAQ)
+
+**Q: Is it possible to change the meaning of a traditional motif?**
+
+A: While traditional motifs have ingrained meanings, it's possible to add new layers to them with personal interpretations and additions. You can discuss this in detail with our artist to create a meaning unique to you.
+
+**Q: Do traditional tattoos hurt?**
+
+A: The tattoo experience varies from person to person. Traditional tattoos can often be detailed and large-scale, so sessions may take longer. However, at Cyprus Tattoo Ink, we do our best to make the experience as comfortable as possible.
+
+**Q: Can we combine traditional motifs with modern styles?**
+
+A: Absolutely! This is one of Cyprus Tattoo Ink's areas of expertise. We can blend traditional motifs with modern styles like watercolor, minimalist, or realistic to offer you a unique design.
+
+**Q: What should I pay attention to in tattoo aftercare?**
+
+A: You should keep your tattoo clean, moisturized, and protected from the sun. Your artist will provide specific aftercare instructions. Following these instructions strictly will accelerate your tattoo's healing process and preserve its quality.
+
+**Q: How do traditional tattoos change over time?**
+
+A: Traditional tattoos made with quality ink and proper techniques retain their vibrancy for many years. However, like all tattoos, they may fade slightly over time. Sun protection and regular moisturizing help slow down this process.
+
+### Conclusion: A Journey into the Depths of Art with Cyprus Tattoo Ink
+
+Tattoo art is not just an adornment, but also a personal journey and a bodily storytelling. Traditional motifs are treasures full of thousands of years of wisdom and aesthetics that add meaning and depth to this journey. As **Cyprus Tattoo Ink** in Girne, we combine this valuable heritage with our modern artistic approach to offer you not just a tattoo, but a work of art that reflects your soul and one you will proudly wear for a lifetime.
+
+Visit our studio at Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000, to meet our artists, share your ideas, and take the first step towards realizing your dream traditional motif tattoo. For detailed information and appointments, you can call us at +90 548 891 0673 or reach us via WhatsApp. For more inspiration, visit our website at https://cyprustattoo.ink or our Instagram page at https://www.instagram.com/cyprustattoo. Discover the art that will live on your body with **Cyprus Tattoo Ink**!
+`
+    }
+  },
 ];
