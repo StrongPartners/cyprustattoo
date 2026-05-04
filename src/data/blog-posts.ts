@@ -36476,4 +36476,167 @@ Contact us today for your dream dotwork tattoo!
 `
     }
   },
+  {
+    id: "283",
+    slug: "sanatsal-dovme-tasariminda-anatomik-yaklasimlar-ve-cyprus-tattoo-ink",
+    title: {
+      tr: "Sanatsal Dövme Tasarımında Anatomik Yaklaşımlar ve Cyprus Tattoo Ink'in Uzmanlığı: Beden Sanatının Derinlikleri",
+      en: "Anatomical Approaches in Artistic Tattoo Design and the Expertise of Cyprus Tattoo Ink: Depths of Body Art"
+    },
+    description: {
+      tr: "Cyprus Tattoo Ink olarak, dövme sanatının anatomik bilgiyle buluştuğu noktada ustalıkla eserler yaratıyoruz. Vücudunuzun doğal hatlarına, kas yapısına ve kemik formuna saygı duyan tasarımlarla, dövmenizin yaşayan bir sanat eseri olmasını sağlıyoruz. Girne'deki stüdyomuzda, bedeninizin hikayesini anlatan, size özel ve kalıcı dövmeler için bizimle iletişime geçin.",
+      en: "At Cyprus Tattoo Ink, we masterfully create artworks where tattoo art meets anatomical knowledge. With designs that respect your body's natural contours, muscle structure, and bone form, we ensure your tattoo becomes a living work of art. For personalized and lasting tattoos that tell your body's story, contact us at our studio in Girne."
+    },
+    date: "2026-05-04",
+    author: "Cyprus Tattoo Specialist",
+    category: { tr: "Sanat", en: "Art" },
+    readTime: { tr: "25 dk", en: "25 min" },
+    image: "/blog/city-guide-hero.png",
+    imageAlt: {
+      tr: "Anatomik dövme tasarımı ve Cyprus Tattoo Ink stüdyosunda bir sanatçının vücut üzerine çizim yaparken yakın çekim görüntüsü",
+      en: "Close-up image of anatomical tattoo design and an artist drawing on a body at Cyprus Tattoo Ink studio"
+    },
+    content: {
+      tr: `## Sanatsal Dövme Tasarımında Anatomik Yaklaşımlar ve Cyprus Tattoo Ink'in Uzmanlığı: Beden Sanatının Derinlikleri
+
+Dövme sanatı, binlerce yıldır insan bedenini bir tuval olarak kullanan, kişisel ifade ve kültürel anlam taşıyan güçlü bir sanat biçimidir. Ancak günümüzde dövme sadece görsel bir estetikten öteye geçerek, bedenin anatomik yapısıyla uyum içinde, yaşayan ve nefes alan bir sanat eseri haline gelmiştir. Girne'nin kalbinde yer alan Cyprus Tattoo Ink olarak, biz bu felsefeyi benimseyerek, her dövmenin sadece bir desen değil, aynı zamanda bedenin doğal formunu tamamlayan, hareketle bütünleşen ve zamanla güzelleşen bir sanat eseri olduğuna inanıyoruz.
+
+Bu blog yazımızda, dövme sanatında anatomik yaklaşımların neden bu kadar kritik olduğunu, Cyprus Tattoo Ink'in bu alandaki uzmanlığını ve bedeninize hayat verecek bir dövme tasarımının inceliklerini derinlemesine inceleyeceğiz. Sanatın ve bilimin kesişim noktasında, bedeninizi bir başyapıta dönüştürmek için nasıl bir yol izlediğimizi keşfedeceksiniz.
+
+### Anatomik Dövme Tasarımının Önemi: Neden Bedeniniz Bir Tuvalden Fazlasıdır?
+
+Bir dövme sanatçısının başarısı, sadece güzel çizimler yapma yeteneğiyle sınırlı değildir; aynı zamanda insan anatomisini derinlemesine anlamasına bağlıdır. Beden, statik bir yüzey değil, sürekli hareket eden, kasılan, gevşeyen ve şekil değiştiren dinamik bir yapıdır. Bir dövme, bedenin bu dinamizmiyle uyum içinde tasarlandığında, gerçek potansiyeline ulaşır. Anatomik dövme tasarımının önemi birçok açıdan ele alınabilir:
+
+*   **Estetik Akış ve Uyum:** Bedenin doğal çizgileri, kas yapıları ve kemik formları, dövme tasarımına rehberlik eder. Örneğin, bir pazı kası üzerindeki bir dövme, kasın kasılmasıyla birlikte şekil değiştirebilir. Anatomiyi bilen bir sanatçı, bu hareketi önceden tahmin ederek, dövmenin her pozisyonda estetik görünmesini sağlar. Bu, dövmenin "vücutla birlikte akması" anlamına gelir ve görsel olarak çok daha tatmin edici bir sonuç verir.
+*   **Dövmenin Uzun Ömürlülüğü:** Dövmenin yerleşimi, derinin kalınlığı, esnekliği ve güneşe maruz kalma oranı gibi faktörler, dövmenin zaman içindeki görünümünü etkiler. Anatomik bilgiye sahip bir sanatçı, dövmenin hangi bölgelerde daha iyi iyileşeceğini ve zamanla daha az bozulacağını bilir. Örneğin, eklem yerleri veya sürekli sürtünmeye maruz kalan bölgeler, detaylı dövmeler için ideal olmayabilir.
+*   **Kişiselleştirilmiş Tasarım:** Her bireyin vücut yapısı benzersizdir. Anatomik bir yaklaşımla, sanatçı dövmeyi sadece bedene uygun değil, aynı zamanda kişinin kendine özgü vücut hatlarını vurgulayacak şekilde tasarlar. Bu, dövmenin sahibine özel olmasını ve onun kişiliğini daha iyi yansıtmasını sağlar.
+*   **Doğal Hareketle Bütünleşme:** İyi tasarlanmış bir dövme, bedenin hareketleriyle bütünleşir. Bir kol büküldüğünde, bir bacak uzatıldığında veya bir omuz kaldırıldığında, dövme de bu harekete katılarak canlılık kazanır. Bu, dövmenin sadece bir resim olmaktan çıkıp, bedenin bir parçası haline gelmesini sağlar.
+
+### Cyprus Tattoo Ink'in Anatomik Tasarım Felsefesi: Sanat ve Bilimin Dansı
+
+Cyprus Tattoo Ink olarak, Girne'deki stüdyomuzda her dövme projesine derinlemesine bir anatomik analizle yaklaşıyoruz. Sanatçılarımız, dövmenin yerleştirileceği bölgenin kas yapısını, kemik formasyonlarını, deri kalınlığını ve hatta kişinin duruş ve hareket alışkanlıklarını dikkatle inceler. Bu titiz ön çalışma, dövmenizin sadece estetik değil, aynı zamanda bedeninize mükemmel uyum sağlayan bir başyapıt olmasını garanti eder.
+
+**Uygulama Sürecimiz:**
+
+1.  **Detaylı Konsültasyon:** İlk adım, sizinle birebir görüşerek dövme fikrinizi, istediğiniz stili ve anlamını anlamaktır. Bu sırada, vücudunuzdaki potansiyel yerleşim alanlarını tartışırız.
+2.  **Anatomik Analiz ve Tasarım Eskizleri:** Sanatçımız, dövme yapılacak bölgenin fotoğrafını çekerek veya doğrudan vücut üzerinde çizimler yaparak anatomik yapıyı analiz eder. Bu aşamada, dövmenin kasların hareketiyle nasıl değişeceğini, kemiklerin üzerinden nasıl geçeceğini ve vücudun doğal akışına nasıl uyum sağlayacağını değerlendiririz. Birkaç farklı eskiz çalışması ile en uygun yerleşim ve kompozisyonu buluruz.
+3.  **Kişiselleştirilmiş Tasarım Geliştirme:** Eskizler üzerinden sizinle birlikte çalışarak, dövme tasarımını kişisel tercihlerinize ve vücut yapınıza en uygun hale getiririz. Detayların, gölgelerin ve renklerin, bedenin doğal formunu nasıl güçlendireceğini planlarız.
+4.  **Uygulama ve İnce Ayarlar:** Dövme uygulama aşamasında, sanatçımız anatomik bilgisi sayesinde her bir çizgiyi ve gölgeyi dikkatle yerleştirir. Canlı bir vücut üzerinde çalışmanın dinamizmini anlayan sanatçılarımız, gerektiğinde küçük ayarlamalar yaparak dövmenin mükemmel bir şekilde oturmasını sağlar.
+
+### Cyprus Tattoo Ink'te Öne Çıkan Anatomik Dövme Stilleri
+
+Stüdyomuzda, anatomik yaklaşımla başarıyla uyguladığımız birçok dövme stili bulunmaktadır. Her stil, bedenin farklı bölgelerinde farklı etkiler yaratır:
+
+*   **Gerçekçilik (Realism):** Gerçekçi dövmelerde detay ve perspektif hayati önem taşır. Bir kasın üzerine yerleştirilen gerçekçi bir portre veya hayvan figürü, kasın hareketiyle daha da canlanır. Sanatçılarımız, ışık ve gölge oyunlarını bedenin üç boyutlu formuyla birleştirerek inanılmaz derecede canlı eserler yaratır.
+*   **Siyah ve Gri (Black and Grey):** Siyah ve gri dövmelerdeki ton geçişleri ve derinlik, anatomik yapıyı vurgulamak için mükemmeldir. Kasların kıvrımları, kemiklerin çıkıntıları, gölgelendirme teknikleriyle daha dramatik ve etkileyici hale getirilebilir.
+*   **Organik ve Biyo-Mekanik:** Bu stiller zaten bedenin doğal formlarından ilham alır. Dövme, sanki derinin altından çıkıyormuş gibi veya bedenin iç yapısıyla bütünleşiyormuş gibi görünür. Cyprus Tattoo Ink sanatçıları, bu stili uygularken bedenin her bir kıvrımını ve hareketini tasarıma dahil eder.
+*   **Sarmal ve Akışkan Tasarımlar:** Özellikle kol, bacak veya gövde etrafına sarılan dövmeler, bedenin doğal akışına uygun olarak tasarlandığında çok daha etkileyici olur. Bu tasarımlar, kasların ve uzuvların hareketini takip ederek, dövmenin sürekli değişen bir görünüm sunmasını sağlar.
+
+### Pro İpuçları: Anatomik Dövme Tasarımı İçin Neler Bilmelisiniz?
+
+Anatomik olarak iyi yerleştirilmiş bir dövme istiyorsanız, karar verme sürecinizde göz önünde bulundurmanız gereken bazı profesyonel ipuçları var:
+
+*   **Sanatçınızın Portfolyosunu İnceleyin:** Seçtiğiniz sanatçının daha önce yaptığı işlerde anatomik uyuma ne kadar dikkat ettiğini gösteren örnekleri arayın. Dövme, vücudun doğal hatlarını takip ediyor mu? Hareketle nasıl görünüyor?
+*   **Vücut Tipinizi ve Hareketlerinizi Göz Önünde Bulundurun:** Spor yapıyor musunuz? Çok mu esneksiniz? Dövme yaptırmayı düşündüğünüz bölge günlük hayatta ne kadar hareket ediyor? Bu soruların cevapları, dövme tasarımının uzun ömürlülüğü ve estetiği için önemlidir.
+*   **Konumlandırma Önemlidir:** Aynı dövme tasarımı, farklı vücut bölgelerinde tamamen farklı görünebilir. Sanatçınızla birlikte en uygun konumu belirlemek için zaman ayırın.
+*   **Dövme Boyutu ve Detay:** Çok küçük ve detaylı dövmeler, derinin yaşlanması ve hareket etmesiyle zamanla bozulabilir. Özellikle hareketli bölgelerde, daha sade ve büyük tasarımlar genellikle daha uzun ömürlü olur.
+*   **Açık İletişim Kurun:** Tasarım ve yerleşimle ilgili tüm endişelerinizi ve fikirlerinizi sanatçınızla açıkça paylaşın. Bu, hayalinizdeki dövmeye ulaşmanın en iyi yoludur.
+
+### Sıkça Sorulan Sorular (SSS) Anatomik Dövme Tasarımı Hakkında
+
+**S: Anatomik dövme tasarımı daha mı pahalıdır?**
+C: Anatomik dövme tasarımı, sanatçının daha fazla zaman ve uzmanlık gerektiren detaylı bir ön çalışma yapmasını içerir. Bu, genel olarak daha karmaşık ve kişiselleştirilmiş bir süreç olduğundan, maliyetini etkileyebilir. Ancak, dövmenizin kalitesi ve uzun ömürlülüğü göz önüne alındığında, yapılan yatırım buna değerdir.
+
+**S: Dövme yapılırken acı hissini etkiler mi?**
+C: Dövmenin anatomik olarak iyi yerleştirilmesi, acı hissini doğrudan etkilemez. Acı hissi daha çok dövmenin yapılacağı bölgenin sinir uçlarının yoğunluğuna, kemiğe yakınlığına ve kişinin ağrı eşiğine bağlıdır. Ancak, anatomik bilgi sayesinde sanatçı, daha hassas bölgelerde çalışırken daha dikkatli olabilir.
+
+**S: Her dövme anatomik olarak mı tasarlanmalıdır?**
+C: Her dövme için anatomik bir yaklaşım faydalı olsa da, bazı minimalist veya çok küçük dövmelerde bu detay seviyesine ihtiyaç duyulmayabilir. Ancak, büyük, karmaşık veya vücudun hareketli bölgelerine yapılacak dövmeler için anatomik tasarım vazgeçilmezdir.
+
+**S: Anatomik dövme tasarımı ne kadar sürer?**
+C: Tasarım süreci, dövmenin karmaşıklığına ve kişinin vücut yapısına göre değişir. Detaylı bir konsültasyon, eskiz çalışmaları ve nihai tasarımın geliştirilmesi birkaç saatten birkaç güne kadar sürebilir. Asıl dövme uygulaması ise tasarımın büyüklüğüne ve detayına göre değişir.
+
+**S: Cyprus Tattoo Ink'te anatomik tasarım konusunda uzmanlaşmış belirli sanatçılar var mı?**
+C: Cyprus Tattoo Ink'teki tüm sanatçılarımız, insan anatomisi konusunda eğitimli ve deneyimlidir. Ekibimiz, dövmenin bedenin doğal yapısına uygunluğunu sağlamak için sürekli olarak bilgi ve becerilerini güncel tutar. Her sanatçının kendine özgü bir uzmanlık alanı olsa da, anatomik uyum ortak felsefemizin temelini oluşturur.
+
+### Cyprus Tattoo Ink: Bedeninizdeki Sanatın Zirvesi
+
+Dövme, sadece bir anlık heves değil, ömür boyu sürecek bir sanattır. Bu nedenle, dövmenizin tasarımı ve uygulanması, bedeninize ve kişiliğinize saygı duyan bir yaklaşımla ele alınmalıdır. Cyprus Tattoo Ink olarak, Girne'deki stüdyomuzda, sanatın ve bilimin birleşiminden doğan, anatomik olarak mükemmel ve estetik açıdan çarpıcı dövmeler yaratmaktan gurur duyuyoruz.
+
+Bedeninizin doğal formunu kucaklayan, hareketlerinizle bütünleşen ve size özel bir hikaye anlatan bir dövmeye sahip olmak istiyorsanız, doğru yerdesiniz. Deneyimli sanatçılarımız, titiz çalışma prensiplerimiz ve hijyen standartlarımızla, dövme yolculuğunuzda size rehberlik etmek için buradayız.
+
+Hayalinizdeki dövmeyi gerçeğe dönüştürmek için bugün bizimle iletişime geçin. Cyprus Tattoo Ink ailesi olarak, sizi Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000 adresindeki stüdyomuza bekliyoruz. Detaylı bilgi almak, randevu oluşturmak veya sanatçılarımızın portfolyolarını incelemek için web sitemizi ziyaret edebilirsiniz: [https://cyprustattoo.ink](https://cyprustattoo.ink) veya bizi arayabilirsiniz: +90 548 891 0673. En güncel çalışmalarımızı ve stüdyo hayatımızı takip etmek için Instagram hesabımıza göz atmayı unutmayın: [https://www.instagram.com/cyprustattoo](https://www.instagram.com/cyprustattoo). Bedeninizi bir sanat eserine dönüştürmek için sabırsızlanıyoruz!
+`,
+      en: `## Anatomical Approaches in Artistic Tattoo Design and the Expertise of Cyprus Tattoo Ink: Depths of Body Art
+
+Tattoo art, using the human body as a canvas for thousands of years, is a powerful art form that carries personal expression and cultural meaning. However, today, tattoos go beyond mere visual aesthetics, becoming living and breathing artworks that are in harmony with the body's anatomical structure. As Cyprus Tattoo Ink, located in the heart of Girne, we embrace this philosophy, believing that every tattoo is not just a pattern but an artwork that complements the body's natural form, integrates with movement, and beautifies with time.
+
+In this blog post, we will delve into why anatomical approaches are so critical in tattoo art, the expertise of Cyprus Tattoo Ink in this field, and the intricacies of a tattoo design that will bring your body to life. You will discover how we navigate the intersection of art and science to transform your body into a masterpiece.
+
+### The Importance of Anatomical Tattoo Design: Why Your Body Is More Than Just a Canvas
+
+The success of a tattoo artist is not limited to their ability to draw beautiful designs; it also depends on their deep understanding of human anatomy. The body is not a static surface but a dynamic structure that constantly moves, contracts, relaxes, and changes shape. A tattoo reaches its true potential when designed in harmony with this dynamism of the body. The importance of anatomical tattoo design can be addressed from several perspectives:
+
+*   **Aesthetic Flow and Harmony:** The natural lines, muscle structures, and bone forms of the body guide the tattoo design. For example, a tattoo on a bicep muscle can change shape as the muscle contracts. An artist who understands anatomy anticipates this movement, ensuring the tattoo looks aesthetic in every position. This means the tattoo "flows with the body," resulting in a much more satisfying visual outcome.
+*   **Longevity of the Tattoo:** Factors such as the tattoo's placement, skin thickness, elasticity, and sun exposure affect the tattoo's appearance over time. An artist with anatomical knowledge knows where tattoos will heal better and degrade less over time. For example, joints or areas subject to constant friction may not be ideal for detailed tattoos.
+*   **Personalized Design:** Each individual's body structure is unique. With an anatomical approach, the artist designs the tattoo not only to fit the body but also to emphasize the person's unique body contours. This ensures the tattoo is personal to its owner and better reflects their personality.
+*   **Integration with Natural Movement:** A well-designed tattoo integrates with the body's movements. When an arm bends, a leg extends, or a shoulder lifts, the tattoo also participates in this movement, gaining vitality. This allows the tattoo to cease being just a picture and become a part of the body.
+
+### Cyprus Tattoo Ink's Anatomical Design Philosophy: The Dance of Art and Science
+
+At Cyprus Tattoo Ink, in our studio in Girne, we approach every tattoo project with an in-depth anatomical analysis. Our artists carefully examine the muscle structure, bone formations, skin thickness, and even the posture and movement habits of the area where the tattoo will be placed. This meticulous preliminary work ensures that your tattoo is not only aesthetic but also a masterpiece that perfectly adapts to your body.
+
+**Our Application Process:**
+
+1.  **Detailed Consultation:** The first step is to meet with you one-on-one to understand your tattoo idea, desired style, and meaning. During this, we discuss potential placement areas on your body.
+2.  **Anatomical Analysis and Design Sketches:** Our artist analyzes the anatomical structure by taking a photo of the area to be tattooed or by drawing directly on the body. At this stage, we evaluate how the tattoo will change with muscle movement, how it will cross bones, and how it will harmonize with the body's natural flow. We find the most suitable placement and composition through several different sketch studies.
+3.  **Personalized Design Development:** Working with you based on the sketches, we tailor the tattoo design to best suit your personal preferences and body structure. We plan how details, shadows, and colors will enhance the body's natural form.
+4.  **Application and Fine-Tuning:** During the tattoo application phase, our artist carefully places each line and shadow thanks to their anatomical knowledge. Our artists, understanding the dynamism of working on a living body, make minor adjustments when necessary to ensure the tattoo sits perfectly.
+
+### Prominent Anatomical Tattoo Styles at Cyprus Tattoo Ink
+
+In our studio, there are many tattoo styles that we successfully apply with an anatomical approach. Each style creates different effects on different parts of the body:
+
+*   **Realism:** Detail and perspective are vital in realistic tattoos. A realistic portrait or animal figure placed on a muscle comes even more alive with the muscle's movement. Our artists combine light and shadow play with the body's three-dimensional form to create incredibly vibrant works.
+*   **Black and Grey:** The tonal transitions and depth in black and grey tattoos are perfect for emphasizing anatomical structure. The curves of muscles and protrusions of bones can be made more dramatic and impressive with shading techniques.
+*   **Organic and Bio-Mechanical:** These styles are already inspired by the body's natural forms. The tattoo appears as if it is emerging from beneath the skin or integrating with the body's internal structure. Cyprus Tattoo Ink artists incorporate every curve and movement of the body into the design when applying this style.
+*   **Spiral and Fluid Designs:** Tattoos that wrap around the arm, leg, or torso, especially, are much more striking when designed in harmony with the body's natural flow. These designs follow the movement of muscles and limbs, allowing the tattoo to offer a constantly changing appearance.
+
+### Pro Tips: What You Should Know for Anatomical Tattoo Design
+
+If you want an anatomically well-placed tattoo, there are some professional tips to consider in your decision-making process:
+
+*   **Review Your Artist's Portfolio:** Look for examples in your chosen artist's previous work that show how much attention they paid to anatomical harmony. Does the tattoo follow the body's natural lines? How does it look with movement?
+*   **Consider Your Body Type and Movements:** Do you exercise? Are you very flexible? How much does the area you're considering for a tattoo move in daily life? The answers to these questions are important for the longevity and aesthetics of the tattoo design.
+*   **Placement Matters:** The same tattoo design can look completely different on different body parts. Take the time to determine the most suitable location with your artist.
+*   **Tattoo Size and Detail:** Very small and detailed tattoos can degrade over time as the skin ages and moves. Especially in mobile areas, simpler and larger designs generally last longer.
+*   **Communicate Openly:** Share all your concerns and ideas about the design and placement openly with your artist. This is the best way to achieve your dream tattoo.
+
+### Frequently Asked Questions (FAQ) About Anatomical Tattoo Design
+
+**Q: Is anatomical tattoo design more expensive?**
+A: Anatomical tattoo design involves detailed preliminary work by the artist, requiring more time and expertise. As this is generally a more complex and personalized process, it can affect the cost. However, considering the quality and longevity of your tattoo, the investment is worthwhile.
+
+**Q: Does anatomical placement affect the pain experienced during tattooing?**
+A: Anatomically good placement of a tattoo does not directly affect the feeling of pain. Pain is more dependent on the density of nerve endings in the area to be tattooed, its proximity to bone, and the individual's pain threshold. However, with anatomical knowledge, the artist can be more careful when working on more sensitive areas.
+
+**Q: Should every tattoo be designed anatomically?**
+A: While an anatomical approach is beneficial for every tattoo, this level of detail may not be necessary for some minimalist or very small tattoos. However, for large, complex tattoos or those to be placed on mobile areas of the body, anatomical design is indispensable.
+
+**Q: How long does anatomical tattoo design take?**
+A: The design process varies depending on the complexity of the tattoo and the individual's body structure. A detailed consultation, sketch work, and the development of the final design can take anywhere from a few hours to several days. The actual tattoo application varies depending on the size and detail of the design.
+
+**Q: Are there specific artists at Cyprus Tattoo Ink who specialize in anatomical design?**
+A: All our artists at Cyprus Tattoo Ink are trained and experienced in human anatomy. Our team continuously updates their knowledge and skills to ensure the tattoo is suitable for the body's natural structure. While each artist may have a unique area of expertise, anatomical harmony forms the core of our shared philosophy.
+
+### Cyprus Tattoo Ink: The Pinnacle of Art on Your Body
+
+A tattoo is not just a fleeting whim, but a lifelong work of art. Therefore, the design and application of your tattoo should be approached with respect for your body and personality. As Cyprus Tattoo Ink, in our studio in Girne, we are proud to create anatomically perfect and aesthetically striking tattoos born from the fusion of art and science.
+
+If you wish to have a tattoo that embraces your body's natural form, integrates with your movements, and tells a unique story about you, you are in the right place. Our experienced artists, meticulous working principles, and hygiene standards are here to guide you on your tattoo journey.
+
+Contact us today to turn your dream tattoo into reality. As the Cyprus Tattoo Ink family, we look forward to welcoming you to our studio at Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000. For detailed information, to make an appointment, or to view our artists' portfolios, you can visit our website: [https://cyprustattoo.ink](https://cyprustattoo.ink) or call us at: +90 548 891 0673. Don't forget to check out our Instagram account to follow our latest work and studio life: [https://www.instagram.com/cyprustattoo](https://www.instagram.com/cyprustattoo). We can't wait to transform your body into a work of art!
+`
+    }
+  },
 ];
