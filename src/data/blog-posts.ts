@@ -40978,4 +40978,175 @@ See your body as a canvas, and know that every stroke on it tells a story. To wr
 `
     }
   },
+  {
+    id: "306",
+    slug: "cyprus-tattoo-ink-ile-dovme-sanatinda-gorsel-hazineler-ve-anlamin-kesfi-girne-kktc",
+    title: {
+      tr: "Cyprus Tattoo Ink ile Görsel Sanatın Derinlikleri: Anlamın ve Estetiğin Kesişim Noktası",
+      en: "Unveiling the Depths of Visual Art with Cyprus Tattoo Ink: Where Meaning and Aesthetics Intersect"
+    },
+    description: {
+      tr: "Girne'deki Cyprus Tattoo Ink, dövme sanatında görsel bir hikaye anlatıcılığı ve kişisel ifade merkezi. Detaylı stiller, profesyonel ipuçları ve sıkça sorulan sorularla dövme yolculuğunuzu keşfedin.",
+      en: "Cyprus Tattoo Ink in Girne is a hub for visual storytelling and personal expression in tattoo art. Explore your tattoo journey with detailed style breakdowns, professional tips, and frequently asked questions."
+    },
+    date: "2026-05-10",
+    author: "Cyprus Tattoo Specialist",
+    category: { tr: "Sanat", en: "Art" },
+    readTime: { tr: "25 dk", en: "25 min" },
+    image: "/blog/studio-checklist-hero.png",
+    imageAlt: {
+      tr: "Cyprus Tattoo Ink stüdyosunda bir sanatçının dövme yaparken yakın çekim görüntüsü, sanatsal detayları vurguluyor.",
+      en: "Close-up shot of an artist tattooing at Cyprus Tattoo Ink studio, emphasizing artistic details."
+    },
+    content: {
+      tr: `## Görsel Sanatın Büyülü Dokunuşu: Cyprus Tattoo Ink ile Bedeninizde Bir Hikaye Yaratın
+
+Dövme sanatı, sadece bir süsleme biçimi olmanın çok ötesinde, derin bir kişisel ifade ve hikaye anlatma aracıdır. Beden, bir sanatçının hayallerini, duygularını ve düşüncelerini ölümsüzleştirdiği bir tuvale dönüşür. Girne'nin kalbinde yer alan Cyprus Tattoo Ink, bu büyüleyici yolculukta size rehberlik eden, sanatsal vizyonunuzu gerçeğe dönüştüren bir merkezdir. Biz, dövmeyi bir zanaattan öte, bir sanat formu olarak görüyor ve her bir müşterimiz için benzersiz, anlamlı ve estetik açıdan kusursuz eserler yaratmayı hedefliyoruz. Bu blog yazımızda, dövme sanatının görsel derinliklerini, farklı stillerini ve Cyprus Tattoo Ink'in bu alandaki eşsiz yaklaşımını keşfedeceğiz. Hazır olun, çünkü bedeninizde yaşayacak bir sanat eserinin kapılarını aralıyoruz.
+
+### Dövme Sanatında Anlam ve Estetiğin Dansı
+
+Dövme, binlerce yıldır insanlık tarihindeki yerini koruyan, kültürel, ruhsal ve kişisel anlamlar taşıyan kadim bir pratiktir. Günümüzde ise modern teknikler ve sanatsal yaklaşımlarla bambaşka bir boyuta ulaşmıştır. Bir dövme, sahibinin kimliğini yansıtabilir, önemli bir anıyı ölümsüzleştirebilir, bir inancı temsil edebilir ya da sadece estetik bir tercih olabilir. Cyprus Tattoo Ink olarak, bu derin bağlantıyı anlıyor ve her dövmenin sahibine özel bir hikaye anlatması gerektiğine inanıyoruz.
+
+Sanatçılarımız, sizinle birlikte oturup hikayenizi dinler, vizyonunuzu anlamak için zaman ayırır. Tasarım sürecimiz, sadece çizimden ibaret değildir; aynı zamanda sizinle duygusal bir bağ kurmayı, iç dünyanızı dövme aracılığıyla dışa vurmanızı sağlamayı amaçlar. Estetik kaygılarımız, anlam derinliğiyle birleştiğinde ortaya çıkan eserler, sadece bakılan değil, hissedilen dövmelerdir. Renklerin uyumu, çizgilerin akıcılığı, gölgelerin derinliği ve kompozisyonun bütünlüğü, her bir dövmemizi bir başyapıta dönüştüren unsurlardır.
+
+### Cyprus Tattoo Ink Farkı: Sanat, Hijyen ve Uzmanlık
+
+Girne'de dövme yaptırmak isteyenler için Cyprus Tattoo Ink, sadece bir stüdyo değil, aynı zamanda bir güven ve sanat vahasıdır. Adresimiz Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000 olup, bize +90 548 891 0673 numaralı telefondan veya WhatsApp üzerinden kolayca ulaşabilirsiniz. Web sitemiz https://cyprustattoo.ink ve Instagram hesabımız https://www.instagram.com/cyprustattoo üzerinden çalışmalarımızı inceleyebilirsiniz.
+
+**Uzman Sanatçılar ve Kişiye Özel Tasarımlar:** Ekibimiz, farklı dövme stillerinde uzmanlaşmış yetenekli sanatçılardan oluşmaktadır. Her bir sanatçımızın kendine özgü bir tarzı ve imza dokunuşu vardır. Bu çeşitlilik sayesinde, hayalinizdeki dövmeyi en iyi şekilde hayata geçirecek doğru sanatçıyı bulmanızı sağlıyoruz. Katalog dövmeler yerine, sizin için özel olarak tasarlanmış, benzersiz ve kişisel bir eser yaratmayı hedefliyoruz.
+
+**Üstün Hijyen Standartları:** Dövme sanatında hijyen, estetik kadar önemlidir. Cyprus Tattoo Ink olarak, sağlık ve güvenliğinize en yüksek önemi veriyoruz. Stüdyomuz, en güncel sterilizasyon protokollerine uygun olarak düzenlenmiştir. Tek kullanımlık iğneler, steril ekipmanlar ve titiz bir çalışma ortamı, her müşterimiz için garantimizdir. Bu konuda asla taviz vermeyiz, çünkü sağlığınız bizim için her şeyden önce gelir.
+
+**Danışmanlık ve Destek:** Dövme yaptırmak büyük bir karardır ve bu süreçte akıllarda pek çok soru işareti olabilir. Cyprus Tattoo Ink'te, deneyimli ekibimizle dövme öncesi ve sonrası tüm sorularınızı yanıtlamak için buradayız. Tasarım seçimi, cilt tipinize uygunluk, ağrı yönetimi ve dövme bakımı konularında size kapsamlı bilgi ve destek sağlıyoruz. Amacımız, dövme yolculuğunuzun her aşamasında kendinizi güvende ve bilgili hissetmenizi sağlamaktır.
+
+### Dövme Stilleri: Bedeninizdeki Sanat Galerisi
+
+Dövme dünyası, sonsuz bir yaratıcılık ve çeşitlilik sunar. Her stilin kendine özgü bir estetiği, tarihi ve anlatım biçimi vardır. Cyprus Tattoo Ink olarak, en popüler ve talep gören dövme stillerinde uzmanlaşmış sanatçılara sahibiz. İşte bazı öne çıkan dövme stilleri ve özellikleri:
+
+*   **Realizm (Gerçekçilik):** Bu stil, fotoğrafik ayrıntılarla canlı ve gerçekçi görüntüler yaratmayı hedefler. Portreler, doğa manzaraları, hayvanlar veya nesneler, sanki cildin üzerine basılmış bir fotoğrafmış gibi görünür. Gölgelendirme, ışıklandırma ve detaylandırma, bu stilin temelini oluşturur. Sanatçının yeteneği ve gözlem gücü, realistik dövmelerde kritik öneme sahiptir.
+
+*   **Blackwork (Siyah İşçilik):** Adından da anlaşılacağı gibi, sadece siyah mürekkep kullanılarak yapılan bir stildir. Yoğun siyah alanlar, keskin çizgiler, geometrik desenler ve soyut formlarla karakterize edilir. Blackwork, minimalistten cesur ve iddialı tasarımlara kadar geniş bir yelpaze sunar. Güçlü bir görsel etki yaratır.
+
+*   **Fineline (İnce Çizgi):** Zarif ve minimalist dövmelerin vazgeçilmez stilidir. Çok ince iğneler kullanılarak hassas ve detaylı çizgilerle tasarımlar oluşturulur. Genellikle küçük ve anlamlı dövmeler için tercih edilir. Minimalist estetiği sevenler için idealdir.
+
+*   **Traditional (Geleneksel / Old School):** Kalın siyah çizgiler, sınırlı renk paleti (genellikle kırmızı, yeşil, sarı, mavi) ve ikonik motiflerle tanınır. Denizcilik temaları (çapa, gemi), gül, kartal, hançer gibi semboller bu stilin vazgeçilmezleridir. Köklü bir tarihi ve kültürel mirası vardır.
+
+*   **Neotraditional (Yeni Geleneksel):** Geleneksel dövme stilinin modern bir yorumudur. Daha zengin renk paletleri, daha fazla detay, boyut ve derinlik eklenerek geleneksel motiflere çağdaş bir hava katılır. Genellikle daha gerçekçi ve sanatsal bir yaklaşıma sahiptir.
+
+*   **Geometric (Geometrik):** Daireler, üçgenler, kareler gibi geometrik şekillerin ve desenlerin ustaca kullanıldığı bir stildir. Simetri, denge ve tekrar, bu stilin anahtar unsurlarıdır. Genellikle soyut ve modern bir estetiğe sahiptir, bazen doğa veya evrensel sembollerle birleştirilir.
+
+*   **Watercolor (Suluboya):** Sulu boya resimlerinin yumuşak, akan ve dağılmış efektlerini taklit eden bir stildir. Belirgin dış çizgiler yerine, renklerin birbirine karışması ve hafif ton geçişleriyle canlı ve sanatsal bir görünüm elde edilir. Oldukça sanatsal ve özgün bir yaklaşımdır.
+
+*   **Dotwork (Noktasal Çalışma):** Tasarımın tamamının veya büyük bir kısmının küçük noktalar kullanılarak oluşturulduğu bir tekniktir. Gölgelendirme ve derinlik, noktaların yoğunluğu ve aralığı ile sağlanır. Genellikle geometrik, mandalalar ve soyut tasarımlarda kullanılır, mistik bir hava katar.
+
+Bu stillerin her biri, Cyprus Tattoo Ink sanatçılarının uzmanlık alanına girmektedir. Hangi stili tercih ederseniz edin, size en iyi sonucu sunmak için buradayız.
+
+### Pro İpuçları: Dövme Yolculuğunuz İçin Bilmeniz Gerekenler
+
+Dövme yaptırma süreci, sadece mürekkep ve iğnelerden ibaret değildir. Başarılı ve keyifli bir deneyim için bazı önemli adımlar ve ipuçları bulunmaktadır:
+
+1.  **Araştırma ve İlham:** İstediğiniz dövme stili ve motifi hakkında önceden araştırma yapın. Pinterest, Instagram gibi platformlar, size ilham verebilecek sayısız örnek sunar. Ancak unutmayın, kopyalamak yerine ilham alarak kendi özgün tasarımınızı oluşturmak çok daha değerlidir.
+2.  **Sanatçı Seçimi:** Her sanatçının kendine özgü bir tarzı vardır. Cyprus Tattoo Ink'in Instagram sayfasını (@cyprustattoo) inceleyerek sanatçılarımızın portfolyolarına göz atın ve tarzınıza en uygun olanı seçin. Sanatçınızla aranızda iyi bir iletişim kurmanız önemlidir.
+3.  **Danışmanlık Randevusu:** Dövme yaptırmadan önce stüdyomuzda bir danışmanlık randevusu ayarlayın. Bu görüşmede, tasarımınızı detaylandırabilir, boyut, yerleşim ve renkler hakkında konuşabilir, aklınızdaki tüm soruları sorabilirsiniz. Bu, hem sizin hem de sanatçınız için net bir yol haritası oluşturacaktır.
+4.  **Hazırlık:** Randevu gününden önce iyi dinlenin, bol su için ve sağlıklı bir yemek yiyin. Alkol ve kan sulandırıcı ilaçlardan kaçının. Cildinizin nemli olması, dövme sürecini daha konforlu hale getirecektir.
+5.  **Dövme Sonrası Bakım:** Dövmenizin uzun ömürlü ve sağlıklı kalması için dövme sonrası bakım talimatlarına titizlikle uyun. Sanatçınız size detaylı bakım yönergeleri verecektir. İyileşme sürecinde sabırlı olun ve cildinizi iyi koruyun.
+
+### Sıkça Sorulan Sorular (SSS)
+
+**S: Dövme yaptırmak acıtır mı?**
+C: Ağrı eşiği kişiden kişiye değişmekle birlikte, evet, dövme yaptırmak bir miktar acıya neden olabilir. Ancak genellikle tahmin edilenden daha az şiddetlidir. Vücudun bazı bölgeleri diğerlerine göre daha hassastır. Sanatçınız, acıyı yönetmenize yardımcı olacak teknikler konusunda size bilgi verecektir.
+
+**S: Dövme ne kadar sürer?**
+C: Dövmenin boyutu, detayı ve yerleşimine bağlı olarak süre değişir. Küçük ve basit bir dövme yarım saat sürebilirken, büyük ve detaylı bir çalışma birkaç seans gerektirebilir. Danışmanlık randevunuzda sanatçınız size tahmini bir süre verecektir.
+
+**S: Dövme bakımı nasıl yapılır?**
+C: Sanatçınız size özel bakım talimatları verecektir. Genellikle dövme bandajlandıktan sonra belirli bir süre sonra çıkarılır, nazikçe yıkanır ve nemlendirici bir kremle bakım yapılır. Dövme tamamen iyileşene kadar güneşe maruz kalmaktan, yüzme havuzundan ve dar giysilerden kaçınılması önemlidir.
+
+**S: Dövme kalıcı mıdır?**
+C: Evet, dövme kalıcıdır. Mürekkep cildin daha derin katmanlarına enjekte edildiği için zamanla solsa da tamamen kaybolmaz. Bu nedenle, dövme seçiminizi dikkatli yapmanız ve pişman olmayacağınız bir tasarım seçtiğinizden emin olmanız önemlidir.
+
+**S: Cyprus Tattoo Ink'e nasıl randevu alabilirim?**
+C: Randevu almak için en kolay yol, bize +90 548 891 0673 numaralı telefondan veya WhatsApp üzerinden ulaşmaktır. Ayrıca, Instagram DM üzerinden veya web sitemizdeki iletişim formunu kullanarak da bize ulaşabilirsiniz. Bir danışmanlık randevusu ile başlamak her zaman en iyi yoldur.
+
+### Cyprus Tattoo Ink ile Sanatsal Yolculuğunuza Başlayın
+
+Dövme sanatı, kişisel ifadenin en güçlü ve kalıcı biçimlerinden biridir. Bedeninizde taşıyacağınız bir sanat eseri, sadece sizin için değil, aynı zamanda etrafınızdaki dünya için de bir hikaye anlatır. Girne'deki Cyprus Tattoo Ink olarak, bu anlamlı yolculukta size eşlik etmekten gurur duyuyoruz. Sanatçılarımızın ustalığı, üstün hijyen standartlarımız ve kişiye özel yaklaşımımızla, hayallerinizdeki dövmeyi gerçeğe dönüştürmek için buradayız.
+
+Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000 adresindeki stüdyomuzu ziyaret edin veya +90 548 891 0673 numaralı telefondan bize ulaşarak randevu alın. Web sitemiz https://cyprustattoo.ink ve Instagram hesabımız https://www.instagram.com/cyprustattoo üzerinden daha fazla ilham ve bilgi edinebilirsiniz. Cyprus Tattoo Ink ile bedeninizde sanatın derinliklerini keşfedin ve kendi eşsiz hikayenizi yaratın!`,
+      en: `## The Magical Touch of Visual Art: Create a Story on Your Body with Cyprus Tattoo Ink
+
+Tattoo art is far beyond a mere form of adornment; it is a profound medium for personal expression and storytelling. The body transforms into a canvas where an artist immortalizes dreams, emotions, and thoughts. Located in the heart of Girne, Cyprus Tattoo Ink is a center that guides you on this enchanting journey, turning your artistic vision into reality. We view tattooing not just as a craft, but as an art form, aiming to create unique, meaningful, and aesthetically flawless pieces for each of our clients. In this blog post, we will explore the visual depths of tattoo art, its various styles, and Cyprus Tattoo Ink's unique approach in this field. Get ready, because we are opening the doors to a work of art that will live on your body.
+
+### The Dance of Meaning and Aesthetics in Tattoo Art
+
+Tattooing is an ancient practice that has maintained its place in human history for thousands of years, carrying cultural, spiritual, and personal meanings. Today, it has reached a whole new dimension with modern techniques and artistic approaches. A tattoo can reflect the owner's identity, immortalize an important memory, represent a belief, or simply be an aesthetic choice. At Cyprus Tattoo Ink, we understand this deep connection and believe that every tattoo should tell a unique story for its owner.
+
+Our artists sit down with you, listen to your story, and take the time to understand your vision. Our design process is not just about drawing; it also aims to build an emotional connection with you, enabling you to express your inner world through a tattoo. When our aesthetic concerns merge with depth of meaning, the resulting works are not just tattoos to be looked at, but felt. The harmony of colors, the fluidity of lines, the depth of shadows, and the integrity of the composition are the elements that transform each of our tattoos into a masterpiece.
+
+### The Cyprus Tattoo Ink Difference: Art, Hygiene, and Expertise
+
+For those looking to get a tattoo in Girne, Cyprus Tattoo Ink is not just a studio, but a sanctuary of trust and art. Our address is Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000, and you can easily reach us at +90 548 891 0673 or via WhatsApp. You can view our work on our website https://cyprustattoo.ink and Instagram account https://www.instagram.com/cyprustattoo.
+
+**Expert Artists and Custom Designs:** Our team consists of talented artists specialized in various tattoo styles. Each of our artists has a unique style and signature touch. This diversity ensures that you find the right artist to bring your dream tattoo to life in the best possible way. Instead of stock tattoos, we aim to create a unique and personal piece designed specifically for you.
+
+**Superior Hygiene Standards:** In tattoo art, hygiene is as crucial as aesthetics. At Cyprus Tattoo Ink, we prioritize your health and safety above all else. Our studio is arranged in accordance with the latest sterilization protocols. Single-use needles, sterile equipment, and a meticulous working environment are our guarantee for every client. We never compromise on this, because your health comes first for us.
+
+**Consultation and Support:** Getting a tattoo is a big decision, and there can be many questions during this process. At Cyprus Tattoo Ink, our experienced team is here to answer all your questions before and after your tattoo. We provide comprehensive information and support on design selection, suitability for your skin type, pain management, and tattoo aftercare. Our goal is to make you feel safe and informed at every stage of your tattoo journey.
+
+### Tattoo Styles: Your Body as an Art Gallery
+
+The world of tattooing offers endless creativity and variety. Each style has its unique aesthetic, history, and mode of expression. At Cyprus Tattoo Ink, we have artists specialized in the most popular and sought-after tattoo styles. Here are some prominent tattoo styles and their characteristics:
+
+*   **Realism:** This style aims to create vivid and lifelike images with photographic details. Portraits, landscapes, animals, or objects appear as if they were a photograph printed on the skin. Shading, lighting, and detailing form the basis of this style. The artist's skill and observation power are critical in realistic tattoos.
+
+*   **Blackwork:** As the name suggests, this style uses only black ink. It is characterized by dense black areas, sharp lines, geometric patterns, and abstract forms. Blackwork offers a wide range from minimalist to bold and assertive designs. It creates a strong visual impact.
+
+*   **Fineline:** The indispensable style for elegant and minimalist tattoos. Designs are created with precise and detailed lines using very fine needles. It is often preferred for small and meaningful tattoos. Ideal for those who love minimalist aesthetics.
+
+*   **Traditional (Old School):** Known for thick black outlines, a limited color palette (typically red, green, yellow, blue), and iconic motifs. Nautical themes (anchor, ship), roses, eagles, daggers are essential symbols of this style. It has a deep historical and cultural heritage.
+
+*   **Neotraditional:** A modern interpretation of the traditional tattoo style. Traditional motifs are given a contemporary flair by adding richer color palettes, more detail, dimension, and depth. It generally has a more realistic and artistic approach.
+
+*   **Geometric:** A style where geometric shapes and patterns such as circles, triangles, and squares are skillfully used. Symmetry, balance, and repetition are the key elements of this style. It generally has an abstract and modern aesthetic, sometimes combined with nature or universal symbols.
+
+*   **Watercolor:** A style that mimics the soft, flowing, and diffused effects of watercolor paintings. Instead of distinct outlines, a vibrant and artistic look is achieved through colors blending into each other and subtle tonal transitions. It is a highly artistic and unique approach.
+
+*   **Dotwork:** A technique where the entire or a large part of the design is created using small dots. Shading and depth are achieved by the density and spacing of the dots. It is often used in geometric, mandala, and abstract designs, adding a mystical aura.
+
+Each of these styles falls within the expertise of Cyprus Tattoo Ink artists. Whatever style you prefer, we are here to provide you with the best results.
+
+### Pro Tips: What You Need to Know for Your Tattoo Journey
+
+The tattooing process is not just about ink and needles. There are some important steps and tips for a successful and enjoyable experience:
+
+1.  **Research and Inspiration:** Research the tattoo style and motif you desire in advance. Platforms like Pinterest and Instagram offer countless examples that can inspire you. But remember, creating your own unique design by drawing inspiration rather than copying is far more valuable.
+2.  **Artist Selection:** Each artist has a unique style. Browse our artists' portfolios on Cyprus Tattoo Ink's Instagram page (@cyprustattoo) and choose the one that best suits your style. Good communication with your artist is essential.
+3.  **Consultation Appointment:** Before getting a tattoo, schedule a consultation appointment at our studio. In this meeting, you can detail your design, discuss size, placement, and colors, and ask all your questions. This will create a clear roadmap for both you and your artist.
+4.  **Preparation:** Before your appointment day, get plenty of rest, drink plenty of water, and eat a healthy meal. Avoid alcohol and blood-thinning medications. Keeping your skin moisturized will make the tattooing process more comfortable.
+5.  **Aftercare:** Follow the aftercare instructions diligently to ensure your tattoo remains long-lasting and healthy. Your artist will provide you with detailed aftercare guidelines. Be patient during the healing process and protect your skin well.
+
+### Frequently Asked Questions (FAQ)
+
+**Q: Does getting a tattoo hurt?**
+A: While pain thresholds vary from person to person, yes, getting a tattoo can cause some pain. However, it is usually less severe than anticipated. Some areas of the body are more sensitive than others. Your artist will inform you about techniques to help manage the pain.
+
+**Q: How long does a tattoo take?**
+A: The duration varies depending on the size, detail, and placement of the tattoo. A small and simple tattoo might take half an hour, while a large and detailed piece could require several sessions. Your artist will give you an estimated time during your consultation appointment.
+
+**Q: How do I care for my tattoo?**
+A: Your artist will provide you with specific aftercare instructions. Generally, the tattoo is bandaged, removed after a certain period, gently washed, and moisturized with a special cream. It is important to avoid sun exposure, swimming pools, and tight clothing until the tattoo is fully healed.
+
+**Q: Are tattoos permanent?**
+A: Yes, tattoos are permanent. Since the ink is injected into the deeper layers of the skin, even if it fades over time, it does not completely disappear. Therefore, it is important to choose your tattoo carefully and ensure you select a design you won't regret.
+
+**Q: How can I book an appointment at Cyprus Tattoo Ink?**
+A: The easiest way to book an appointment is to reach us at +90 548 891 0673 or via WhatsApp. You can also contact us via Instagram DM or by using the contact form on our website. Starting with a consultation appointment is always the best approach.
+
+### Begin Your Artistic Journey with Cyprus Tattoo Ink
+
+Tattoo art is one of the most powerful and permanent forms of personal expression. A work of art you carry on your body tells a story not only for you but also for the world around you. As Cyprus Tattoo Ink in Girne, we are proud to accompany you on this meaningful journey. With the mastery of our artists, our superior hygiene standards, and our personalized approach, we are here to turn your dream tattoo into reality.
+
+Visit our studio at Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000, or contact us at +90 548 891 0673 to book an appointment. You can find more inspiration and information on our website https://cyprustattoo.ink and our Instagram account https://www.instagram.com/cyprustattoo. Discover the depths of art on your body and create your unique story with Cyprus Tattoo Ink!`
+    }
+  },
 ];
