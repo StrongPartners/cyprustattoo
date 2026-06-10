@@ -41798,4 +41798,215 @@ Visit our studio in Girne, at Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi 
 ---`
     }
   },
+  {
+    id: "310",
+    slug: "dovme-sanatinda-shadow-work-ve-gercekcilik-cyprus-tattoo-ink-ile-mukemmel-uyum-girne-kktc",
+    title: {
+      tr: "Gölgenin Dansı, Gerçekliğin Tınısı: Cyprus Tattoo Ink ile Shadow Work ve Realizm Sanatı",
+      en: "The Dance of Shadow, The Resonance of Reality: Shadow Work and Realism Art with Cyprus Tattoo Ink"
+    },
+    description: {
+      tr: "Cyprus Tattoo Ink olarak, gölge işçiliğinin (shadow work) derinliklerini ve realizmin çarpıcı etkisini bir araya getirerek, her bir dövmeyi kalıcı bir sanat eserine dönüştürüyoruz. Girne'deki stüdyomuzda, bedeninizi tuval olarak kullanan ustalarımızla, hayallerinizdeki gerçekçi dövmeleri hayata geçirin. Profesyonel ipuçları, sıkça sorulan sorular ve stil analizleri ile shadow work ve realizm dünyasına bir yolculuk yapın.",
+      en: "At Cyprus Tattoo Ink, we merge the depths of shadow work with the striking impact of realism, transforming each tattoo into a lasting work of art. In our Girne studio, let our masters use your body as a canvas to bring your realistic tattoo dreams to life. Embark on a journey into the world of shadow work and realism with professional tips, FAQs, and style breakdowns."
+    },
+    date: "2026-06-10",
+    author: "Cyprus Tattoo Specialist",
+    category: { tr: "Sanat", en: "Art" },
+    readTime: { tr: "25 dk", en: "25 min" },
+    image: "/blog/trends-2026-hero.png",
+    imageAlt: {
+      tr: "Cyprus Tattoo Ink'te yapılmış gerçekçi gölge işçiliği dövmesi, deri üzerinde derinlik ve boyut gösteriyor",
+      en: "Realistic shadow work tattoo done at Cyprus Tattoo Ink, showcasing depth and dimension on the skin"
+    },
+    content: {
+      tr: `## Gölgenin Dansı, Gerçekliğin Tınısı: Cyprus Tattoo Ink ile Shadow Work ve Realizm Sanatı
+
+Dövme sanatı, binlerce yıldır insanlığın kendini ifade etme biçimlerinden biri olmuştur. Zamanla evrilen bu sanat formu, günümüzde inanılmaz teknikler ve stillerle karşımıza çıkıyor. Bu stiller arasında özellikle iki tanesi, derinliği, gerçekçiliği ve görsel çarpıcılığıyla öne çıkar: **Shadow Work (Gölge İşçiliği)** ve **Realizm (Gerçekçilik)**. Girne'nin kalbinde, Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1 adresinde bulunan **Cyprus Tattoo Ink** olarak, bu iki büyüleyici stilin ustaca harmanlanarak nasıl kalıcı bir sanat eserine dönüştüğünü sizlerle paylaşmak istiyoruz.
+
+### Shadow Work: Gölgenin Gücüyle Sanat Yaratmak
+
+Shadow Work, adından da anlaşılacağı gibi, dövme sanatında gölgelerin ve derinliğin ustaca kullanılmasına odaklanan bir tekniktir. Bu stil, genellikle siyah ve gri tonların geniş bir yelpazesini kullanarak, bir dövmeye üç boyutluluk, hacim ve dramatik bir etki kazandırır. Ancak shadow work, sadece siyah ve gri dövmelerle sınırlı değildir; renkli dövmelerde de tonlamaların ve gölgelerin doğru kullanımı, esere inanılmaz bir derinlik katar.
+
+**Shadow Work'ün Temel Özellikleri:**
+
+*   **Derinlik ve Boyut:** Dövme, sanki cildin üzerinde değil de içindeymiş gibi bir his verir. Işık ve gölge oyunları, objelere hacim kazandırır.
+*   **Kontrast:** Açık ve koyu tonların dengeli kullanımı, görsel olarak çarpıcı bir etki yaratır ve dövmeye karakter katar.
+*   **Doku:** Gölgeleme teknikleri, ağaç kabuğu, metal, kumaş veya insan derisi gibi farklı dokuları gerçekçi bir şekilde taklit etmeyi sağlar.
+*   **Duygu ve Atmosfer:** Shadow work, bir dövmeye melankoli, gizem, güç veya huzur gibi farklı duygusal atmosferler katabilir. Bu, sanatçının gölgeleri nasıl kullandığına ve konunun ne olduğuna bağlıdır.
+
+Cyprus Tattoo Ink'te sanatçılarımız, gölge işçiliğinin inceliklerine hakimdir. Her bir gölgenin nereye düşmesi gerektiğini, hangi tonun hangi etkiyi yaratacağını titizlikle hesaplarız. Amacımız, sadece bir resim değil, aynı zamanda bir hikaye anlatan, duygu yüklü bir sanat eseri yaratmaktır.
+
+### Realizm: Gerçekliğin Ciltteki Yansıması
+
+Realizm, dövme sanatında fotoğrafik bir kesinlik ve detay seviyesiyle nesnelerin, portrelerin veya sahnelerin yeniden yaratılmasıdır. Bu stil, sanatçının inanılmaz bir teknik beceriye, gözlem yeteneğine ve sabrına sahip olmasını gerektirir. Bir realizm dövmesi, gerçek bir fotoğraf veya nesne kadar canlı ve detaylı görünebilir.
+
+**Realizm'in Temel Özellikleri:**
+
+*   **Fotoğrafik Detay:** İnsan yüzlerinden hayvan portrelerine, doğa manzaralarından objelere kadar her şey, en ince detayına kadar gerçekçi bir şekilde işlenir.
+*   **Işık ve Gölge Ustalığı:** Realizmde ışık ve gölge kullanımı, objelerin hacmini, derinliğini ve dokusunu belirlemede kritik öneme sahiptir. Bu, dövmenin üç boyutlu ve canlı görünmesini sağlar.
+*   **Renk Kullanımı:** Realizm dövmeleri hem siyah-gri hem de renkli olabilir. Renkli realizmde, tonların ve geçişlerin doğru kullanımı, eserin gerçeğe yakınlığını artırır.
+*   **Hassasiyet ve Sabır:** Realist bir dövme yaratmak, sanatçıdan yüksek düzeyde hassasiyet ve uzun saatler süren detaylı çalışma gerektirir.
+
+Cyprus Tattoo Ink'te realist dövmeler, sanatçılarımızın en çok gurur duyduğu alanlardan biridir. İster sevdiğiniz birinin portresi, ister favori hayvanınızın detaylı bir çizimi, ister hayranlık duyduğunuz bir manzara olsun, bu vizyonları cildinize en gerçekçi ve çarpıcı şekilde aktarabiliyoruz. Bedeninizdeki her bir kıvrımı, kas yapısını ve cilt tonunu göz önünde bulundurarak, dövmenizin doğal bir uzantınız gibi görünmesini sağlıyoruz.
+
+### Shadow Work ve Realizm'in Mükemmel Uyumu
+
+Bu iki stil, çoğu zaman birbirini tamamlayarak birlikte kullanılır. Realizm, bir konunun gerçeğe yakın detaylarını sunarken, shadow work bu detaylara derinlik ve atmosfer katar. Örneğin, gerçekçi bir orman manzarasında, ağaçların ve yaprakların gölgelendirilmesi, ormanın gizemli ve derin hissini güçlendirir. Bir portrede, yüzdeki gölgeler, kişinin karakterini ve duygularını daha belirgin hale getirir.
+
+**Cyprus Tattoo Ink'in Yaklaşımı:**
+
+Biz Cyprus Tattoo Ink'te, sadece dövme yapmıyor, aynı zamanda hikayeler anlatıyoruz. Sanatçılarımız, her müşterinin kişisel hikayesini ve vizyonunu anlamak için zaman ayırır. Shadow work ve realizm tekniklerini birleştirerek, sizin için sadece estetik değil, aynı zamanda duygusal bir değeri olan eşsiz bir dövme yaratmayı hedefliyoruz. Bu süreçte:
+
+1.  **Danışma:** İlk adım, sizinle detaylı bir görüşme yapmaktır. Hayalinizdeki dövmeyi, anlamını ve istediğiniz stili konuşuruz. Referans görselleriniz varsa, bunları değerlendiririz.
+2.  **Tasarım:** Sanatçımız, sizinle birlikte çalışarak özgün bir tasarım geliştirir. Shadow work ve realizm unsurlarını en iyi şekilde harmanlayarak, dövmenizin taslağını hazırlar.
+3.  **Uygulama:** Hijyen ve güvenlik standartlarına sıkı sıkıya bağlı kalarak, en modern ekipmanlarla dövmenizi uyguluyoruz. Sanatçımızın ustalığı, her bir gölge geçişini ve detayı mükemmel bir şekilde cildinize işler.
+4.  **Bakım Talimatları:** Dövmenizin uzun ömürlü olması için detaylı bakım talimatları sunarız ve iyileşme sürecinde size destek oluruz.
+
+### Pro İpuçları: Shadow Work ve Realizm Dövmeleri İçin
+
+*   **Sanatçınızı Akıllıca Seçin:** Realizm ve shadow work, yüksek düzeyde teknik beceri gerektirir. Sanatçınızın portföyünde bu tarz dövmelerden bolca örnek olduğundan ve bunların 'iyileşmiş' (healed) hallerini gördüğünüzden emin olun. Cyprus Tattoo Ink'in Instagram sayfasını inceleyebilirsiniz: **https://www.instagram.com/cyprustattoo**
+*   **Sabırlı Olun:** Bu tarz dövmeler, detay yoğunluğu nedeniyle zaman alabilir. Birden fazla seans gerekebilir. Sonuç, sabrınıza değecektir.
+*   **Cilt Tonunuzu Dikkate Alın:** Açık cilt tonları, gölge geçişlerini ve detayları daha net gösterirken, koyu cilt tonlarında kontrastı artırmak için farklı tonlama teknikleri gerekebilir. Sanatçınız size en uygun yaklaşımı önerecektir.
+*   **Konumlandırma Önemlidir:** Dövmenin vücudunuzdaki konumu, ışık ve gölge oyunlarının nasıl görüneceğini etkiler. Sanatçınız, dövmenizin en iyi görüneceği yeri belirlemenize yardımcı olacaktır.
+*   **Bakım Talimatlarına Uyun:** Özellikle detaylı dövmelerde, doğru bakım, renklerin canlılığını ve gölgelerin keskinliğini korumak için hayati öneme sahiptir.
+
+### Sıkça Sorulan Sorular (SSS)
+
+**S: Shadow Work dövmeler sadece siyah-gri mi olur?**
+C: Hayır, shadow work teknikleri renkli dövmelerde de derinlik ve hacim yaratmak için kullanılabilir. Ancak en belirgin ve dramatik etkisini genellikle siyah ve gri tonlarda gösterir.
+
+**S: Realist bir dövmenin iyileşme süreci ne kadar sürer?**
+C: Her dövmede olduğu gibi, realist bir dövmenin iyileşme süreci de dövmenin boyutuna, konumuna ve kişinin cilt yapısına göre değişir. Genellikle 2-4 hafta sürer, ancak tam iyileşme ve renklerin oturması birkaç ayı bulabilir. Sanatçınız size özel bakım talimatları verecektir.
+
+**S: Realist portre dövmesi yaptırmak için ne tür bir fotoğraf getirmeliyim?**
+C: Yüksek çözünürlüklü, net ve iyi aydınlatılmış bir fotoğraf idealdir. Yüz ifadelerinin net olduğu ve istediğiniz detayı gösteren fotoğraflar, sanatçının en iyi işi çıkarmasına yardımcı olacaktır.
+
+**S: Shadow Work ve Realizm dövmeleri zamanla nasıl değişir?**
+C: Her dövme zamanla bir miktar değişime uğrar. Ancak doğru tekniklerle ve kaliteli mürekkeplerle yapılan shadow work ve realizm dövmeleri, detaylarını ve kontrastlarını uzun süre korur. Güneşten korunma ve düzenli nemlendirme gibi iyi bakım uygulamaları, dövmenizin ömrünü uzatır.
+
+**S: Cyprus Tattoo Ink'te bu tarz dövmeler için fiyatlandırma nasıl yapılıyor?**
+C: Fiyatlandırma, dövmenin boyutu, detay seviyesi, konumu ve seans sayısı gibi faktörlere göre değişir. En doğru fiyat bilgisi için bizimle iletişime geçmenizi ve bir danışma randevusu almanızı öneririz. Bu sayede sanatçımız, sizin için kişiselleştirilmiş bir fiyatlandırma sunabilir.
+
+### Stil Analizleri: Shadow Work ve Realizm Uygulamaları
+
+*   **Siyah ve Gri Realist Portreler:** Bu tarz dövmeler, genellikle sevdiklerimizin, ikonların veya kurgusal karakterlerin yüzlerini büyük bir hassasiyetle cilde işler. Shadow work, yüz hatlarına derinlik ve karakter katarken, realizm fotoğrafik benzerliği sağlar.
+*   **Doğa ve Hayvan Realizmi:** Orman manzaraları, vahşi hayvan portreleri veya deniz altı sahneleri gibi konularda, shadow work ile ağaçların dokusu, hayvanların kürkleri veya suyun derinliği inanılmaz bir gerçekçilikle yansıtılır.
+*   **Mitolojik ve Fantastik Varlıklar:** Ejderhalar, tanrılar veya efsanevi yaratıklar, realizm ile cilde aktarıldığında hayata dönmüş gibi görünür. Gölge işçiliği, bu varlıklara mistik bir hava ve güç katar.
+*   **Mimari ve Nesne Realizmi:** Tarihi yapılar, heykeller veya günlük objeler, realist tekniklerle işlendiğinde, detayları ve dokuları ile dikkat çeker. Shadow work, bu objelerin üç boyutlu formunu vurgular.
+*   **Karanlık Sanat (Dark Art) ve Gotik Temalar:** Shadow work'ün yoğun kontrastları ve derin gölgeleri, bu tarz temaların dramatik ve etkileyici atmosferini yaratmada idealdir. Realist unsurlar, korkutucu veya büyüleyici detayları ön plana çıkarır.
+
+### Cyprus Tattoo Ink Farkı: Sanat ve Güvenlik Bir Arada
+
+**Cyprus Tattoo Ink** olarak, biz sadece dövme yapmıyoruz; cildinize bir sanat eseri işliyoruz. Sanatçılarımızın teknik uzmanlığı, estetik anlayışı ve her detaya gösterdiği özen, bizi Girne'de bir adım öne çıkarıyor. Stüdyomuz, en yüksek hijyen ve güvenlik standartlarına uygun olarak tasarlanmıştır. Kullanılan tüm ekipmanlar steril, tek kullanımlık ve en kaliteli markalardan seçilmiştir.
+
+Unutmayın, bir dövme sadece bir resim değildir; o sizin hikayenizdir, sizin ifadenizdir. Bu yolculukta size eşlik etmekten ve hayallerinizdeki dövmeyi cildinize işlemekten onur duyarız.
+
+### Bize Ulaşın
+
+Eğer siz de cildinizde bir sanat eseri taşımak, gölge işçiliği ve realizmin büyüleyici dünyasını keşfetmek istiyorsanız, **Cyprus Tattoo Ink**'e hoş geldiniz. Girne'deki stüdyomuzda sizi ağırlamaktan ve hayallerinizdeki dövme tasarımını gerçeğe dönüştürmekten mutluluk duyarız.
+
+Bize ulaşmak için:
+
+*   **Adres:** Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000, Kuzey Kıbrıs
+*   **Telefon/WhatsApp:** +90 548 891 0673
+*   **Web Sitesi:** https://cyprustattoo.ink
+*   **Instagram:** https://www.instagram.com/cyprustattoo
+
+Sanatla kalın, kendinizi ifade etmekten çekinmeyin! Cyprus Tattoo Ink ekibi olarak, sizi stüdyomuzda bekliyoruz.`,
+      en: `## The Dance of Shadow, The Resonance of Reality: Shadow Work and Realism Art with Cyprus Tattoo Ink
+
+Tattoo art has been one of humanity's forms of self-expression for thousands of years. This evolving art form now presents itself with incredible techniques and styles. Among these, two styles particularly stand out for their depth, realism, and visual impact: **Shadow Work** and **Realism**. As **Cyprus Tattoo Ink**, located in the heart of Girne at Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, we want to share with you how these two captivating styles are masterfully blended to create a permanent work of art.
+
+### Shadow Work: Creating Art with the Power of Shadow
+
+Shadow Work, as the name suggests, is a technique in tattoo art that focuses on the masterful use of shadows and depth. This style typically uses a wide spectrum of black and grey tones to give a tattoo a three-dimensional quality, volume, and dramatic effect. However, shadow work is not limited to black and grey tattoos; the correct use of tonality and shadows in color tattoos also adds incredible depth to the piece.
+
+**Key Features of Shadow Work:**
+
+*   **Depth and Dimension:** The tattoo gives the impression of being embedded in the skin rather than merely sitting on its surface. Play of light and shadow adds volume to objects.
+*   **Contrast:** The balanced use of light and dark tones creates a visually striking effect and adds character to the tattoo.
+*   **Texture:** Shading techniques allow for realistic imitation of various textures such as tree bark, metal, fabric, or human skin.
+*   **Emotion and Atmosphere:** Shadow work can infuse a tattoo with different emotional atmospheres like melancholy, mystery, power, or serenity. This depends on how the artist uses shadows and the subject matter.
+
+At Cyprus Tattoo Ink, our artists are masters of the nuances of shadow work. We meticulously calculate where each shadow should fall and which tone will create what effect. Our goal is to create not just a picture, but a story-telling, emotionally charged work of art.
+
+### Realism: The Reflection of Reality on Skin
+
+Realism in tattoo art is the recreation of objects, portraits, or scenes with photographic precision and detail. This style requires the artist to possess incredible technical skill, observational ability, and patience. A realism tattoo can appear as vivid and detailed as a real photograph or object.
+
+**Key Features of Realism:**
+
+*   **Photographic Detail:** Everything from human faces to animal portraits, from natural landscapes to objects, is rendered with realistic detail down to the finest point.
+*   **Mastery of Light and Shadow:** In realism, the use of light and shadow is critical in defining the volume, depth, and texture of objects. This makes the tattoo appear three-dimensional and lifelike.
+*   **Use of Color:** Realism tattoos can be both black-grey and colored. In colored realism, the correct use of tones and transitions enhances the piece's resemblance to reality.
+*   **Precision and Patience:** Creating a realistic tattoo demands a high level of precision from the artist and many hours of detailed work.
+
+At Cyprus Tattoo Ink, realistic tattoos are one of the areas our artists take the most pride in. Whether it's a portrait of a loved one, a detailed drawing of your favorite animal, or a landscape you admire, we can transfer these visions onto your skin in the most realistic and striking way. We consider every curve, muscle structure, and skin tone on your body to ensure your tattoo looks like a natural extension of you.
+
+### The Perfect Harmony of Shadow Work and Realism
+
+These two styles often complement each other. Realism presents the lifelike details of a subject, while shadow work adds depth and atmosphere to these details. For example, in a realistic forest landscape, the shading of trees and leaves enhances the mysterious and deep feeling of the forest. In a portrait, shadows on the face make the person's character and emotions more pronounced.
+
+**Cyprus Tattoo Ink's Approach:**
+
+At Cyprus Tattoo Ink, we don't just create tattoos; we tell stories. Our artists take the time to understand each client's personal story and vision. By combining shadow work and realism techniques, we aim to create a unique tattoo for you that holds not only aesthetic but also emotional value. In this process:
+
+1.  **Consultation:** The first step is a detailed consultation with you. We discuss your dream tattoo, its meaning, and your desired style. If you have reference images, we evaluate them.
+2.  **Design:** Our artist works with you to develop an original design. They prepare a draft of your tattoo, blending shadow work and realism elements in the best possible way.
+3.  **Application:** We apply your tattoo using the most modern equipment, adhering strictly to hygiene and safety standards. Our artist's mastery ensures every shadow transition and detail is perfectly etched onto your skin.
+4.  **Aftercare Instructions:** We provide detailed aftercare instructions to ensure the longevity of your tattoo and support you throughout the healing process.
+
+### Pro Tips for Shadow Work and Realism Tattoos
+
+*   **Choose Your Artist Wisely:** Realism and shadow work require a high level of technical skill. Ensure your artist's portfolio contains plenty of examples of these styles, and you've seen their 'healed' work. You can check Cyprus Tattoo Ink's Instagram page: **https://www.instagram.com/cyprustattoo**
+*   **Be Patient:** These types of tattoos can take time due to their detail intensity. Multiple sessions may be required. The result will be worth your patience.
+*   **Consider Your Skin Tone:** Lighter skin tones show shadow transitions and details more clearly, while darker skin tones may require different shading techniques to increase contrast. Your artist will suggest the most suitable approach.
+*   **Placement Matters:** The placement of the tattoo on your body affects how light and shadow play out. Your artist will help you determine the best location for your tattoo.
+*   **Follow Aftercare Instructions:** Especially for detailed tattoos, proper aftercare is vital for preserving the vibrancy of colors and the sharpness of shadows.
+
+### Frequently Asked Questions (FAQ)
+
+**Q: Are Shadow Work tattoos only black and grey?**
+A: No, shadow work techniques can also be used in color tattoos to create depth and volume. However, they typically show their most distinct and dramatic effect in black and grey tones.
+
+**Q: How long does the healing process for a realistic tattoo take?**
+A: As with any tattoo, the healing process for a realistic tattoo varies depending on the tattoo's size, location, and the individual's skin type. It usually takes 2-4 weeks, but complete healing and settlement of colors can take several months. Your artist will provide specific aftercare instructions.
+
+**Q: What kind of photo should I bring for a realistic portrait tattoo?**
+A: A high-resolution, clear, and well-lit photograph is ideal. Photos with clear facial expressions and showing the detail you desire will help the artist produce their best work.
+
+**Q: How do Shadow Work and Realism tattoos change over time?**
+A: Every tattoo undergoes some change over time. However, shadow work and realism tattoos done with correct techniques and quality inks retain their details and contrasts for a long time. Good aftercare practices, such as sun protection and regular moisturizing, extend the life of your tattoo.
+
+**Q: How is pricing done for these types of tattoos at Cyprus Tattoo Ink?**
+A: Pricing varies based on factors such as the tattoo's size, level of detail, location, and number of sessions. For the most accurate pricing information, we recommend contacting us and scheduling a consultation. This way, our artist can provide you with personalized pricing.
+
+### Style Breakdowns: Shadow Work and Realism Applications
+
+*   **Black and Grey Realistic Portraits:** These tattoos typically etch the faces of loved ones, icons, or fictional characters onto the skin with great precision. Shadow work adds depth and character to facial features, while realism ensures photographic likeness.
+*   **Nature and Animal Realism:** In subjects such as forest landscapes, wild animal portraits, or underwater scenes, shadow work incredibly reflects the texture of trees, the fur of animals, or the depth of water with stunning realism.
+*   **Mythological and Fantastic Creatures:** Dragons, gods, or legendary beings appear to come to life when rendered on skin with realism. Shadow work adds a mystical aura and power to these beings.
+*   **Architectural and Object Realism:** Historical structures, sculptures, or everyday objects, when rendered with realistic techniques, stand out with their details and textures. Shadow work emphasizes the three-dimensional form of these objects.
+*   **Dark Art and Gothic Themes:** The intense contrasts and deep shadows of shadow work are ideal for creating the dramatic and impressive atmosphere of these themes. Realistic elements highlight frightening or captivating details.
+
+### The Cyprus Tattoo Ink Difference: Art and Safety Combined
+
+As **Cyprus Tattoo Ink**, we don't just apply tattoos; we embed a work of art into your skin. The technical expertise of our artists, their aesthetic understanding, and their attention to every detail set us apart in Girne. Our studio is designed to meet the highest hygiene and safety standards. All equipment used is sterile, single-use, and sourced from the highest quality brands.
+
+Remember, a tattoo is not just a picture; it's your story, your expression. We are honored to accompany you on this journey and to etch the tattoo of your dreams onto your skin.
+
+### Contact Us
+
+If you too wish to carry a work of art on your skin, to explore the fascinating world of shadow work and realism, welcome to **Cyprus Tattoo Ink**. We would be delighted to host you at our studio in Girne and turn your dream tattoo design into reality.
+
+To reach us:
+
+*   **Address:** Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000, North Cyprus
+*   **Phone/WhatsApp:** +90 548 891 0673
+*   **Website:** https://cyprustattoo.ink
+*   **Instagram:** https://www.instagram.com/cyprustattoo
+
+Stay artistic, don't hesitate to express yourself! The Cyprus Tattoo Ink team looks forward to welcoming you to our studio.`
+    }
+  },
 ];
