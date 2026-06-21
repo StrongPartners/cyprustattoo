@@ -50143,4 +50143,181 @@ We look forward to hearing your stories and inking them onto your body with mean
 `
     }
   },
+  {
+    id: "351",
+    slug: "sanatsal-dovme-tasariminda-soyut-ifade-ve-gercekcilik-cyprus-tattoo-ink-ile-donusum",
+    title: {
+      tr: "Soyut İfade ve Gerçekçiliğin Büyülü Dansı: Cyprus Tattoo Ink ile Sanatsal Dönüşüm",
+      en: "The Magical Dance of Abstract Expression and Realism: Artistic Transformation with Cyprus Tattoo Ink"
+    },
+    description: {
+      tr: "Cyprus Tattoo Ink'te soyut ve gerçekçi dövme sanatının inceliklerini keşfedin. Sanatsal ifadenin sınırlarını zorlayan bu blog yazısı, Girne'deki stüdyomuzda benzersiz dövme deneyimleri sunuyor. Hayallerinizi bedeninize taşıyın!",
+      en: "Discover the intricacies of abstract and realistic tattoo art at Cyprus Tattoo Ink. This blog post pushes the boundaries of artistic expression, offering unique tattoo experiences at our studio in Girne. Bring your dreams to life on your skin!"
+    },
+    date: "2026-06-21",
+    author: "Cyprus Tattoo Specialist",
+    category: { tr: "Sanat", en: "Art" },
+    readTime: { tr: "25 dk", en: "25 min" },
+    image: "/blog/portfolio-reading-hero.png",
+    imageAlt: {
+      tr: "Cyprus Tattoo Ink'te soyut ve gerçekçi dövmelerin birleşimi, Girne'de sanatsal dönüşüm",
+      en: "Fusion of abstract and realistic tattoos at Cyprus Tattoo Ink, artistic transformation in Girne"
+    },
+    content: {
+      tr: `## Soyut İfade ve Gerçekçiliğin Büyülü Dansı: Cyprus Tattoo Ink ile Sanatsal Dönüşüm
+
+Dövme sanatı, binlerce yıldır insanlık tarihi boyunca kendini ifade etmenin, aidiyet hissinin ve estetik beğenilerin bir yansıması olmuştur. Günümüzde ise bu sanat formu, geleneksel sınırların ötesine geçerek, soyut ve gerçekçi yaklaşımların büyüleyici bir harmanını sunmaktadır. Kuzey Kıbrıs'ın incisi Girne'de yer alan **Cyprus Tattoo Ink**, bu iki zıt gibi görünen dünyanın kusursuz birleşimini bedeninize taşımak için kapılarını aralıyor. Biz sadece dövme yapmıyor, her bir bireyin ruhunu, hikayesini ve hayallerini ölümsüz bir sanat eserine dönüştürüyoruz.
+
+### Sanatın İki Yüzü: Soyut ve Gerçekçi Dövmeler
+
+Dövme sanatının geniş spektrumunda, iki ana akım sıklıkla öne çıkar: soyut ve gerçekçi. Her ikisi de kendine has bir çekiciliğe ve ifade gücüne sahiptir, ancak yaklaşımları ve etkileşim biçimleri oldukça farklıdır.
+
+#### Gerçekçiliğin Çarpıcı Gücü
+
+Gerçekçi dövmeler, adından da anlaşılacağı gibi, objelerin, portrelerin, hayvanların veya sahnelerin fotoğrafik detaylarla ve üç boyutlu bir etkiyle cilde işlenmesidir. Bu tarzda, ışık, gölge, doku ve perspektif gibi unsurlar büyük bir ustalıkla kullanılır. Amaç, dövme yapılan nesnenin veya kişinin mümkün olan en doğru ve canlı şekilde yansıtılmasıdır. Bir gerçekçi dövme, adeta cilde kazınmış bir fotoğraf gibidir, izleyeni detayların derinliğine çeker.
+
+**Cyprus Tattoo Ink**'te gerçekçi dövmelerde uzmanlaşmış sanatçılarımız, insan portrelerinden vahşi doğanın görkemli canlılarına, tarihi mimarilerden günlük objelere kadar geniş bir yelpazede nefes kesici eserler yaratmaktadır. Her bir kılın, her bir gözün parıltısının veya her bir yaprağın damarının titizlikle işlendiği bu dövmeler, sadece bir görüntü değil, aynı zamanda bir duygu ve anı taşır. Özellikle **siyah ve gri gerçekçilik (black and grey realism)**, ışık ve gölge oyunlarıyla derinlik ve dramatik bir etki yaratmada eşsizdir. Renkli gerçekçilik ise, canlı tonlarla objeleri adeta cildinizde canlandırır.
+
+*   **Detay Odaklılık:** Gerçekçi dövmelerde en belirgin özellik, en küçük detaylara bile gösterilen özen ve ustalıktır.
+*   **Derinlik ve Boyut:** Işık ve gölge kullanımıyla üç boyutlu bir etki yaratma becerisi, bu tarzın vazgeçilmezidir.
+*   **Duygusal Bağ:** Bir portre veya anısı olan bir obje, kişisel bir hikayenin en güçlü görsel anlatımı olabilir.
+
+#### Soyut İfadenin Sınırsız Evreni
+
+Soyut dövmeler ise gerçekçi yaklaşımların tam tersine, somut formlardan ve belirgin figürlerden uzaklaşarak, renklerin, çizgilerin, şekillerin ve dokuların özgürce kullanıldığı bir dünyayı temsil eder. Bu tarzda amaç, bir nesneyi taklit etmek değil, bir duygu, bir fikir, bir atmosfer veya bir enerji hissini yansıtmaktır. Soyut dövmeler, izleyenin kendi yorumunu katmasına olanak tanıyan, daha kişisel ve içsel bir deneyim sunar.
+
+**Cyprus Tattoo Ink**'te soyut dövme sanatı, sanatçılarımızın yaratıcılığının ve müşterilerimizin hayal gücünün birleştiği bir platformdur. Akışkan çizgilerden geometrik desenlere, su sıçramalarından kaligrafik izlere, doğanın organik formlarından bilinçaltının derinliklerine uzanan bu tarz, her bireyin özgünlüğünü ve iç dünyasını eşsiz bir şekilde ifade etme fırsatı sunar. Soyut dövmeler, genellikle minimalist, suluboya (watercolor), dağınık (abstract brushstroke) veya geometrik stillerle harmanlanarak daha da zenginleştirilebilir.
+
+*   **Özgürlük ve Yaratıcılık:** Belirli kurallara bağlı kalmadan, sanatçının ve müşterinin hayal gücünün sınırlarını zorlar.
+*   **Duygusal Anlam:** Bir görüntüden ziyade, bir hissi, bir ruh halini veya kişisel bir yolculuğu temsil eder.
+*   **Estetik Çeşitlilik:** Renk, form ve doku kullanımıyla sonsuz estetik kombinasyonlar yaratılabilir.
+
+### Cyprus Tattoo Ink'te Soyut ve Gerçekçi Sanatın Buluşması
+
+**Cyprus Tattoo Ink** olarak, dövme sanatını bir bütün olarak ele alıyoruz ve soyut ile gerçekçiliği bir araya getirme potansiyelini büyük bir heyecanla kucaklıyoruz. Neden sadece birini seçesiniz ki, ikisinin de en iyi yönlerini birleştirerek bedeninizi benzersiz bir sanat eserine dönüştürebilirsiniz?
+
+Bir portrenin etrafını saran soyut fırça darbeleri, gerçekçi bir hayvan figürünün içinden fışkıran geometrik desenler veya bir manzaranın gerçekçi detaylarının soyut renk geçişleriyle harmanlanması... Bu tür hibrit tasarımlar, hem göz alıcı detaylar sunar hem de derin bir anlam katmanı taşır. Sanatçılarımız, bu iki farklı yaklaşımı ustaca birleştirerek, her müşterinin kişisel hikayesini ve estetik zevkini yansıtan özgün ve çarpıcı tasarımlar yaratmaktadır.
+
+Örneğin, gerçekçi bir aslan başının etrafında akan soyut çizgiler, gücün ve özgürlüğün modern bir yorumunu sunabilir. Ya da sevdiğiniz bir manzaranın fotoğrafik detayları, yukarı doğru yükselen soyut renk patlamalarıyla birleşerek bir umut veya yeni başlangıç hikayesi anlatabilir. Bu kombinasyonlar, dövmenin sadece bir desen olmaktan çıkıp, yaşayan, nefes alan bir sanat eserine dönüşmesini sağlar.
+
+### Neden Cyprus Tattoo Ink?
+
+Girne'de, dövme yaptırmak isteyenlerin ilk tercihi olmamızın birçok nedeni var. **Cyprus Tattoo Ink** olarak, sadece dövme kalitesiyle değil, aynı zamanda stüdyo atmosferimiz, hijyen standartlarımız ve müşteri odaklı yaklaşımımızla da fark yaratıyoruz.
+
+*   **Uzman Sanatçı Kadrosu:** Gerçekçi ve soyut dövme stillerinde uzmanlaşmış, uluslararası ödüllere sahip sanatçılarımız, her detayı titizlikle işler ve hayallerinizi cildinize en iyi şekilde yansıtır.
+*   **Kişiye Özel Tasarım:** Her dövme, müşterimizin istekleri, kişiliği ve vücut yapısı göz önünde bulundurularak sıfırdan tasarlanır. Hazır şablonlar yerine, size özel, benzersiz bir sanat eseri yaratırız.
+*   **Hijyen ve Güvenlik:** Sağlığınız bizim önceliğimizdir. Stüdyomuz, en yüksek hijyen ve sterilizasyon standartlarına sahiptir. Tüm ekipmanlar tek kullanımlık olup, düzenli olarak dezenfekte edilir.
+*   **Konforlu ve Sanatsal Ortam:** Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000 adresindeki stüdyomuz, sizi rahat ve ilham verici bir atmosfere davet ediyor. Sanatla iç içe, keyifli bir dövme deneyimi yaşamanızı sağlıyoruz.
+*   **Kapsamlı Danışmanlık:** Dövme süreci öncesinde, dövme sonrası bakım hakkında detaylı bilgi verilir ve tüm sorularınız sabırla yanıtlanır. Dövmenizin uzun yıllar boyunca ilk günkü güzelliğini koruması için gerekli tüm tavsiyeler paylaşılır.
+
+### Pro İpuçları: Soyut ve Gerçekçi Dövmenizi Seçerken
+
+1.  **Araştırma Yapın ve İlham Alın:** İnternet, dergiler veya sanat galerilerinden farklı soyut ve gerçekçi sanat eserlerini inceleyin. Hangi tarzın size daha çok hitap ettiğini, hangi renklerin veya formların sizi cezbettiğini keşfedin.
+2.  **Sanatçınızla İletişim Kurun:** Fikirlerinizi, beklentilerinizi ve dövmenizin sizin için ne anlama geldiğini sanatçınızla açıkça paylaşın. Cyprus Tattoo Ink sanatçıları, vizyonunuzu anlamak ve bunu sanatsal bir tasarıma dönüştürmek için sizinle yakından çalışacaktır.
+3.  **Vücut Alanını Düşünün:** Dövmenin boyutu, şekli ve yerleşimi, tasarımın genel estetiği üzerinde büyük bir etkiye sahiptir. Büyük, detaylı gerçekçi dövmeler geniş alanlarda (sırt, göğüs, kol) daha iyi dururken, soyut tasarımlar daha esnek yerleşim seçenekleri sunar.
+4.  **Bütçenizi Belirleyin:** Dövme sanatı bir yatırım olduğu için, bütçenizi önceden belirlemek ve sanatçınızla paylaşmak önemlidir. Gerçekçi ve detaylı dövmeler genellikle daha fazla zaman ve işçilik gerektirdiği için maliyetleri daha yüksek olabilir.
+5.  **Sabırlı Olun:** Özellikle karmaşık gerçekçi veya büyük ölçekli soyut dövmeler, birden fazla seans gerektirebilir. Mükemmel bir sonuç için sabırlı olmak ve sanatçınızın tavsiyelerine uymak çok önemlidir.
+
+### Sıkça Sorulan Sorular
+
+**S: Soyut dövmeler ne anlama geliyor?**
+C: Soyut dövmelerin belirli bir nesneyi temsil etme zorunluluğu yoktur. Anlamları, genellikle dövmeyi yaptıran kişinin kişisel yorumuna, yaşam deneyimlerine ve duygusal bağlarına göre değişir. Bir soyut dövme, bir duyguyu, bir anıyı, bir felsefeyi veya sadece estetik bir güzelliği ifade edebilir.
+
+**S: Gerçekçi dövmeler zamanla bozulur mu?**
+C: Her dövme gibi gerçekçi dövmeler de zamanla doğal olarak bir miktar solma veya detay kaybı yaşayabilir. Ancak, kaliteli mürekkep kullanımı, deneyimli bir sanatçı tarafından doğru tekniklerle yapılması ve düzenli bakım ile bu etki minimize edilebilir. Güneş koruması ve iyi nemlendirme, gerçekçi dövmelerinizin ömrünü uzatmanın anahtarıdır.
+
+**S: Soyut ve gerçekçi stilleri birleştiren bir dövme yaptırabilir miyim?**
+C: Kesinlikle! **Cyprus Tattoo Ink** olarak, bu tür hibrit tasarımlarda uzmanız. İki stilin en iyi yönlerini birleştirerek, hem görsel olarak çarpıcı hem de derin anlamlar taşıyan benzersiz bir sanat eseri yaratabiliriz. Fikirlerinizi bizimle paylaşın, hayallerinizi gerçeğe dönüştürelim.
+
+**S: Dövme yaptırmadan önce nasıl hazırlanmalıyım?**
+C: Dövme randevunuzdan önce iyi uyuyun, bol su için ve sağlıklı bir yemek yiyin. Alkolden ve kan inceltici ilaçlardan kaçının. Dövme yapılacak bölgenin temiz ve nemli olduğundan emin olun. Stüdyomuza geldiğinizde, sanatçınız size daha detaylı bilgi verecektir.
+
+**S: Cyprus Tattoo Ink'e nasıl ulaşabilirim?**
+C: Bize Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000 adresinden ulaşabilir, +90 548 891 0673 numaralı telefondan veya WhatsApp üzerinden iletişime geçebilir, web sitemiz https://cyprustattoo.ink adresini ziyaret edebilir veya Instagram sayfamız https://www.instagram.com/cyprustattoo üzerinden DM gönderebilirsiniz.
+
+### Kapanış
+
+Bedeniniz, sizin hikayenizi anlatan bir tuvaldir. **Cyprus Tattoo Ink** olarak, bu tuval üzerinde soyut ifadenin sınırsız özgürlüğü ile gerçekçiliğin çarpıcı detaylarını bir araya getirerek, sadece bir dövme değil, aynı zamanda yaşayan bir sanat eseri yaratıyoruz. Girne'deki stüdyomuzda sizi ağırlamaktan, hayallerinizi dinlemekten ve bedeninizi sanatla dönüştürmekten büyük bir onur duyarız. İster gerçekçi bir portre, ister sizi yansıtan soyut bir kompozisyon, isterse de bu iki dünyanın büyüleyici birleşimi olsun, **Cyprus Tattoo Ink**'te size özel bir sanat eseri bekliyor.
+
+Sanat yolculuğunuza bizimle çıkmaya hazır mısınız? Hemen bugün bizimle iletişime geçin ve bedeninizi bir şahesere dönüştürmek için ilk adımı atın. Sizleri Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000 adresindeki stüdyomuza bekliyoruz. Unutmayın, bir telefon kadar yakınız: +90 548 891 0673. Daha fazla bilgi ve ilham için https://cyprustattoo.ink adresini ziyaret etmeyi ve https://www.instagram.com/cyprustattoo Instagram sayfamızı takip etmeyi unutmayın. Sanatla kalın, **Cyprus Tattoo Ink** farkıyla!
+`,
+      en: `## The Magical Dance of Abstract Expression and Realism: Artistic Transformation with Cyprus Tattoo Ink
+
+Throughout thousands of years of human history, tattoo art has been a reflection of self-expression, a sense of belonging, and aesthetic preferences. Today, this art form transcends traditional boundaries, offering a captivating blend of abstract and realistic approaches. **Cyprus Tattoo Ink**, located in Girne (Kyrenia), the pearl of North Cyprus, opens its doors to bring the seamless fusion of these two seemingly opposite worlds to your body. We don't just create tattoos; we transform each individual's soul, story, and dreams into an immortal work of art.
+
+### Two Faces of Art: Abstract and Realistic Tattoos
+
+Within the broad spectrum of tattoo art, two main currents often stand out: abstract and realistic. Both have their own unique charm and expressive power, but their approaches and interaction methods are quite different.
+
+#### The Striking Power of Realism
+
+Realistic tattoos, as the name suggests, involve imprinting objects, portraits, animals, or scenes onto the skin with photographic detail and a three-dimensional effect. In this style, elements such as light, shadow, texture, and perspective are used with great mastery. The aim is to reflect the tattooed object or person as accurately and vividly as possible. A realistic tattoo is like a photograph etched onto the skin, drawing the viewer into the depth of its details.
+
+At **Cyprus Tattoo Ink**, our artists specializing in realistic tattoos create breathtaking works ranging from human portraits to majestic wildlife, from historical architecture to everyday objects. These tattoos, where every strand of hair, every glint in an eye, or every vein of a leaf is meticulously crafted, carry not just an image but also an emotion and a memory. Especially **black and grey realism** is unique in creating depth and a dramatic effect with its interplay of light and shadow. Color realism, on the other hand, brings objects to life on your skin with vibrant tones.
+
+*   **Detail-Oriented:** The most distinctive feature of realistic tattoos is the attention and mastery given to even the smallest details.
+*   **Depth and Dimension:** The ability to create a three-dimensional effect through the use of light and shadow is indispensable to this style.
+*   **Emotional Connection:** A portrait or an object with sentimental value can be the most powerful visual narrative of a personal story.
+
+#### The Limitless Universe of Abstract Expression
+
+Abstract tattoos, in contrast to realistic approaches, move away from concrete forms and distinct figures, representing a world where colors, lines, shapes, and textures are used freely. The aim here is not to imitate an object but to convey a feeling, an idea, an atmosphere, or a sense of energy. Abstract tattoos offer a more personal and introspective experience, allowing the viewer to contribute their own interpretation.
+
+At **Cyprus Tattoo Ink**, abstract tattoo art is a platform where the creativity of our artists and the imagination of our clients converge. Ranging from fluid lines to geometric patterns, from watercolor splashes to calligraphic marks, from the organic forms of nature to the depths of the subconscious, this style offers a unique opportunity to express each individual's originality and inner world. Abstract tattoos can often be enriched by blending with minimalist, watercolor, abstract brushstroke, or geometric styles.
+
+*   **Freedom and Creativity:** Pushes the boundaries of the artist's and client's imagination without adhering to specific rules.
+*   **Emotional Meaning:** Represents a feeling, a mood, or a personal journey rather than a literal image.
+*   **Aesthetic Variety:** Endless aesthetic combinations can be created through the use of color, form, and texture.
+
+### The Meeting of Abstract and Realistic Art at Cyprus Tattoo Ink
+
+As **Cyprus Tattoo Ink**, we approach tattoo art as a whole and embrace the potential of bringing abstract and realism together with great excitement. Why choose just one when you can combine the best aspects of both to transform your body into a unique work of art?
+
+Abstract brushstrokes surrounding a portrait, geometric patterns erupting from within a realistic animal figure, or the blend of realistic details of a landscape with abstract color transitions... Such hybrid designs offer both striking details and a deep layer of meaning. Our artists skillfully combine these two distinct approaches to create original and captivating designs that reflect each client's personal story and aesthetic taste.
+
+For example, abstract lines flowing around a realistic lion's head can offer a modern interpretation of strength and freedom. Or photographic details of a beloved landscape, combined with abstract bursts of color rising upwards, can tell a story of hope or a new beginning. These combinations transform the tattoo from merely a pattern into a living, breathing work of art.
+
+### Why Cyprus Tattoo Ink?
+
+There are many reasons why we are the first choice for those seeking tattoos in Girne. At **Cyprus Tattoo Ink**, we stand out not only for the quality of our tattoos but also for our studio atmosphere, hygiene standards, and client-centric approach.
+
+*   **Expert Artist Team:** Our internationally awarded artists, specialized in realistic and abstract tattoo styles, meticulously craft every detail and reflect your dreams onto your skin in the best possible way.
+*   **Custom Design:** Every tattoo is designed from scratch, taking into account our client's wishes, personality, and body structure. Instead of ready-made templates, we create a unique, personalized work of art for you.
+*   **Hygiene and Safety:** Your health is our priority. Our studio adheres to the highest hygiene and sterilization standards. All equipment is single-use and regularly disinfected.
+*   **Comfortable and Artistic Environment:** Our studio at Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000, invites you into a relaxed and inspiring atmosphere. We ensure you have an enjoyable tattoo experience surrounded by art.
+*   **Comprehensive Consultation:** Before the tattooing process, detailed information about aftercare is provided, and all your questions are patiently answered. All necessary advice is shared to ensure your tattoo maintains its original beauty for many years.
+
+### Pro Tips: When Choosing Your Abstract and Realistic Tattoo
+
+1.  **Research and Get Inspired:** Explore various abstract and realistic artworks from the internet, magazines, or art galleries. Discover which style appeals more to you, and which colors or forms captivate you.
+2.  **Communicate with Your Artist:** Clearly share your ideas, expectations, and what your tattoo means to you with your artist. Cyprus Tattoo Ink artists will work closely with you to understand your vision and transform it into an artistic design.
+3.  **Consider the Body Area:** The size, shape, and placement of the tattoo have a significant impact on the overall aesthetic of the design. Large, detailed realistic tattoos often look better in broader areas (back, chest, arm), while abstract designs offer more flexible placement options.
+4.  **Determine Your Budget:** Since tattoo art is an investment, it's important to set your budget beforehand and share it with your artist. Realistic and detailed tattoos often require more time and craftsmanship, which can lead to higher costs.
+5.  **Be Patient:** Especially complex realistic or large-scale abstract tattoos may require multiple sessions. Patience and adhering to your artist's advice are crucial for a perfect outcome.
+
+### Frequently Asked Questions
+
+**Q: What do abstract tattoos mean?**
+A: Abstract tattoos do not have to represent a specific object. Their meanings typically vary according to the wearer's personal interpretation, life experiences, and emotional connections. An abstract tattoo can express an emotion, a memory, a philosophy, or simply aesthetic beauty.
+
+**Q: Do realistic tattoos deteriorate over time?**
+A: Like all tattoos, realistic tattoos can naturally experience some fading or loss of detail over time. However, this effect can be minimized with the use of quality ink, proper techniques by an experienced artist, and regular aftercare. Sun protection and good moisturization are key to extending the life of your realistic tattoos.
+
+**Q: Can I get a tattoo that combines abstract and realistic styles?**
+A: Absolutely! At **Cyprus Tattoo Ink**, we specialize in such hybrid designs. By combining the best aspects of both styles, we can create a unique work of art that is both visually striking and deeply meaningful. Share your ideas with us, and let us turn your dreams into reality.
+
+**Q: How should I prepare before getting a tattoo?**
+A: Before your tattoo appointment, get a good night's sleep, drink plenty of water, and eat a healthy meal. Avoid alcohol and blood-thinning medications. Ensure the area to be tattooed is clean and moisturized. Your artist will provide more detailed information when you arrive at our studio.
+
+**Q: How can I reach Cyprus Tattoo Ink?**
+A: You can find us at Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000, contact us via phone or WhatsApp at +90 548 891 0673, visit our website at https://cyprustattoo.ink, or send a DM via our Instagram page https://www.instagram.com/cyprustattoo.
+
+### Conclusion
+
+Your body is a canvas that tells your story. At **Cyprus Tattoo Ink**, we bring together the boundless freedom of abstract expression and the striking details of realism on this canvas, creating not just a tattoo, but a living work of art. We would be honored to welcome you to our studio in Girne, listen to your dreams, and transform your body with art. Whether it's a realistic portrait, an abstract composition that reflects you, or a captivating fusion of these two worlds, a unique piece of art awaits you at **Cyprus Tattoo Ink**.
+
+Are you ready to embark on your artistic journey with us? Contact us today and take the first step towards transforming your body into a masterpiece. We look forward to seeing you at our studio at Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000. Remember, we are just a phone call away: +90 548 891 0673. For more information and inspiration, visit https://cyprustattoo.ink and follow our Instagram page https://www.instagram.com/cyprustattoo. Stay artistic, with the **Cyprus Tattoo Ink** difference!
+`
+    }
+  },
 ];
