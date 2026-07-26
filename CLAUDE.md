@@ -81,10 +81,20 @@ See `DESIGN.md` for the phased design roadmap and `README.md` for repo basics.
 
 Daily SEO posts are produced by a **Claude Code Routine**, not by a script calling an LLM API:
 
-- Routine ID `trig_01UeRoipxPiCuuhjirqwb5Wk` ("Cyprus Tattoo — AI Blog Yazarı")
+- Routine ID `trig_01UeRoipxPiCuuhjirqwb5Wk` ("JBA Cyprus — AI Blog Yazarı")
 - Fires every 6 hours (00/06/12/18 UTC) into a **fresh session** in this environment
-- Each run: pulls `main` → greps existing slugs + max id → writes a new 1500–2000 word TR post plus full EN translation → appends to `blogPosts` → **verifies `npm run build` passes** → pushes to `main`
 - No separate LLM API key or billing — it runs on the account's Claude subscription
+
+Flow, and where each half runs:
+
+1. **Routine session** — pulls `main`, branches to `blog/auto-<UTC timestamp>`, greps existing slugs + max id, writes a 1500–2000 word TR post plus full EN translation, appends to `blogPosts`, verifies `npm run build`, pushes the branch. It stops there.
+2. **`.github/workflows/blog-auto-merge.yml`** — triggers on `blog/auto-**`, rebuilds the branch merged onto current `main`, opens a PR, merges it, deletes the branch. Vercel deploys from `main`.
+
+The split exists because the Routine session has **no GitHub MCP tools** (triggers created via MCP carry no connectors) and the project has no `gh` CLI — so it cannot open a PR itself. The Actions runner has both.
+
+The build runs in both halves on purpose: the Routine builds inside its own container, the workflow builds the branch *merged onto main*. A post that builds alone can still break once other commits land beside it.
+
+Branch name prefix `blog/auto-` is load-bearing — the workflow matches on it.
 
 `.github/workflows/daily-blog.yml` + `scripts/generate-blog.mjs` remain as a **manual fallback only** (schedule commented out; needs an `ANTHROPIC_API_KEY` secret). Never re-enable that cron while the Routine is active — two writers pushing to `main` cause push conflicts and duplicate content.
 
