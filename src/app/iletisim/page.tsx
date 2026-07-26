@@ -5,9 +5,9 @@ import { buildFAQPageJsonLd } from "@/lib/seo-schema";
 const siteUrl = "https://cyprustattoo.ink";
 
 export const metadata: Metadata = {
-    title: "İletişim | Cyprus Tattoo - Girne, Kuzey Kıbrıs",
+    title: "İletişim | JBA Cyprus Tattoo & Piercing - Girne",
     description:
-        "Cyprus Tattoo Ink ile iletişime geçin. WhatsApp, telefon, adres ve yol tarifi. Pazartesi–Cumartesi 10:00–21:00.",
+        "JBA Cyprus Tattoo & Piercing ile iletişime geçin. WhatsApp, telefon, adres ve yol tarifi. Pazartesi–Cumartesi 10:00–21:00.",
     alternates: {
         canonical: `${siteUrl}/iletisim`,
         languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        question: "Cyprus Tattoo Ink nerede bulunuyor?",
+        question: "JBA Cyprus Tattoo & Piercing nerede bulunuyor?",
         answer:
             "Stüdyomuz Girne (Kyrenia), Kuzey Kıbrıs'ta yer alıyor: Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Girne 9000.",
     },

@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ConversionTracker from "@/components/ConversionTracker";
 import { LanguageProvider } from "@/components/LanguageContext";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -21,8 +22,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Cyprus Tattoo | Kuzey Kıbrıs'ın En İyi Dövme Salonu",
-    template: "%s | Cyprus Tattoo",
+    default: "JBA Cyprus Tattoo & Piercing | Kuzey Kıbrıs Dövme Salonu",
+    template: "%s | JBA Cyprus",
   },
   description:
     "Kuzey Kıbrıs'ta profesyonel dövme salonu. North Cyprus'un en deneyimli dövme sanatçıları ile özel tasarım, custom tattoo ve piercing hizmetleri. KKTC dövme - WhatsApp ile hızlı rezervasyon!",
@@ -45,9 +46,9 @@ export const metadata: Metadata = {
     "tattoo studio Kyrenia",
     "Girne dövme",
   ],
-  authors: [{ name: "Cyprus Tattoo Studio" }],
-  creator: "Cyprus Tattoo",
-  publisher: "Cyprus Tattoo",
+  authors: [{ name: "JBA Cyprus Tattoo & Piercing" }],
+  creator: "JBA Cyprus Tattoo & Piercing",
+  publisher: "JBA Cyprus Tattoo & Piercing",
   manifest: "/manifest.json",
   robots: {
     index: true,
@@ -65,8 +66,8 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     alternateLocale: "en_US",
     url: siteUrl,
-    siteName: "Cyprus Tattoo",
-    title: "Cyprus Tattoo | Kuzey Kıbrıs'ın En İyi Dövme Salonu",
+    siteName: "JBA Cyprus Tattoo & Piercing",
+    title: "JBA Cyprus Tattoo & Piercing | Kuzey Kıbrıs Dövme Salonu",
     description:
       "Kuzey Kıbrıs'ta profesyonel dövme salonu. Custom tasarım, geleneksel ve modern dövme stilleri. WhatsApp ile hızlı rezervasyon!",
     images: [
@@ -74,13 +75,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Cyprus Tattoo Studio - Kuzey Kıbrıs Dövme Salonu",
+        alt: "JBA Cyprus Tattoo & Piercing - Kuzey Kıbrıs Dövme Salonu",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cyprus Tattoo | Kuzey Kıbrıs Dövme Salonu",
+    title: "JBA Cyprus Tattoo & Piercing | Girne Dövme & Piercing",
     description:
       "Kuzey Kıbrıs'ın en iyi dövme salonu. Custom tasarım, profesyonel sanatçılar.",
     images: ["/og-image.png"],
@@ -99,7 +100,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Cyprus Tattoo",
+    title: "JBA Cyprus",
   },
 };
 
@@ -107,8 +108,8 @@ const organizationLd = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "TattooParlor"],
   "@id": `${siteUrl}/#organization`,
-  name: "Cyprus Tattoo",
-  alternateName: ["Cyprus Tattoo Ink", "Cyprus Tattoo Studio"],
+  name: "JBA Cyprus Tattoo & Piercing",
+  alternateName: ["JBA Cyprus", "Cyprus Tattoo Ink", "Cyprus Tattoo"],
   description:
     "Professional tattoo studio in Kyrenia, North Cyprus. Custom designs, realism, fine line, traditional and cover-up tattoos by award-winning artists.",
   url: siteUrl,
@@ -252,7 +253,7 @@ const websiteLd = {
   "@type": "WebSite",
   "@id": `${siteUrl}/#website`,
   url: siteUrl,
-  name: "Cyprus Tattoo",
+  name: "JBA Cyprus Tattoo & Piercing",
   inLanguage: ["tr-TR", "en-US"],
   publisher: { "@id": `${siteUrl}/#organization` },
   potentialAction: {
@@ -308,6 +309,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <WhatsAppButton />
+          <ConversionTracker />
         </LanguageProvider>
       </body>
     </html>

@@ -105,7 +105,7 @@ export default function ImageLightbox({
             >
                 <Image
                     src={current}
-                    alt={alt?.(index) ?? `Cyprus Tattoo portfolio ${index + 1}`}
+                    alt={alt?.(index) ?? `JBA Cyprus portfolio ${index + 1}`}
                     fill
                     sizes="(max-width: 1024px) 90vw, 1200px"
                     className="object-contain"

@@ -4,8 +4,8 @@ const siteUrl = "https://cyprustattoo.ink";
 
 export const metadata: Metadata = {
     title: {
-        default: "Cyprus Tattoo | The Best Tattoo Studio in North Cyprus (Kyrenia)",
-        template: "%s | Cyprus Tattoo",
+        default: "JBA Cyprus Tattoo & Piercing | North Cyprus (Kyrenia)",
+        template: "%s | JBA Cyprus",
     },
     description:
         "Professional tattoo studio in Kyrenia, North Cyprus. Custom designs, realism, minimalist fine line, traditional and cover-up by award-winning artists. Book via WhatsApp.",
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
         locale: "en_US",
         alternateLocale: "tr_TR",
         url: `${siteUrl}/en`,
-        siteName: "Cyprus Tattoo",
-        title: "Cyprus Tattoo | The Best Tattoo Studio in North Cyprus",
+        siteName: "JBA Cyprus Tattoo & Piercing",
+        title: "JBA Cyprus Tattoo & Piercing | North Cyprus",
         description:
             "Professional tattoo studio in Kyrenia. Custom designs, realism, fine line, traditional. Book via WhatsApp.",
         images: [
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
                 url: "/og-image.png",
                 width: 1200,
                 height: 630,
-                alt: "Cyprus Tattoo Studio - North Cyprus Tattoo Parlor",
+                alt: "JBA Cyprus Tattoo & Piercing - North Cyprus Tattoo Parlor",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Cyprus Tattoo | North Cyprus Tattoo Studio",
+        title: "Cyprus Tattoo | North JBA Cyprus Tattoo & Piercing",
         description:
             "Professional tattoo studio in Kyrenia, North Cyprus. Custom designs by award-winning artists.",
         images: ["/og-image.png"],

@@ -4,9 +4,9 @@ import GaleriClient from "@/app/galeri/GaleriClient";
 const siteUrl = "https://cyprustattoo.ink";
 
 export const metadata: Metadata = {
-    title: "Gallery | Cyprus Tattoo Portfolio - North Cyprus",
+    title: "Gallery | JBA Cyprus Portfolio - North Cyprus",
     description:
-        "Explore the portfolio of Cyprus Tattoo Ink in Kyrenia. Custom designs, realism, fine line, traditional, blackwork and cover-up tattoos by our artists.",
+        "Explore the portfolio of JBA Cyprus Tattoo & Piercing in Kyrenia. Custom designs, realism, fine line, traditional, blackwork and cover-up tattoos by our artists.",
     alternates: {
         canonical: `${siteUrl}/en/galeri`,
         languages: {

@@ -5,9 +5,9 @@ import { buildFAQPageJsonLd } from "@/lib/seo-schema";
 const siteUrl = "https://cyprustattoo.ink";
 
 export const metadata: Metadata = {
-    title: "Contact | Cyprus Tattoo - Kyrenia, North Cyprus",
+    title: "Contact | JBA Cyprus Tattoo & Piercing - Kyrenia",
     description:
-        "Get in touch with Cyprus Tattoo Ink in Kyrenia. WhatsApp, phone, address and directions. Open Mon-Sat 10:00-21:00.",
+        "Get in touch with JBA Cyprus Tattoo & Piercing in Kyrenia. WhatsApp, phone, address and directions. Open Mon-Sat 10:00-21:00.",
     alternates: {
         canonical: `${siteUrl}/en/iletisim`,
         languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        question: "Where is Cyprus Tattoo Ink located?",
+        question: "Where is JBA Cyprus Tattoo & Piercing located?",
         answer:
             "Our studio is in Kyrenia (Girne), North Cyprus: Emin Alpkaya Sk Şehit Emin Alpkaya Sokak Çelebi Apartmanı No:1, Kyrenia 9000.",
     },

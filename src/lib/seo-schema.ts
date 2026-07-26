@@ -27,13 +27,13 @@ export function buildBlogPostingJsonLd(post: BlogPost, locale: Locale) {
         articleSection: post.category[locale],
         author: {
             "@type": "Organization",
-            name: post.author || "Cyprus Tattoo Studio",
+            name: post.author || "JBA Cyprus Tattoo & Piercing",
             url: SITE_URL,
         },
         publisher: {
             "@type": "Organization",
             "@id": ORGANIZATION_ID,
-            name: "Cyprus Tattoo",
+            name: "JBA Cyprus Tattoo & Piercing",
             logo: {
                 "@type": "ImageObject",
                 url: `${SITE_URL}/logo.png`,

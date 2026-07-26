@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!post) return { title: "Yazı Bulunamadı" };
 
     return {
-        title: `${post.title.tr} | Cyprus Tattoo Blog`,
+        title: `${post.title.tr} | JBA Cyprus Blog`,
         description: post.description.tr,
         alternates: {
             canonical: `${siteUrl}/blog/${post.slug}`,

@@ -5,6 +5,7 @@ import Image from "next/image";
 import { galleryImages, galleryVideos } from "@/data/assets-data";
 import { useLanguage } from "@/components/LanguageContext";
 import ImageLightbox from "@/components/ImageLightbox";
+import LazyVideo from "@/components/LazyVideo";
 
 export default function GaleriClient() {
   const { t } = useLanguage();
@@ -33,14 +34,9 @@ export default function GaleriClient() {
             {galleryVideos.map((vid, i) => (
               <div key={i} className="group rounded-2xl overflow-hidden border border-white/5 bg-surface transition-all hover:border-primary/20 relative">
                 <div className="aspect-[9/16] sm:aspect-video relative bg-black">
-                  <video
+                  <LazyVideo
                     src={vid}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="metadata"
-                    title={`Cyprus Tattoo Process Video ${i + 1}`}
+                    title={`JBA Cyprus Process Video ${i + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -66,7 +62,7 @@ export default function GaleriClient() {
               >
                 <Image
                   src={img}
-                  alt={`Cyprus Tattoo Portfolio ${i + 1}`}
+                  alt={`JBA Cyprus Portfolio ${i + 1}`}
                   width={500}
                   height={500}
                   loading="lazy"
@@ -106,7 +102,7 @@ export default function GaleriClient() {
         index={activeIndex}
         onClose={() => setActiveIndex(null)}
         onNavigate={setActiveIndex}
-        alt={(i) => `Cyprus Tattoo portfolio ${i + 1}`}
+        alt={(i) => `JBA Cyprus portfolio ${i + 1}`}
       />
     </div>
   );

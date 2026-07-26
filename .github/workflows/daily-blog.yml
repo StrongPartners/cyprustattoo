@@ -1,9 +1,25 @@
-name: AI Daily Blogger
+name: AI Daily Blogger (yedek)
+
+# Otomatik zamanlama DEVRE DIŞI.
+#
+# Günlük blog üretimi artık Claude Code Routine'i ile yapılıyor
+# (trig_01UeRoipxPiCuuhjirqwb5Wk, 6 saatte bir: 00/06/12/18 UTC).
+# Routine kendi oturumunda yazıyı üretir, `npm run build` ile doğrular
+# ve main'e push eder — ayrı bir LLM API anahtarı gerekmez.
+#
+# Bu workflow yedek olarak duruyor: scripts/generate-blog.mjs Anthropic
+# API'sini doğrudan çağırır ve ANTHROPIC_API_KEY secret'ı ister.
+# Elle tetiklemek için: Actions > AI Daily Blogger (yedek) > Run workflow
+#
+# Zamanlamayı geri açmak istersen aşağıdaki schedule bloğunun yorumunu kaldır
+# ve Routine'i devre dışı bırak — ikisi aynı anda çalışırsa main'de
+# push çakışması ve mükerrer içerik oluşur.
+#
+#  schedule:
+#    - cron: "0 0,6,12,18 * * *"
 
 on:
-  schedule:
-    - cron: "0 0,6,12,18 * * *" # Every 6 hours
-  workflow_dispatch: # Manual run
+  workflow_dispatch: # Sadece manuel çalıştırma
     inputs:
       post_count:
         description: 'Number of posts to generate'
@@ -27,7 +43,7 @@ jobs:
 
       - name: Generate AI Blog Post
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           POST_COUNT: ${{ github.event.inputs.post_count || '1' }}
         run: node scripts/generate-blog.mjs
 
