@@ -96,6 +96,11 @@ The build runs in both halves on purpose: the Routine builds inside its own cont
 
 Branch name prefix `blog/auto-` is load-bearing — the workflow matches on it.
 
+> **Repo setting:** the workflow prefers opening a PR, which needs Settings → Actions →
+> General → Workflow permissions → *Allow GitHub Actions to create and approve pull
+> requests* (GitHub ships this **off**). While it is off the workflow falls back to a
+> direct merge and logs a warning, so posts still publish either way.
+
 `.github/workflows/daily-blog.yml` + `scripts/generate-blog.mjs` remain as a **manual fallback only** (schedule commented out; needs an `ANTHROPIC_API_KEY` secret). Never re-enable that cron while the Routine is active — two writers pushing to `main` cause push conflicts and duplicate content.
 
 History: this pipeline originally used `gemini-2.0-flash`, which was retired 2026-03-06 (fixed in `796209e` by moving to `gemini-2.5-flash` with thinking disabled). It then ran until 2026-06-23, when the Google AI Studio prepay balance was depleted (`429 RESOURCE_EXHAUSTED`) — that outage is what prompted the move to a Routine.
