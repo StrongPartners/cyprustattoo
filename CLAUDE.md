@@ -16,7 +16,7 @@ Next.js 15 (App Router) + Tailwind v4 site for Cyprus Tattoo Ink, a professional
 - **i18n:** `src/components/LanguageContext.tsx` derives `language` from `usePathname()`. Use the `localePath()` helper from `useLanguage()` for every internal `<Link>` href — never hardcode `/blog`, `/galeri`, etc.
 - **Client/server split:** Every route that reads `useLanguage()` has a `FooClient.tsx` (client) + `page.tsx` (server, exports `metadata`). Follow this pattern for new pages so each locale gets its own canonical + hreflang.
 - **Schema:** Centralised in `src/lib/seo-schema.ts` (`buildBlogPostingJsonLd`, `buildFAQPageJsonLd`, `buildBreadcrumbJsonLd`). Add new types here.
-- **Blog data:** `src/data/blog-posts.ts` — 100+ bilingual posts, auto-appended by `scripts/generate-blog.mjs` every 6 hours via GitHub Actions (uses `gemini-2.5-flash`).
+- **Blog data:** `src/data/blog-posts.ts` — 300+ bilingual posts, ~2 MB / 20k+ lines. **Never read the whole file** — grep for `slug:` / `id:` and read the interface at the top instead.
 - **Indexing:** `src/lib/master-indexer.ts` submits both locales to IndexNow + Google Indexing API. Update `STATIC_PATHS` when adding new routes.
 
 ## Design tokens (in `globals.css` `@theme`)
@@ -77,11 +77,24 @@ Curated references for future redesign work (from the user's GitHub research, Ap
 
 See `DESIGN.md` for the phased design roadmap and `README.md` for repo basics.
 
+## Automated blog generation
+
+Daily SEO posts are produced by a **Claude Code Routine**, not by a script calling an LLM API:
+
+- Routine ID `trig_01UeRoipxPiCuuhjirqwb5Wk` ("Cyprus Tattoo — AI Blog Yazarı")
+- Fires every 6 hours (00/06/12/18 UTC) into a **fresh session** in this environment
+- Each run: pulls `main` → greps existing slugs + max id → writes a new 1500–2000 word TR post plus full EN translation → appends to `blogPosts` → **verifies `npm run build` passes** → pushes to `main`
+- No separate LLM API key or billing — it runs on the account's Claude subscription
+
+`.github/workflows/daily-blog.yml` + `scripts/generate-blog.mjs` remain as a **manual fallback only** (schedule commented out; needs an `ANTHROPIC_API_KEY` secret). Never re-enable that cron while the Routine is active — two writers pushing to `main` cause push conflicts and duplicate content.
+
+History: this pipeline originally used `gemini-2.0-flash`, which was retired 2026-03-06 (fixed in `796209e` by moving to `gemini-2.5-flash` with thinking disabled). It then ran until 2026-06-23, when the Google AI Studio prepay balance was depleted (`429 RESOURCE_EXHAUSTED`) — that outage is what prompted the move to a Routine.
+
 ## Branch discipline
 
 - Main development branch for this stream: `claude/fix-seo-content-sharing-HN1CM`
-- Never push to `main` directly. `main` is the production deploy target via Vercel.
-- The AI Blogger pushes to `main` at 00:00 / 06:00 / 12:00 / 18:00 UTC — coordinate any refactors to `src/data/blog-posts.ts` around that cron.
+- Never push to `main` directly for feature work. `main` is the production deploy target via Vercel.
+- The blog Routine is the one exception — it pushes content-only commits to `main` on its own schedule. Coordinate any refactor of `src/data/blog-posts.ts` around 00/06/12/18 UTC.
 
 ## Commit style
 
