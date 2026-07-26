@@ -7,6 +7,7 @@ import { useLanguage } from "@/components/LanguageContext";
 import { useIsDesktop } from "@/hooks/useIsDesktop";
 import MotionReveal from "@/components/MotionReveal";
 import Parallax from "@/components/Parallax";
+import LazyVideo from "@/components/LazyVideo";
 
 type Tile =
     | { kind: "video"; src: string; index: number }
@@ -69,14 +70,9 @@ export default function GalleryPreview() {
                                             key={`vid-${tile.index}`}
                                             className="group relative overflow-hidden rounded-2xl bg-surface shadow-2xl"
                                         >
-                                            <video
-                                                src={tile.src}
-                                                autoPlay
-                                                muted
-                                                loop
-                                                playsInline
-                                                preload="metadata"
+                                            <LazyVideo
                                                 title={`JBA Cyprus Highlight Video ${tile.index + 1}`}
+                                                src={tile.src}
                                                 className="h-auto w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                             />
                                         </div>

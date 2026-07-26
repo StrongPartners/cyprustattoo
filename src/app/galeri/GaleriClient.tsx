@@ -5,6 +5,7 @@ import Image from "next/image";
 import { galleryImages, galleryVideos } from "@/data/assets-data";
 import { useLanguage } from "@/components/LanguageContext";
 import ImageLightbox from "@/components/ImageLightbox";
+import LazyVideo from "@/components/LazyVideo";
 
 export default function GaleriClient() {
   const { t } = useLanguage();
@@ -33,13 +34,8 @@ export default function GaleriClient() {
             {galleryVideos.map((vid, i) => (
               <div key={i} className="group rounded-2xl overflow-hidden border border-white/5 bg-surface transition-all hover:border-primary/20 relative">
                 <div className="aspect-[9/16] sm:aspect-video relative bg-black">
-                  <video
+                  <LazyVideo
                     src={vid}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    preload="metadata"
                     title={`JBA Cyprus Process Video ${i + 1}`}
                     className="w-full h-full object-cover"
                   />

@@ -7,6 +7,8 @@ import { useLanguage } from "@/components/LanguageContext";
 import AnimatedHeading from "@/components/AnimatedHeading";
 import Link from "next/link";
 
+const HERO_CLIP_COUNT = 4;
+
 export default function Hero() {
     const [videoIndex, setVideoIndex] = useState(0);
     const [videoReady, setVideoReady] = useState(false);
@@ -40,13 +42,17 @@ export default function Hero() {
         return () => io.disconnect();
     }, []);
 
+    // Cycling the full 37-clip set meant a fresh multi-MB download every 8s for
+    // as long as anyone sat on the homepage. Four is enough to read as motion.
+    const heroClips = galleryVideos.slice(0, HERO_CLIP_COUNT);
+
     useEffect(() => {
         if (!videoReady) return;
         const interval = setInterval(() => {
-            setVideoIndex((prev) => (prev + 1) % galleryVideos.length);
+            setVideoIndex((prev) => (prev + 1) % heroClips.length);
         }, 8000);
         return () => clearInterval(interval);
-    }, [videoReady]);
+    }, [videoReady, heroClips.length]);
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -82,7 +88,7 @@ export default function Hero() {
                         playsInline
                         preload="none"
                         className="h-full w-full object-cover"
-                        src={galleryVideos[videoIndex]}
+                        src={heroClips[videoIndex]}
                     />
                 </motion.div>
             )}
