@@ -39,8 +39,8 @@ export default function Header() {
             alt="JBA Cyprus Tattoo & Piercing Logo"
             width={512}
             height={512}
-            className="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform"
-            style={{ maxHeight: '48px', width: 'auto' }}
+            className="h-12 sm:h-14 w-auto object-contain mix-blend-screen group-hover:scale-105 transition-transform"
+            style={{ maxHeight: '56px', width: 'auto' }}
             priority
           />
         </Link>

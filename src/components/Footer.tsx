@@ -21,7 +21,7 @@ export default function Footer() {
                 alt="JBA Cyprus Tattoo & Piercing Logo"
                 width={512}
                 height={512}
-                className="h-16 w-auto object-contain"
+                className="h-16 w-auto object-contain mix-blend-screen"
               />
             </div>
             <p className="text-white/40 text-sm leading-relaxed mb-8">
