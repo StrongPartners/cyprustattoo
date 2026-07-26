@@ -1,0 +1,92 @@
+name: Blog auto-merge
+
+# The blog Routine cannot open a pull request itself: its session has no GitHub
+# MCP tools and this project has no `gh` CLI. So it pushes a branch, and this
+# workflow does the PR half — where `gh` is preinstalled and GITHUB_TOKEN is
+# already scoped correctly.
+#
+# The build runs here as well as in the Routine. That is deliberate, not
+# duplicated work: the Routine builds against its own container, this builds
+# the branch merged onto current main. A post that builds in isolation can
+# still break once other commits land alongside it, and this is the gate that
+# catches it. If the build fails the PR stays open and nothing reaches
+# production.
+
+on:
+  push:
+    branches:
+      - "blog/auto-**"
+
+concurrency:
+  # Two firings should never race to merge into main.
+  group: blog-auto-merge
+  cancel-in-progress: false
+
+jobs:
+  verify-and-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Build
+        run: npm run build
+
+      - name: Open pull request
+        id: pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          TITLE=$(git log -1 --pretty=%s)
+
+          # A re-push to an existing branch must not open a second PR.
+          EXISTING=$(gh pr list --head "$BRANCH" --state open --json url --jq '.[0].url // empty')
+          if [ -n "$EXISTING" ]; then
+            echo "Reusing open PR: $EXISTING"
+            echo "url=$EXISTING" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          URL=$(gh pr create \
+            --base main \
+            --head "$BRANCH" \
+            --title "$TITLE" \
+            --body "Automated blog post from the daily Routine.
+
+          The build passed on this branch merged onto current \`main\`, so this is
+          safe to merge. Auto-merged by \`.github/workflows/blog-auto-merge.yml\`.")
+          echo "Opened $URL"
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
+      - name: Merge and clean up
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+        run: |
+          set -euo pipefail
+          gh pr merge "$PR_URL" --merge --delete-branch
+          echo "Merged $PR_URL — Vercel will deploy from main."
+
+      - name: Report failure
+        if: failure()
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          echo "::error::Blog post on '$BRANCH' did not publish."
+          echo "The branch is left in place with its commit intact — inspect the"
+          echo "failing step above, fix forward, and re-push to retry."
