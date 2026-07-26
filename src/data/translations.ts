@@ -10,8 +10,8 @@ export const translations = {
         },
         hero: {
             location: "Kuzey Kıbrıs · North Cyprus",
-            title1: "CYPRUS",
-            title2: "TATTOO",
+            title1: "JBA CYPRUS",
+            title2: "TATTOO & PIERCING",
             desc: "Girne'nin en profesyonel dövme stüdyosu. Cildinize sanat işliyoruz — custom tasarım, realistik, minimalist ve daha fazlası.",
             cta_whatsapp: "WhatsApp Rezervasyon",
             cta_gallery: "Galeriyi Gör",
@@ -55,6 +55,15 @@ export const translations = {
             view_all: "Tüm Yazıları Gör",
             read_more: "Okumaya Başla →"
         },
+        manifesto: {
+            eyebrow: "Felsefemiz",
+            line1: "Her çizgi",
+            line2: "bir imza",
+            line3: "bırakır",
+            desc: "Cildinize işlediğimiz her detay, yıllar süren teknik birikimin ve sizin hikâyenizin buluştuğu yerdir. Kopya değil, karakter.",
+            stat_label: "Tamamlanan Çalışma",
+            cta: "Portföyü İncele"
+        },
         cta_banner: {
             title: "Hayalindeki Dövme",
             subtitle: "Bir Adım Uzağında",
@@ -62,10 +71,10 @@ export const translations = {
             button: "Şimdi Rezervasyon Yap"
         },
         footer: {
-            desc: "Cyprus Tattoo Studio — Kuzey Kıbrıs'ın kalbinde sanatı cildinize işliyoruz. Profesyonellik, hijyen ve özgünlük bir arada.",
+            desc: "JBA Cyprus Tattoo & Piercing — Kuzey Kıbrıs'ın kalbinde sanatı cildinize işliyoruz. Profesyonellik, hijyen ve özgünlük bir arada.",
             location: "LOKASYON",
             country: "Kuzey Kıbrıs",
-            copyright: "© 2026 Cyprus Tattoo. Tüm hakları saklıdır."
+            copyright: "© 2026 JBA Cyprus Tattoo & Piercing. Tüm hakları saklıdır."
         },
         gallery: {
             title: "GALERİ",
@@ -93,7 +102,7 @@ export const translations = {
             story_title_1: "Kuzey Kıbrıs'ın",
             story_title_2: "Dövme Kültürüne",
             story_title_3: "Yön Veriyoruz",
-            story_p1: "Cyprus Tattoo, Girne'nin kalbinde, dövme sanatını bir yaşam biçimi olarak gören profesyoneller tarafından kuruldu.",
+            story_p1: "JBA Cyprus Tattoo & Piercing, Girne'nin kalbinde, dövme sanatını bir yaşam biçimi olarak gören profesyoneller tarafından kuruldu.",
             story_p2: "Bizim için her dövme bir imzadır. Cildinize işlediğimiz her çizgi, yıllar süren teknik birikimin, sanatsal vizyonun ve en önemlisi sizin hikayenizin birleşimidir. Realistik çalışmalardan ince çizgi sanatına kadar her stilde uzman sanatçılarımızla, KKTC'nin en güvenilir stüdyosu olmanın gururunu yaşıyoruz.",
             cards: {
                 quality: { title: "Dünya Standartları", desc: "AB standartlarında en iyi pigment ve ekipmanları kullanıyoruz." },
@@ -124,8 +133,8 @@ export const translations = {
         },
         hero: {
             location: "Kyrenıa · North Cyprus",
-            title1: "CYPRUS",
-            title2: "TATTOO",
+            title1: "JBA CYPRUS",
+            title2: "TATTOO & PIERCING",
             desc: "The pinnacle of tattoo artistry in Kyrenia. We transform your vision into timeless skin art through precision craftsmanship and bespoke designs — from hyper-realism to fine-line elegance.",
             cta_whatsapp: "Book via WhatsApp",
             cta_gallery: "Explore Portfolio",
@@ -169,6 +178,15 @@ export const translations = {
             view_all: "Read More Articles",
             read_more: "Deep Dive →"
         },
+        manifesto: {
+            eyebrow: "Our Philosophy",
+            line1: "Every line",
+            line2: "leaves a",
+            line3: "signature",
+            desc: "Every detail we set into your skin is where years of technical craft meet your own story. Not a copy — a character.",
+            stat_label: "Pieces Completed",
+            cta: "View the Portfolio"
+        },
         cta_banner: {
             title: "Your Masterpiece Awaits",
             subtitle: "Craft Your Legacy",
@@ -176,10 +194,10 @@ export const translations = {
             button: "Reserve Your Session"
         },
         footer: {
-            desc: "Cyprus Tattoo Studio — Crafting art onto your skin in the heart of North Cyprus. Professionalism, hygiene, and authenticity combined.",
+            desc: "JBA Cyprus Tattoo & Piercing — Crafting art onto your skin in the heart of North Cyprus. Professionalism, hygiene, and authenticity combined.",
             location: "LOCATION",
             country: "North Cyprus",
-            copyright: "© 2026 Cyprus Tattoo Studio. All rights reserved."
+            copyright: "© 2026 JBA Cyprus Tattoo & Piercing. All rights reserved."
         },
         gallery: {
             title: "GALLERY",
@@ -207,7 +225,7 @@ export const translations = {
             story_title_1: "Pioneering",
             story_title_2: "Tattoo Culture",
             story_title_3: "in North Cyprus",
-            story_p1: "Cyprus Tattoo was founded in the heart of Kyrenia by professionals who see tattoo art as a way of life.",
+            story_p1: "JBA Cyprus Tattoo & Piercing was founded in the heart of Kyrenia by professionals who see tattoo art as a way of life.",
             story_p2: "For us, every tattoo is a signature. Every line we ink on your skin is a combination of years of technical accumulation, artistic vision, and most importantly, your story. We are proud to be the most reliable studio in the TRNC with our expert artists in every style, from realistic works to fine line art.",
             cards: {
                 quality: { title: "Global Standards", desc: "We use top-quality pigments matching EU standards." },

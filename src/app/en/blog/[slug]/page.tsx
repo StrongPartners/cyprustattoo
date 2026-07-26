@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     if (!post) return { title: "Post Not Found" };
 
     return {
-        title: `${post.title.en} | Cyprus Tattoo Blog`,
+        title: `${post.title.en} | JBA Cyprus Blog`,
         description: post.description.en,
         alternates: {
             canonical: `${siteUrl}/en/blog/${post.slug}`,

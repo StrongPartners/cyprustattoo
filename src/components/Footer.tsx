@@ -18,9 +18,9 @@ export default function Footer() {
             <div className="mb-8">
               <Image
                 src="/logo.png"
-                alt="Cyprus Tattoo Logo"
-                width={800}
-                height={436}
+                alt="JBA Cyprus Tattoo & Piercing Logo"
+                width={512}
+                height={512}
                 className="h-16 w-auto object-contain"
               />
             </div>

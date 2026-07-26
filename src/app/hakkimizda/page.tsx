@@ -4,9 +4,9 @@ import HakkimizdaClient from "./HakkimizdaClient";
 const siteUrl = "https://cyprustattoo.ink";
 
 export const metadata: Metadata = {
-    title: "Hakkımızda | Cyprus Tattoo Ink - Girne, Kuzey Kıbrıs",
+    title: "Hakkımızda | JBA Cyprus Tattoo & Piercing - Girne, Kuzey Kıbrıs",
     description:
-        "Cyprus Tattoo Ink: Girne'de 12+ yıllık profesyonel dövme deneyimi. Hijyen öncelikli, sanatçı odaklı, özel tasarımlar.",
+        "JBA Cyprus Tattoo & Piercing: Girne'de 12+ yıllık profesyonel dövme deneyimi. Hijyen öncelikli, sanatçı odaklı, özel tasarımlar.",
     alternates: {
         canonical: `${siteUrl}/hakkimizda`,
         languages: {

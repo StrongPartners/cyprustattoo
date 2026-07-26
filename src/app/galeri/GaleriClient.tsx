@@ -40,7 +40,7 @@ export default function GaleriClient() {
                     muted
                     playsInline
                     preload="metadata"
-                    title={`Cyprus Tattoo Process Video ${i + 1}`}
+                    title={`JBA Cyprus Process Video ${i + 1}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -66,7 +66,7 @@ export default function GaleriClient() {
               >
                 <Image
                   src={img}
-                  alt={`Cyprus Tattoo Portfolio ${i + 1}`}
+                  alt={`JBA Cyprus Portfolio ${i + 1}`}
                   width={500}
                   height={500}
                   loading="lazy"
@@ -106,7 +106,7 @@ export default function GaleriClient() {
         index={activeIndex}
         onClose={() => setActiveIndex(null)}
         onNavigate={setActiveIndex}
-        alt={(i) => `Cyprus Tattoo portfolio ${i + 1}`}
+        alt={(i) => `JBA Cyprus portfolio ${i + 1}`}
       />
     </div>
   );

@@ -4,9 +4,9 @@ import HakkimizdaClient from "@/app/hakkimizda/HakkimizdaClient";
 const siteUrl = "https://cyprustattoo.ink";
 
 export const metadata: Metadata = {
-    title: "About | Cyprus Tattoo Ink - Kyrenia, North Cyprus",
+    title: "About | JBA Cyprus Tattoo & Piercing - Kyrenia, North Cyprus",
     description:
-        "Cyprus Tattoo Ink: 12+ years of professional tattoo experience in Kyrenia, North Cyprus. Hygiene-first, artist-led, custom designs.",
+        "JBA Cyprus Tattoo & Piercing: 12+ years of professional tattoo experience in Kyrenia, North Cyprus. Hygiene-first, artist-led, custom designs.",
     alternates: {
         canonical: `${siteUrl}/en/hakkimizda`,
         languages: {

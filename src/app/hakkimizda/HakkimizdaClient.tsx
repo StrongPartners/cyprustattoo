@@ -24,7 +24,7 @@ export default function HakkimizdaPage() {
             <div className="aspect-[4/5] bg-surface rounded-[3rem] border border-white/5 overflow-hidden shadow-2xl">
               <Image
                 src="/assets/images/05042af7-c7ad-4eab-bb21-08200c6965f4.JPG"
-                alt="Cyprus Tattoo Studio"
+                alt="JBA Cyprus Tattoo & Piercing"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
               />
