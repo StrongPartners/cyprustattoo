@@ -51538,4 +51538,229 @@ Contact us now and start your artistic tattoo journey!
 `
     }
   },
+  {
+    id: "358",
+    slug: "kuzey-kibrista-ilk-piercing-rehberi",
+    title: {
+      tr: "Kuzey Kıbrıs'ta İlk Piercing Rehberi: Türler, İyileşme Süreleri ve Bakım",
+      en: "First Piercing Guide in North Cyprus: Types, Healing Times and Aftercare"
+    },
+    description: {
+      tr: "Girne'de ilk piercing'ini yaptırmadan önce bilmen gerekenler: hangi bölge ne kadar sürede iyileşir, hangi takı malzemesi güvenlidir, Kıbrıs ikliminde bakım nasıl yapılır.",
+      en: "What to know before your first piercing in Kyrenia: healing times by placement, safe jewellery metals and aftercare in the Cyprus climate."
+    },
+    date: "2026-10-13",
+    author: "JBA Cyprus",
+    category: { tr: "Piercing", en: "Piercing" },
+    readTime: { tr: "4 dk", en: "5 min" },
+    image: "/blog/kuzey-kibrista-ilk-piercing-rehberi.jpg",
+    imageAlt: {
+      tr: "JBA Cyprus stüdyosunda eldivenli sanatçı steril ekipmanla çalışırken",
+      en: "A gloved artist working with sterile equipment at the JBA Cyprus studio"
+    },
+    content: {
+      tr: `İlk piercing kararı genellikle hızlı verilir, ama iyi geçmesi için birkaç şeyi önceden bilmek gerekir: hangi bölge ne kadar sürede iyileşir, hangi takı malzemesi güvenlidir, ilk haftalarda neye dokunmamak gerekir. Bu rehberde Girne'de, Kuzey Kıbrıs'ın sıcak ve nemli ikliminde ilk piercing'ini yaptıracak biri için bilmesi gerekenleri sade bir dille topladık.
+
+## Piercing türleri: nereden başlamalı?
+
+İlk piercing için en sık tercih edilen bölgeler, iyileşmesi görece kolay olanlardır.
+
+- **Kulak memesi (lob):** Yumuşak doku olduğu için en hızlı iyileşen bölgedir. İlk piercing için en güvenli başlangıçtır.
+- **Helix (kulak kepçesinin üst kenarı):** Kıkırdak bölgedir. Şık durur ama iyileşmesi uzun sürer ve yatarken baskıya hassastır.
+- **Tragus ve conch:** Kıkırdak piercing'lerdir. Kulaklık kullananlar için ilk aylar biraz sabır ister.
+- **Burun (nostril):** Popülerdir, yüz ifadesine belirgin bir dokunuş katar. Bakımı düzenli yapılmalıdır.
+- **Septum:** Burun kıkırdağının altındaki ince doku bölgesinden geçer; doğru yapıldığında beklenenden rahat iyileşir.
+- **Göbek:** Kıyafet sürtünmesine açık olduğu için iyileşmesi uzun sürer.
+
+Hangi bölgenin sana uygun olduğu; yüz ve kulak anatomisine, günlük alışkanlıklarına (kask, kulaklık, spor, uyku pozisyonu) ve iyileşme sürecine ne kadar zaman ayırabileceğine bağlıdır. Randevudan önce bunları piercer'ınla konuşmak en doğrusudur.
+
+## İyileşme süreleri: ne kadar sabır gerekiyor?
+
+Aşağıdaki süreler sektörde genel kabul gören yaklaşık aralıklardır. Herkesin cildi farklıdır; bakım, genel sağlık ve takının kalitesi süreyi doğrudan etkiler.
+
+- **Kulak memesi:** 6–8 hafta
+- **Kıkırdak (helix, tragus, conch):** 6–12 ay
+- **Burun (nostril):** 4–6 ay
+- **Septum:** 2–3 ay
+- **Göbek:** 6–12 ay
+- **Dil:** 4–6 hafta
+
+Önemli bir not: piercing dışarıdan iyileşmiş görünse de içerideki kanal daha sonra olgunlaşır. Bu yüzden takıyı erken değiştirmek ya da uzun süre çıkarmak en sık yapılan hatadır.
+
+## Takı malzemesi neden bu kadar önemli?
+
+İlk takı, iyileşme sürecinin en belirleyici parçasıdır. Kalitesiz metaller tahriş, alerji ve uzayan iyileşme demektir.
+
+- **İmplant sınıfı titanyum:** Hafiftir, nikel içermez ve ilk piercing için en çok önerilen malzemedir.
+- **Niyobyum:** Titanyuma benzer şekilde vücut dostudur.
+- **Katı altın (14 ayar ve üzeri, nikelsiz):** Uygun alaşımda iyi bir seçenektir, ama kaplama altın değil katı altın olmalıdır.
+- **Kaçınılması gerekenler:** Kaplama takılar, bilinmeyen alaşımlar ve "gümüş" ilk takı olarak uygun değildir.
+
+İlk takı genellikle şişmeye yer bırakmak için biraz uzun seçilir. Şişlik geçtikten sonra, piercer'ın kontrolünde daha kısa bir takıya geçilir. Bu "küçültme" adımı, takının takılıp yamulmasını önler.
+
+## Piercing nasıl yapılmalı: iğne mi tabanca mı?
+
+Profesyonel piercing **steril, tek kullanımlık iğne** ile yapılır. İğne dokuyu keserek temiz bir kanal açar. Takı tabancaları ise özellikle kıkırdakta dokuya baskı uygulayarak ezer, ayrıca tam sterilize edilemezler. Bu yüzden kıkırdak bölgeler için tabanca kullanılmamalıdır.
+
+İyi bir stüdyoda şunları görmelisin: eldiven, ambalajı senin önünde açılan steril iğne ve takı, işaretleme ve yerleşimin birlikte kontrol edilmesi. Stüdyomuzda hijyen ve sterilizasyon sürecini merak ediyorsan [iletişim sayfamızdan](/iletisim) bize yazabilirsin.
+
+## İlk haftalarda bakım: yapılacaklar ve yapılmayacaklar
+
+**Yapılacaklar**
+- Günde 1–2 kez steril tuzlu su (serum fizyolojik) ile bölgeyi nazikçe temizle.
+- Temiz bir gazlı bez ya da kâğıt havluyla kurula; bez havlu bakteri taşıyabilir.
+- Yastık kılıfını sık değiştir, mümkünse piercing'in üzerine yatma.
+- Saçını, kulaklığını ve telefonunu temiz tut; bunlar bölgeye en çok değen şeylerdir.
+
+**Yapılmayacaklar**
+- Takıyı çevirme, oynatma ya da elle kabukları temizleme.
+- Alkol, oksijenli su veya sert sabun kullanma; dokuyu kurutup iyileşmeyi geciktirir.
+- İyileşme bitmeden takıyı çıkarma ya da değiştirme.
+- İlk haftalarda havuz, jakuzi ve deniz; Kıbrıs yazında bu kuralı esnetmek cazip gelir ama enfeksiyon riskini artırır.
+
+## Kıbrıs iklimi ve piercing
+
+Girne'nin sıcak ve nemli yazında terleme ve güneş, iyileşme sürecini zorlayabilir. Yaz aylarında piercing yaptıracaksan:
+
+- Bölgeyi doğrudan güneşten koru, ter sonrası nazikçe temizle.
+- Deniz tatilinden hemen önce yeni piercing yaptırma; mümkünse planını en az birkaç hafta öne al.
+- Şapka, kask ve yüzme bonesi gibi baskı yapan aksesuarlara dikkat et.
+
+## Normal iyileşme mi, sorun mu?
+
+İlk günlerde hafif kızarıklık, şişlik, hassasiyet ve şeffaf ya da açık sarı sızıntının kuruyup kabuk yapması normaldir.
+
+Şu belirtilerde ise piercer'ına danış, gerekirse doktora başvur:
+- Giderek artan kızarıklık, sıcaklık ve şiddetli ağrı
+- Yeşil, koyu ya da kötü kokulu akıntı
+- Ateş ya da genel halsizlik
+- Takının dokuya gömülmeye başlaması
+
+Enfeksiyon şüphesinde takıyı kendi başına çıkarma: kanal kapanıp enfeksiyonu içeride hapsedebilir. Önce bir sağlık profesyoneline danış.
+
+## Sık Sorulan Sorular
+
+**Piercing çok acıtır mı?**
+Çoğu kişi bir-iki saniyelik keskin bir his tarif eder. Kıkırdak bölgeler kulak memesine göre daha hassastır, ama işlem çok kısa sürer.
+
+**Aynı gün birden fazla piercing yaptırabilir miyim?**
+Mümkündür, ama ilk piercing'inde vücudunun nasıl tepki verdiğini görmek için tek bölgeyle başlamak daha rahat bir süreç sağlar.
+
+**Ne zaman takımı değiştirebilirim?**
+Yukarıdaki iyileşme süreleri tamamlandıktan ve piercer'ın kontrol ettikten sonra. Kısa takıya geçiş ise genellikle ilk haftalarda, şişlik indikten sonra yapılır.
+
+**Kulaklık kullanmak sorun olur mu?**
+Kıkırdak piercing'lerde (tragus, conch) kulak içi kulaklıklar ilk aylarda baskı yapabilir. Bu dönemde kulak üstü modeller daha rahattır.
+
+**18 yaşından küçükler piercing yaptırabilir mi?**
+Yaş ve veli onayı konusunda stüdyo politikası için bizimle doğrudan iletişime geç.
+
+## Sonuç
+
+İyi bir ilk piercing; doğru bölge, kaliteli takı, steril bir işlem ve birkaç haftalık sabırla gelir. Ne istediğinden emin değilsen [galerimize](/galeri) göz atabilir, aklındaki fikri WhatsApp'tan bize yazabilirsin. JBA Cyprus Tattoo & Piercing olarak Girne'deki stüdyomuzda bölgeyi, takıyı ve bakımı birlikte planlıyoruz.
+
+WhatsApp: [+90 548 891 0673](https://wa.me/905488910673)`,
+      en: `Most people decide on their first piercing quickly, but a few things are worth knowing beforehand: how long each spot takes to heal, which jewellery metals are safe, and what to leave alone in the first weeks. This guide gathers what you need to know if you are getting your first piercing in Kyrenia, in North Cyprus's warm, humid climate.
+
+## Piercing types: where to start?
+
+The most popular first piercings are the ones that heal most easily.
+
+- **Earlobe:** Soft tissue, so it heals fastest. The safest place to start.
+- **Helix (upper rim of the ear):** Cartilage. It looks great but takes longer to heal and is sensitive to pressure when you sleep.
+- **Tragus and conch:** Cartilage piercings. If you wear earbuds, the first months need some patience.
+- **Nostril:** Popular and adds a distinct touch to the face. Aftercare needs to be consistent.
+- **Septum:** Passes through the thin tissue just below the nasal cartilage; done well, it often heals more comfortably than people expect.
+- **Navel:** Exposed to friction from clothing, so it takes a long time to heal.
+
+The right spot for you depends on your ear and face anatomy, your daily habits (helmets, headphones, sport, sleeping position) and how much time you can give the healing process. Talk these through with your piercer before the appointment.
+
+## Healing times: how much patience do you need?
+
+The ranges below are widely used industry estimates. Everyone's skin is different; aftercare, general health and jewellery quality all affect healing.
+
+- **Earlobe:** 6–8 weeks
+- **Cartilage (helix, tragus, conch):** 6–12 months
+- **Nostril:** 4–6 months
+- **Septum:** 2–3 months
+- **Navel:** 6–12 months
+- **Tongue:** 4–6 weeks
+
+One important note: a piercing can look healed on the outside long before the channel inside has matured. Changing or removing jewellery too early is the most common mistake.
+
+## Why jewellery material matters so much
+
+Your first piece of jewellery shapes the whole healing process. Poor-quality metals mean irritation, allergies and longer healing.
+
+- **Implant-grade titanium:** Light, nickel-free and the most recommended choice for a first piercing.
+- **Niobium:** Body-friendly, much like titanium.
+- **Solid gold (14k or higher, nickel-free):** A good option in the right alloy, but it must be solid gold, not plated.
+- **Avoid:** Plated jewellery, unknown alloys and silver are not suitable for a fresh piercing.
+
+The first piece is usually a little longer to leave room for swelling. Once the swelling settles, your piercer swaps it for a shorter one. This "downsizing" step stops the jewellery from snagging and sitting at an angle.
+
+## How it should be done: needle or gun?
+
+A professional piercing is done with a **sterile, single-use needle**. The needle cuts a clean channel through the tissue. Piercing guns push through and crush tissue, especially cartilage, and cannot be fully sterilised. They should not be used on cartilage.
+
+In a good studio you should see gloves, a sterile needle and jewellery opened in front of you, and the marking and placement checked together with you. If you want to know more about our hygiene and sterilisation process, write to us via our [contact page](/en/iletisim).
+
+## Aftercare in the first weeks: dos and don'ts
+
+**Do**
+- Gently clean the area once or twice a day with sterile saline.
+- Pat it dry with clean gauze or paper towel; cloth towels can carry bacteria.
+- Change your pillowcase often and avoid sleeping on the piercing.
+- Keep your hair, headphones and phone clean, as they touch the area most.
+
+**Don't**
+- Twist or move the jewellery, or pick at crusts.
+- Use alcohol, hydrogen peroxide or harsh soap; they dry out the tissue and slow healing.
+- Remove or change the jewellery before it has healed.
+- Swim in pools, hot tubs or the sea in the first weeks. It is tempting during a Cyprus summer, but it raises the risk of infection.
+
+## The Cyprus climate and piercings
+
+Heat, sweat and sun in a Kyrenia summer can make healing harder. If you are getting pierced in the summer months:
+
+- Keep the area out of direct sun and clean it gently after sweating.
+- Avoid getting a new piercing right before a beach holiday; plan it at least a few weeks earlier if you can.
+- Watch out for hats, helmets and swimming caps that press on the area.
+
+## Normal healing or a problem?
+
+Mild redness, swelling, tenderness and clear or pale yellow fluid that dries into a crust are normal in the first days.
+
+Talk to your piercer, and see a doctor if needed, if you notice:
+- Redness, heat and pain that keep getting worse
+- Green, dark or foul-smelling discharge
+- Fever or feeling generally unwell
+- The jewellery starting to sink into the tissue
+
+If you suspect an infection, do not take the jewellery out yourself: the channel can close and trap the infection inside. See a health professional first.
+
+## Frequently Asked Questions
+
+**Does a piercing hurt a lot?**
+Most people describe a sharp feeling lasting a second or two. Cartilage is more sensitive than the earlobe, but the procedure is very quick.
+
+**Can I get more than one piercing on the same day?**
+You can, but starting with one spot makes your first experience easier, because you see how your body reacts.
+
+**When can I change my jewellery?**
+After the healing times above, and once your piercer has checked it. Downsizing to a shorter bar usually happens in the first weeks, once the swelling has gone down.
+
+**Is it a problem to wear earbuds?**
+With cartilage piercings (tragus, conch), in-ear earbuds can press on the area in the first months. Over-ear headphones are more comfortable during that time.
+
+**Can under-18s get a piercing?**
+Please contact us directly for the studio's policy on age and parental consent.
+
+## Conclusion
+
+A good first piercing comes from the right spot, quality jewellery, a sterile procedure and a few weeks of patience. If you are not sure what you want, browse our [gallery](/en/galeri) or send us your idea on WhatsApp. At JBA Cyprus Tattoo & Piercing in Kyrenia, we plan the placement, jewellery and aftercare together with you.
+
+WhatsApp: [+90 548 891 0673](https://wa.me/905488910673)`
+    }
+  },
 ];
