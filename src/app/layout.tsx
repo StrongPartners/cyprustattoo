@@ -113,7 +113,7 @@ const organizationLd = {
   description:
     "Professional tattoo studio in Kyrenia, North Cyprus. Custom designs, realism, fine line, traditional and cover-up tattoos by award-winning artists.",
   url: siteUrl,
-  telephone: "+9005488910673",
+  telephone: "+905488910673",
   priceRange: "$$",
   currenciesAccepted: "EUR, GBP, TRY, USD",
   paymentAccepted: "Cash, Credit Card",
@@ -155,14 +155,14 @@ const organizationLd = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+9005488910673",
+      telephone: "+905488910673",
       contactType: "customer service",
       availableLanguage: ["Turkish", "English"],
       areaServed: ["CY", "TR", "GB"],
     },
   ],
   sameAs: [
-    "https://wa.me/9005488910673",
+    "https://wa.me/905488910673",
     "https://www.instagram.com/cyprustatt00",
     "https://maps.app.goo.gl/ZuaX3EaQKwaTyrmbA",
   ],

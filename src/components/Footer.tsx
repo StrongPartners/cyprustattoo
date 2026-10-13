@@ -42,7 +42,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://wa.me/9005488910673"
+                href="https://wa.me/905488910673"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center hover:border-[#25d366] hover:bg-[#25d366]/10 transition-all group"
@@ -91,7 +91,7 @@ export default function Footer() {
               <li className="text-white/40 text-sm italic">cyprustattoo.ink</li>
               <li className="pt-4">
                 <a
-                  href="https://wa.me/9005488910673"
+                  href="https://wa.me/905488910673"
                   className="inline-block bg-primary/10 border border-primary/20 text-primary hover:bg-primary hover:text-black font-bold px-6 py-3 rounded-xl transition-all text-xs uppercase tracking-widest"
                 >
                   {t.nav.booking}

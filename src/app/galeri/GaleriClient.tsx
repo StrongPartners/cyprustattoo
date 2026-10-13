@@ -88,7 +88,7 @@ export default function GaleriClient() {
             {t.gallery.cta_desc}
           </p>
           <a
-            href="https://wa.me/9005488910673"
+            href="https://wa.me/905488910673"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-4 bg-primary text-black font-black px-12 py-6 rounded-2xl text-sm uppercase tracking-widest transition-all hover:bg-secondary hover:scale-105 shadow-2xl shadow-primary/20"

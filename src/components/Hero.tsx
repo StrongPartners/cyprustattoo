@@ -147,7 +147,7 @@ export default function Hero() {
 
                 <div className="flex flex-col items-center justify-center gap-6 sm:flex-row">
                     <a
-                        href="https://wa.me/9005488910673"
+                        href="https://wa.me/905488910673"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-gold w-full text-center sm:w-auto"

@@ -22,7 +22,7 @@ export default function CTASection() {
                         {t.cta_banner.desc}
                     </p>
                     <a
-                        href="https://wa.me/9005488910673"
+                        href="https://wa.me/905488910673"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-4 px-12 py-6 bg-primary text-black font-black uppercase tracking-[0.2em] rounded-2xl hover:bg-secondary transition-all hover:scale-105 shadow-2xl shadow-primary/30"

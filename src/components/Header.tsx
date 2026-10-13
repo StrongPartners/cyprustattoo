@@ -74,7 +74,7 @@ export default function Header() {
           </div>
 
           <a
-            href="https://wa.me/9005488910673"
+            href="https://wa.me/905488910673"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden lg:block bg-[#c9a96e] hover:bg-[#e2c88a] text-black font-bold text-xs px-4 py-2 rounded transition-all hover:shadow-lg hover:shadow-[#c9a96e]/30 uppercase tracking-wide"
@@ -127,7 +127,7 @@ export default function Header() {
             </Link>
           ))}
           <a
-            href="https://wa.me/9005488910673"
+            href="https://wa.me/905488910673"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#c9a96e] text-black font-bold text-center px-5 py-3 rounded uppercase tracking-wide mt-2"
