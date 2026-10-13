@@ -44,7 +44,62 @@
   --breakpoint-2xl: 1536px;
 }
 
+/*
+ * Light editorial theme (Oct 2026). Same trick as bccreative.agency: components keep their
+ * class names (text-white, bg-background, border-white/5 …) and the tokens are remapped, so
+ * "white" text becomes warm ink on paper. Anything that must stay dark — the video hero, the
+ * footer, the lightbox — wraps itself in .on-dark, which restores the original palette.
+ */
+:root {
+  --color-white: #1c1814;
+  --color-background: #f5efe6;
+  --color-surface: #fffcf7;
+  --color-surface-light: #ece3d5;
+  --color-surface-raised: #e6dccb;
+  --color-border: rgba(28, 24, 20, 0.08);
+  --color-border-strong: rgba(28, 24, 20, 0.16);
+  --color-primary: #a27a35;
+  --color-primary-soft: #c39a52;
+  --color-secondary: #c39a52;
+  --color-accent: #7a5a26;
+  --shadow-soft: 0 18px 40px -22px rgba(60, 40, 15, 0.35);
+}
+
+.on-dark {
+  --color-white: #ffffff;
+  --color-background: #0a0a0a;
+  --color-surface: #111111;
+  --color-surface-light: #1a1a1a;
+  --color-surface-raised: #1f1f1f;
+  --color-border: rgba(255, 255, 255, 0.06);
+  --color-border-strong: rgba(255, 255, 255, 0.12);
+  --color-primary: #c9a96e;
+  --color-primary-soft: #e2c88a;
+  --color-secondary: #e2c88a;
+  --color-accent: #8b6b3d;
+  color: #ffffff;
+}
+
+/* Gold call-to-action with a slow aurora sheen (bccreative.agency's aurora button). */
+@keyframes aurora-drift { to { background-position: 200% 50%; } }
+.aurora-btn {
+  background-image: linear-gradient(110deg, #a27a35 0%, #d8b670 25%, #a27a35 50%, #e9cf94 75%, #a27a35 100%);
+  background-size: 200% 100%;
+  animation: aurora-drift 6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-btn { animation: none; }
+}
+
 @layer base {
+  /* clip, not hidden: decorative glows past the right edge must not widen the page on
+     phones, and clip (unlike hidden) keeps position: sticky working for the pinned sections. */
+  html,
+  body {
+    overflow-x: clip;
+  }
+
   body {
     @apply bg-background text-white font-outfit overflow-x-hidden;
   }

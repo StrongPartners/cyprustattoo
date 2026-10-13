@@ -54,7 +54,7 @@ export default function ImageLightbox({
 
     return (
         <div
-            className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-lg flex items-center justify-center p-4"
+            className="on-dark fixed inset-0 z-[100] bg-black/95 backdrop-blur-lg flex items-center justify-center p-4"
             role="dialog"
             aria-modal="true"
             aria-label="Gallery viewer"

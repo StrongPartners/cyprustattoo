@@ -22,7 +22,7 @@ export default function IletisimPage() {
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {/* WhatsApp - Primary */}
           <a
-            href="https://wa.me/9005488910673"
+            href="https://wa.me/905488910673"
             target="_blank"
             rel="noopener noreferrer"
             className="group bg-surface border border-[#25d366]/20 hover:border-[#25d366] rounded-[2.5rem] p-12 text-center transition-all hover:shadow-2xl hover:shadow-[#25d366]/10 relative overflow-hidden"
@@ -43,7 +43,7 @@ export default function IletisimPage() {
 
           {/* Telefon */}
           <a
-            href="tel:+9005488910673"
+            href="tel:+905488910673"
             className="group bg-surface border border-primary/20 hover:border-primary rounded-[2.5rem] p-12 text-center transition-all hover:shadow-2xl hover:shadow-primary/10 relative overflow-hidden"
           >
             <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/5 rounded-full blur-3xl" />

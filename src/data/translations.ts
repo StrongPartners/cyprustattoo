@@ -53,7 +53,8 @@ export const translations = {
             title: "Bilgi Merkezi",
             subtitle: "Dövme Rehberi",
             view_all: "Tüm Yazıları Gör",
-            read_more: "Okumaya Başla →"
+            read_more: "Okumaya Başla →",
+            load_more: "Daha Fazla Yazı"
         },
         manifesto: {
             eyebrow: "Felsefemiz",
@@ -176,7 +177,8 @@ export const translations = {
             title: "Knowledge Hub",
             subtitle: "The Tattoo Journal",
             view_all: "Read More Articles",
-            read_more: "Deep Dive →"
+            read_more: "Deep Dive →",
+            load_more: "More Articles"
         },
         manifesto: {
             eyebrow: "Our Philosophy",

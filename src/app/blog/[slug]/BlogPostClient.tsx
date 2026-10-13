@@ -3,11 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageContext";
-import { BlogPost } from "@/data/blog-posts";
+import type { BlogPost } from "@/data/blog-posts";
+import type { BlogSummary } from "@/lib/blog-summaries";
 import ReadingProgress from "@/components/ReadingProgress";
 import RelatedPosts from "@/components/RelatedPosts";
+import PostBody from "@/components/PostBody";
 
-export default function BlogPostClient({ post }: { post: BlogPost }) {
+export default function BlogPostClient({ post, related }: { post: BlogPost; related: BlogSummary[] }) {
     const { t, language, localePath } = useLanguage();
 
     return (
@@ -49,29 +51,10 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                 </header>
 
                 {/* Post Content */}
-                <div className="prose prose-invert max-w-none">
-                    {post.content[language].split("\n\n").map((paragraph, idx) => {
-                        if (paragraph.startsWith("## ")) {
-                            return (
-                                <h2 key={idx} className="text-3xl sm:text-4xl font-black text-white mt-20 mb-10 uppercase tracking-tight">
-                                    <span className="text-primary mr-4">—</span>
-                                    {paragraph.replace("## ", "")}
-                                </h2>
-                            );
-                        }
-                        return (
-                            <p key={idx} className="text-white/60 text-lg sm:text-xl leading-relaxed mb-8 font-light italic">
-                                {paragraph}
-                            </p>
-                        );
-                    })}
-                </div>
+                <PostBody content={post.content[language]} />
 
                 {/* Related Posts */}
-                <RelatedPosts
-                    currentSlug={post.slug}
-                    categoryTr={post.category?.tr}
-                />
+                <RelatedPosts posts={related} />
 
                 {/* Footer CTA */}
                 <div className="mt-24 p-12 sm:p-20 bg-surface border border-primary/10 rounded-[3rem] text-center relative overflow-hidden">
@@ -83,7 +66,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                         {t.cta_banner.desc}
                     </p>
                     <a
-                        href="https://wa.me/9005488910673"
+                        href="https://wa.me/905488910673"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-4 bg-primary text-black font-black px-12 py-6 rounded-2xl text-sm uppercase tracking-widest transition-all hover:bg-secondary hover:scale-105 shadow-2xl shadow-primary/20"

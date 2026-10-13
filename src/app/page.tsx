@@ -5,6 +5,7 @@ import ServicesSection from "@/components/ServicesSection";
 import GalleryPreview from "@/components/GalleryPreview";
 import BlogPreview from "@/components/BlogPreview";
 import CTASection from "@/components/CTASection";
+import { getBlogSummaries } from "@/lib/blog-summaries";
 
 // Industry style names — deliberately untranslated; they read the same to a
 // Turkish and an English visitor and function as a visual texture, not copy.
@@ -27,7 +28,7 @@ export default function Home() {
       <ManifestoSection />
       <ServicesSection />
       <GalleryPreview />
-      <BlogPreview />
+      <BlogPreview posts={getBlogSummaries(3)} />
       <CTASection />
     </div>
   );

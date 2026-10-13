@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { galleryImages, galleryVideos } from "@/data/assets-data";
+import { galleryImages, galleryVideos, videoPoster } from "@/data/assets-data";
 import { useLanguage } from "@/components/LanguageContext";
 import ImageLightbox from "@/components/ImageLightbox";
 import LazyVideo from "@/components/LazyVideo";
@@ -36,6 +36,7 @@ export default function GaleriClient() {
                 <div className="aspect-[9/16] sm:aspect-video relative bg-black">
                   <LazyVideo
                     src={vid}
+                    poster={videoPoster(vid)}
                     title={`JBA Cyprus Process Video ${i + 1}`}
                     className="w-full h-full object-cover"
                   />
@@ -87,7 +88,7 @@ export default function GaleriClient() {
             {t.gallery.cta_desc}
           </p>
           <a
-            href="https://wa.me/9005488910673"
+            href="https://wa.me/905488910673"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-4 bg-primary text-black font-black px-12 py-6 rounded-2xl text-sm uppercase tracking-widest transition-all hover:bg-secondary hover:scale-105 shadow-2xl shadow-primary/20"

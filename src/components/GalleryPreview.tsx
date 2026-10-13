@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { galleryImages, galleryVideos } from "@/data/assets-data";
+import { featuredWork, galleryImages, videoPoster } from "@/data/assets-data";
 import { useLanguage } from "@/components/LanguageContext";
 import { useIsDesktop } from "@/hooks/useIsDesktop";
 import MotionReveal from "@/components/MotionReveal";
@@ -28,7 +28,7 @@ export default function GalleryPreview() {
     const isDesktop = useIsDesktop();
 
     const tiles: Tile[] = [
-        ...galleryVideos.slice(0, 2).map((src, index) => ({ kind: "video" as const, src, index })),
+        ...featuredWork.previewClips.map((src, index) => ({ kind: "video" as const, src, index })),
         ...galleryImages.slice(0, 8).map((src, index) => ({ kind: "image" as const, src, index })),
     ];
     const columns = toColumns(tiles, 4);
@@ -73,6 +73,7 @@ export default function GalleryPreview() {
                                             <LazyVideo
                                                 title={`JBA Cyprus Highlight Video ${tile.index + 1}`}
                                                 src={tile.src}
+                                                poster={videoPoster(tile.src)}
                                                 className="h-auto w-full object-cover transition-transform duration-700 group-hover:scale-105"
                                             />
                                         </div>

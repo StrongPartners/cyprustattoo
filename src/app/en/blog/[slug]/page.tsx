@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { blogPosts } from "@/data/blog-posts";
+import { getAllPosts, getPostBySlug } from "@/data/blog-posts";
+import { getRelatedSummaries } from "@/lib/blog-summaries";
 import BlogPostClient from "@/app/blog/[slug]/BlogPostClient";
 import { buildBlogPostingJsonLd } from "@/lib/seo-schema";
 
@@ -11,8 +12,8 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const { slug } = await params;
-    const post = blogPosts.find((p) => p.slug === slug);
+    const slug = decodeURIComponent((await params).slug);
+    const post = getPostBySlug(slug);
 
     if (!post) return { title: "Post Not Found" };
 
@@ -46,8 +47,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function EnBlogPostPage({ params }: Props) {
-    const { slug } = await params;
-    const post = blogPosts.find((p) => p.slug === slug);
+    const slug = decodeURIComponent((await params).slug);
+    const post = getPostBySlug(slug);
 
     if (!post) notFound();
 
@@ -59,13 +60,16 @@ export default async function EnBlogPostPage({ params }: Props) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <BlogPostClient post={post} />
+            <BlogPostClient post={post} related={getRelatedSummaries(post.slug, post.category?.tr)} />
         </>
     );
 }
 
+// Every post is prerendered; an unknown slug is a plain 404, never a render at request time.
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
-    return blogPosts.map((post) => ({
+    return getAllPosts().map((post) => ({
         slug: post.slug,
     }));
 }

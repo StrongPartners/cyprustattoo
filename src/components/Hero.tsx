@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
-import { galleryVideos } from "@/data/assets-data";
+import Image from "next/image";
+import { featuredWork, videoPoster } from "@/data/assets-data";
 import { useLanguage } from "@/components/LanguageContext";
 import AnimatedHeading from "@/components/AnimatedHeading";
 import Link from "next/link";
@@ -44,7 +45,7 @@ export default function Hero() {
 
     // Cycling the full 37-clip set meant a fresh multi-MB download every 8s for
     // as long as anyone sat on the homepage. Four is enough to read as motion.
-    const heroClips = galleryVideos.slice(0, HERO_CLIP_COUNT);
+    const heroClips = featuredWork.heroClips.slice(0, HERO_CLIP_COUNT);
 
     useEffect(() => {
         if (!videoReady) return;
@@ -69,12 +70,20 @@ export default function Hero() {
     return (
         <section
             ref={containerRef}
-            className="relative flex min-h-[95vh] items-center justify-center overflow-hidden bg-[#0a0a0a]"
+            className="on-dark relative flex min-h-[95vh] items-center justify-center overflow-hidden bg-[#0a0a0a]"
         >
+            {/* Still plate: real work on screen from the first paint, the clip fades in over it. */}
+            <motion.div
+                className="absolute inset-0 opacity-40"
+                style={shouldReduce ? undefined : { y: videoY, scale: videoScale, willChange: "transform" }}
+            >
+                <Image src={featuredWork.hero} alt="" fill priority sizes="100vw" className="object-cover object-center" />
+            </motion.div>
+
             {videoReady && (
                 <motion.div
                     key={videoIndex}
-                    className="absolute inset-0 h-full w-full opacity-30 transition-opacity duration-1000"
+                    className="absolute inset-0 h-full w-full opacity-50 transition-opacity duration-1000"
                     style={
                         shouldReduce
                             ? undefined
@@ -87,6 +96,7 @@ export default function Hero() {
                         loop
                         playsInline
                         preload="none"
+                        poster={videoPoster(heroClips[videoIndex])}
                         className="h-full w-full object-cover"
                         src={heroClips[videoIndex]}
                     />
@@ -94,7 +104,8 @@ export default function Hero() {
             )}
 
             {/* Depth scrims */}
-            <div className="absolute inset-0 z-10 bg-gradient-to-b from-background via-background/40 to-background" />
+            <div className="absolute inset-0 z-10 bg-gradient-to-b from-background/90 via-background/20 to-background" />
+            <div className="absolute inset-0 z-10 bg-[radial-gradient(ellipse_at_center,rgba(10,10,10,0.55)_0%,rgba(10,10,10,0)_70%)]" />
             <div className="absolute left-0 top-0 z-10 h-1/4 w-full bg-gradient-to-b from-background to-transparent" />
             <div className="absolute bottom-0 left-0 z-10 h-1/3 w-full bg-gradient-to-t from-background to-transparent" />
 
@@ -136,10 +147,10 @@ export default function Hero() {
 
                 <div className="flex flex-col items-center justify-center gap-6 sm:flex-row">
                     <a
-                        href="https://wa.me/9005488910673"
+                        href="https://wa.me/905488910673"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-gold w-full text-center sm:w-auto"
+                        className="btn-gold aurora-btn w-full text-center sm:w-auto"
                     >
                         {t.hero.cta_whatsapp}
                     </a>
