@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import slugRedirects from "./content/slug-redirects.json";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -8,6 +9,17 @@ const nextConfig: NextConfig = {
     deviceSizes: [360, 640, 768, 1024, 1280, 1536, 1920],
     imageSizes: [64, 96, 128, 256, 384],
     minimumCacheTTL: 60 * 60 * 24 * 30,
+  },
+  // Ten early posts had Turkish letters in their slugs (e.g. "dansı"); they were renamed to
+  // ASCII so every host serves them, and the old addresses keep working with a 301.
+  async redirects() {
+    return slugRedirects.flatMap(({ from, to }) =>
+      ["", "/en"].map((prefix) => ({
+        source: `${prefix}/blog/${encodeURIComponent(from)}`,
+        destination: `${prefix}/blog/${to}`,
+        permanent: true,
+      }))
+    );
   },
   async headers() {
     return [

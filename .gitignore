@@ -46,3 +46,8 @@ next-env.d.ts
 
 # credentials
 cyprustattooink-907429fa7a11.json
+
+# Cloudflare (OpenNext)
+.open-next
+.wrangler
+.dev.vars

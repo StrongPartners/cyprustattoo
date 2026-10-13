@@ -8,7 +8,7 @@ Next.js 15 (App Router) + Tailwind v4 site for Cyprus Tattoo Ink, a professional
 - **Styling:** Tailwind v4 via `@theme` in `src/app/globals.css`
 - **Fonts:** Inter (latin), Outfit (body via CSS var)
 - **Images:** next/image with AVIF/WebP, responsive `deviceSizes`
-- **Hosting:** Vercel (cron + edge); GitHub Actions for AI blog generation
+- **Hosting:** Cloudflare Workers via OpenNext (`wrangler.jsonc`, `open-next.config.ts`), deployed by `.github/workflows/deploy-cloudflare.yml` on every push to `main`. Prerendered pages are served from static assets; next/image goes through the `IMAGES` binding. (Moved off Vercel in Oct 2026.)
 
 ## Architecture conventions
 
@@ -16,7 +16,7 @@ Next.js 15 (App Router) + Tailwind v4 site for Cyprus Tattoo Ink, a professional
 - **i18n:** `src/components/LanguageContext.tsx` derives `language` from `usePathname()`. Use the `localePath()` helper from `useLanguage()` for every internal `<Link>` href — never hardcode `/blog`, `/galeri`, etc.
 - **Client/server split:** Every route that reads `useLanguage()` has a `FooClient.tsx` (client) + `page.tsx` (server, exports `metadata`). Follow this pattern for new pages so each locale gets its own canonical + hreflang.
 - **Schema:** Centralised in `src/lib/seo-schema.ts` (`buildBlogPostingJsonLd`, `buildFAQPageJsonLd`, `buildBreadcrumbJsonLd`). Add new types here.
-- **Blog data:** `src/data/blog-posts.ts` — 300+ bilingual posts, ~2 MB / 20k+ lines. **Never read the whole file** — grep for `slug:` / `id:` and read the interface at the top instead.
+- **Blog data:** one JSON file per post in `content/blog/<id>.json` (id zero-padded to 4). `src/data/blog-posts.ts` holds the interface and `getAllPosts()`, which reads the folder **at build time only** — never import it into anything that runs per request (API routes, middleware): the Worker has no filesystem. Slugs must be ASCII; `content/slug-redirects.json` keeps 301s for the old Turkish-letter slugs.
 - **Indexing:** `src/lib/master-indexer.ts` submits both locales to IndexNow + Google Indexing API. Update `STATIC_PATHS` when adding new routes.
 
 ## Design tokens (in `globals.css` `@theme`)
@@ -79,36 +79,21 @@ See `DESIGN.md` for the phased design roadmap and `README.md` for repo basics.
 
 ## Automated blog generation
 
-Daily SEO posts are produced by a **Claude Code Routine**, not by a script calling an LLM API:
+One post a day, written by Claude from a Claude Code Routine. The procedure (rules, topic backlog,
+image, publishing) is `docs/BLOG_RUTIN.md` — change it there, not in the routine.
 
-- Routine ID `trig_01UeRoipxPiCuuhjirqwb5Wk` ("JBA Cyprus — AI Blog Yazarı")
-- Fires every 6 hours (00/06/12/18 UTC) into a **fresh session** in this environment
-- No separate LLM API key or billing — it runs on the account's Claude subscription
+1. **Routine session** — branches from `main` to `blog/auto-<UTC timestamp>`, adds `content/blog/<id>.json`
+   + `public/blog/<slug>.jpg`, runs `npm run build`, pushes the branch. It stops there.
+2. **`.github/workflows/blog-auto-merge.yml`** — builds the branch merged onto current `main`, merges it,
+   deletes the branch and deploys to Cloudflare. Branch prefix `blog/auto-` is load-bearing.
 
-Flow, and where each half runs:
-
-1. **Routine session** — pulls `main`, branches to `blog/auto-<UTC timestamp>`, greps existing slugs + max id, writes a 1500–2000 word TR post plus full EN translation, appends to `blogPosts`, verifies `npm run build`, pushes the branch. It stops there.
-2. **`.github/workflows/blog-auto-merge.yml`** — triggers on `blog/auto-**`, rebuilds the branch merged onto current `main`, opens a PR, merges it, deletes the branch. Vercel deploys from `main`.
-
-The split exists because the Routine session has **no GitHub MCP tools** (triggers created via MCP carry no connectors) and the project has no `gh` CLI — so it cannot open a PR itself. The Actions runner has both.
-
-The build runs in both halves on purpose: the Routine builds inside its own container, the workflow builds the branch *merged onto main*. A post that builds alone can still break once other commits land beside it.
-
-Branch name prefix `blog/auto-` is load-bearing — the workflow matches on it.
-
-> **Repo setting:** the workflow prefers opening a PR, which needs Settings → Actions →
-> General → Workflow permissions → *Allow GitHub Actions to create and approve pull
-> requests* (GitHub ships this **off**). While it is off the workflow falls back to a
-> direct merge and logs a warning, so posts still publish either way.
-
-`.github/workflows/daily-blog.yml` + `scripts/generate-blog.mjs` remain as a **manual fallback only** (schedule commented out; needs an `ANTHROPIC_API_KEY` secret). Never re-enable that cron while the Routine is active — two writers pushing to `main` cause push conflicts and duplicate content.
-
-History: this pipeline originally used `gemini-2.0-flash`, which was retired 2026-03-06 (fixed in `796209e` by moving to `gemini-2.5-flash` with thinking disabled). It then ran until 2026-06-23, when the Google AI Studio prepay balance was depleted (`429 RESOURCE_EXHAUSTED`) — that outage is what prompted the move to a Routine.
+The old Gemini/Anthropic-API generator (`scripts/generate-blog.mjs`, `daily-blog.yml`) was removed in Oct 2026;
+it edited the old single-file data format.
 
 ## Branch discipline
 
 - Main development branch for this stream: `claude/fix-seo-content-sharing-HN1CM`
-- Never push to `main` directly for feature work. `main` is the production deploy target via Vercel.
+- Never push to `main` directly for feature work. `main` is the production deploy target (Cloudflare).
 - The blog Routine is the one exception — it pushes content-only commits to `main` on its own schedule. Coordinate any refactor of `src/data/blog-posts.ts` around 00/06/12/18 UTC.
 
 ## Commit style

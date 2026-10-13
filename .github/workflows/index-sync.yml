@@ -1,20 +1,24 @@
 name: Remote Indexing Trigger
 
+# Pings IndexNow (Bing, Yandex, Seznam, Naver…) with every URL in the sitemap: after each
+# Cloudflare deploy, and once a day (this replaces the old Vercel cron at 08:00 UTC).
+# Google reads the sitemap through Search Console.
+
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch: # Manuel tetikleme için
+  workflow_run:
+    workflows: ["Deploy to Cloudflare"]
+    types: [completed]
+  schedule:
+    - cron: "0 8 * * *"
+  workflow_dispatch:
 
 jobs:
   ping-indexer:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
-      - name: Wait for Vercel Deployment
-        run: sleep 120 # Vercel'in deploy olması için 2 dakika bekle
-
       - name: Ping Indexing API
         run: |
-          curl -X POST https://cyprustattoo.ink/api/indexnow \
-          -H "Content-Type: application/json" \
-          -d '{}'
+          curl -fsS -X POST https://cyprustattoo.ink/api/indexnow \
+            -H "Content-Type: application/json" \
+            -d '{}'

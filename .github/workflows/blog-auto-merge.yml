@@ -74,7 +74,7 @@ jobs:
           if [ -n "$URL" ]; then
             echo "Merging $URL"
             if gh pr merge "$URL" --merge --delete-branch; then
-              echo "Published via PR. Vercel will deploy from main."
+              echo "Published via PR. The deploy job below ships it to Cloudflare."
               exit 0
             fi
             echo "::warning::PR merge failed; falling back to a direct merge."
@@ -92,7 +92,7 @@ jobs:
           git merge --no-ff "origin/$BRANCH" -m "Merge blog post: $TITLE"
           git push origin main
           git push origin --delete "$BRANCH"
-          echo "Published via direct merge. Vercel will deploy from main."
+          echo "Published via direct merge. The deploy job below ships it to Cloudflare."
 
       - name: Report failure
         if: failure()
@@ -102,3 +102,9 @@ jobs:
           echo "::error::Blog post on '$BRANCH' did not publish."
           echo "The branch is left in place with its commit intact — inspect the"
           echo "failing step above, fix forward, and re-push to retry."
+
+  # A merge pushed with GITHUB_TOKEN does not start other workflows, so deploy from here.
+  deploy:
+    needs: verify-and-publish
+    uses: ./.github/workflows/deploy-cloudflare.yml
+    secrets: inherit

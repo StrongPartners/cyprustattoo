@@ -1,33 +1,28 @@
 import { submitToIndexNow } from "./indexnow";
-import { submitToGoogleIndexing } from "./google-indexing";
-import { blogPosts } from "@/data/blog-posts";
 
 const BASE_URL = "https://cyprustattoo.ink";
 
-const STATIC_PATHS = ["", "/blog", "/galeri", "/hakkimizda", "/iletisim"];
-
-function buildAllUrls(): string[] {
-    const urls: string[] = [];
-    for (const locale of ["", "/en"] as const) {
-        for (const path of STATIC_PATHS) {
-            const url = `${BASE_URL}${locale}${path}` || BASE_URL;
-            urls.push(url);
-        }
-        for (const post of blogPosts) {
-            urls.push(`${BASE_URL}${locale}/blog/${post.slug}`);
-        }
-    }
-    return urls;
+/**
+ * Every URL the site publishes, read from its own sitemap. This runs per request on the
+ * Worker, so it must not import the blog content (that only exists at build time).
+ */
+async function buildAllUrls(): Promise<string[]> {
+    const res = await fetch(`${BASE_URL}/sitemap.xml`, { headers: { "user-agent": "cyprustattoo-indexer" } });
+    if (!res.ok) throw new Error(`sitemap.xml returned ${res.status}`);
+    const xml = await res.text();
+    return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
 }
 
 export async function masterIndex(specificUrls?: string[]) {
-    const urlsToIndex = specificUrls || buildAllUrls();
+    const urlsToIndex = specificUrls || (await buildAllUrls());
 
     console.log(`Starting Master Indexing for ${urlsToIndex.length} URLs...`);
 
+    // Google is fed by the sitemap (Search Console). The Indexing API we used to call here is
+    // only meant for JobPosting/BroadcastEvent pages and needed googleapis, which does not run
+    // on Cloudflare Workers.
     const results = {
         indexNow: await submitToIndexNow(urlsToIndex),
-        google: await submitToGoogleIndexing(urlsToIndex),
     };
 
     return results;

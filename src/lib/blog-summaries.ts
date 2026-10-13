@@ -1,4 +1,4 @@
-import { blogPosts, type BlogPost } from "@/data/blog-posts";
+import { getAllPosts, type BlogPost } from "@/data/blog-posts";
 
 /**
  * Everything a card needs, nothing it doesn't. `blog-posts.ts` is ~2 MB because of the
@@ -13,15 +13,16 @@ function summarize({ content: _content, ...rest }: BlogPost): BlogSummary {
     return rest;
 }
 
-const ordered = [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
+const ordered = () => [...getAllPosts()].sort((a, b) => b.date.localeCompare(a.date));
 
 export function getBlogSummaries(limit?: number): BlogSummary[] {
-    return (limit ? ordered.slice(0, limit) : ordered).map(summarize);
+    const all = ordered();
+    return (limit ? all.slice(0, limit) : all).map(summarize);
 }
 
 /** Same category first, newest first, topped up with the latest posts. */
 export function getRelatedSummaries(currentSlug: string, categoryTr: string | undefined, limit = 3): BlogSummary[] {
-    const pool = ordered.filter((p) => p.slug !== currentSlug);
+    const pool = ordered().filter((p) => p.slug !== currentSlug);
     const picked = categoryTr ? pool.filter((p) => p.category?.tr === categoryTr) : [];
     for (const p of pool) {
         if (picked.length >= limit) break;

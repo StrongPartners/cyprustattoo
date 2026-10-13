@@ -2,7 +2,7 @@
 
 Her gün **bir** yazı. Yazar Claude; bir Claude Code Routine her sabah bu dosyayı izler.
 Yazı `blog/auto-<UTC zaman damgası>` dalına push edilir, `.github/workflows/blog-auto-merge.yml`
-dalı main üzerinde derleyip yayınlar (Vercel main'den deploy eder). Prosedürü burada değiştir, routine'de değil.
+dalı main üzerinde derleyip yayınlar ve Cloudflare'e deploy eder. Prosedürü burada değiştir, routine'de değil.
 
 ## Neden yeniden kuruldu
 - Eski akış 23 Haziran 2026'da durdu (Gemini bakiyesi bitti, ardından kurulan routine silinmiş).
@@ -28,8 +28,10 @@ dalı main üzerinde derleyip yayınlar (Vercel main'den deploy eder). Prosedür
    1200x675 JPG (q 4) yap, `public/blog/<slug>.jpg` olarak kaydet. `imageAlt` görseli dürüstçe anlatsın.
    (Hesap: `CLOUDFLARE_API_TOKEN`. Ücretsiz kota başka işlerde biterse yedek: `public/gallery/` içinden son 30 yazıda
    kullanılmamış gerçek bir stüdyo fotoğrafı, 16:9 kırpılmış; stok/başka stüdyo görseli asla.)
-8. **Kayıt:** `src/data/blog-posts.ts` sonuna, `];` öncesine ekle. `id` = en büyük id + 1, `date` = bugün (UTC),
-   `author: "JBA Cyprus"`. Dosyanın tamamını okuma (2 MB); slug ve id için grep kullan.
+8. **Kayıt:** yeni dosya `content/blog/<id>.json` (id = en büyük id + 1, 4 haneye sıfırla doldurulmuş dosya adı:
+   `0359.json`). Alanlar: id, slug, title{tr,en}, description{tr,en}, date (bugün, UTC), author ("JBA Cyprus"),
+   category{tr,en}, readTime{tr,en}, image, imageAlt{tr,en}, content{tr,en}. Örnek: en son eklenen dosya.
+   En büyük id ve slug kontrolü: `ls content/blog | tail -1`, `grep -h '"slug"' content/blog/*.json`.
 9. **Kontrol:** `npm run build` geçmeli. Slug benzersiz, ASCII, küçük harf, tireli.
 10. **Yayın:** `git checkout -B blog/auto-$(date -u +%Y%m%d-%H%M%S) origin/main`, commit (`feat(blog): <TR başlık>`),
     push. Gerisini workflow yapar. Main'e doğrudan push etme.

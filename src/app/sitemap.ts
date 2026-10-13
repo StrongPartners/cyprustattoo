@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { blogPosts } from "@/data/blog-posts";
+import { getAllPosts } from "@/data/blog-posts";
 
 const BASE_URL = "https://cyprustattoo.ink";
 
@@ -48,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ];
     });
 
-    const blogRoutes: MetadataRoute.Sitemap = blogPosts.flatMap((post) => {
+    const blogRoutes: MetadataRoute.Sitemap = getAllPosts().flatMap((post) => {
         const trUrl = `${BASE_URL}/blog/${post.slug}`;
         const enUrl = `${BASE_URL}/en/blog/${post.slug}`;
         const postDate = new Date(post.date || now);
