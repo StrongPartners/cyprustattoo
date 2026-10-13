@@ -45,6 +45,13 @@
 }
 
 @layer base {
+  /* clip, not hidden: decorative glows past the right edge must not widen the page on
+     phones, and clip (unlike hidden) keeps position: sticky working for the pinned sections. */
+  html,
+  body {
+    overflow-x: clip;
+  }
+
   body {
     @apply bg-background text-white font-outfit overflow-x-hidden;
   }
