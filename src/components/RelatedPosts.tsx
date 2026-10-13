@@ -2,40 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { blogPosts, type BlogPost } from "@/data/blog-posts";
+import type { BlogSummary } from "@/lib/blog-summaries";
 import { useLanguage } from "@/components/LanguageContext";
 
-type Props = {
-    currentSlug: string;
-    categoryTr?: string;
-    limit?: number;
-};
-
-function pickRelated(
-    currentSlug: string,
-    categoryTr: string | undefined,
-    limit: number
-): BlogPost[] {
-    const pool = [...blogPosts]
-        .filter((p) => p.slug !== currentSlug)
-        .sort((a, b) => b.date.localeCompare(a.date));
-    const sameCategory = categoryTr
-        ? pool.filter((p) => p.category?.tr === categoryTr)
-        : [];
-    const picked = [...sameCategory];
-    const remaining = limit - picked.length;
-    if (remaining > 0) {
-        const filler = pool
-            .filter((p) => !picked.includes(p))
-            .slice(0, remaining);
-        picked.push(...filler);
-    }
-    return picked.slice(0, limit);
-}
-
-export default function RelatedPosts({ currentSlug, categoryTr, limit = 3 }: Props) {
+export default function RelatedPosts({ posts }: { posts: BlogSummary[] }) {
     const { t, language, localePath } = useLanguage();
-    const related = pickRelated(currentSlug, categoryTr, limit);
+    const related = posts;
 
     if (related.length === 0) return null;
 

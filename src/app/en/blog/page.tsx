@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getBlogSummaries } from "@/lib/blog-summaries";
 import BlogClient from "@/app/blog/BlogClient";
 
 const siteUrl = "https://cyprustattoo.ink";
@@ -18,5 +19,5 @@ export const metadata: Metadata = {
 };
 
 export default function EnBlogPage() {
-    return <BlogClient />;
+    return <BlogClient posts={getBlogSummaries()} />;
 }

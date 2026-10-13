@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blog-posts";
+import { getRelatedSummaries } from "@/lib/blog-summaries";
 import BlogPostClient from "./BlogPostClient";
 import { buildBlogPostingJsonLd } from "@/lib/seo-schema";
 
@@ -59,7 +60,7 @@ export default async function BlogPostPage({ params }: Props) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <BlogPostClient post={post} />
+            <BlogPostClient post={post} related={getRelatedSummaries(post.slug, post.category?.tr)} />
         </>
     );
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getBlogSummaries } from "@/lib/blog-summaries";
 import BlogClient from "./BlogClient";
 
 export const metadata: Metadata = {
@@ -8,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-    return <BlogClient />;
+    return <BlogClient posts={getBlogSummaries()} />;
 }

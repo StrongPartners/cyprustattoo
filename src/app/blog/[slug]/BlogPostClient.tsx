@@ -3,11 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageContext";
-import { BlogPost } from "@/data/blog-posts";
+import type { BlogPost } from "@/data/blog-posts";
+import type { BlogSummary } from "@/lib/blog-summaries";
 import ReadingProgress from "@/components/ReadingProgress";
 import RelatedPosts from "@/components/RelatedPosts";
 
-export default function BlogPostClient({ post }: { post: BlogPost }) {
+export default function BlogPostClient({ post, related }: { post: BlogPost; related: BlogSummary[] }) {
     const { t, language, localePath } = useLanguage();
 
     return (
@@ -68,10 +69,7 @@ export default function BlogPostClient({ post }: { post: BlogPost }) {
                 </div>
 
                 {/* Related Posts */}
-                <RelatedPosts
-                    currentSlug={post.slug}
-                    categoryTr={post.category?.tr}
-                />
+                <RelatedPosts posts={related} />
 
                 {/* Footer CTA */}
                 <div className="mt-24 p-12 sm:p-20 bg-surface border border-primary/10 rounded-[3rem] text-center relative overflow-hidden">

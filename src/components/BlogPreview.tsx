@@ -2,15 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { blogPosts } from "@/data/blog-posts";
+import type { BlogSummary } from "@/lib/blog-summaries";
 import { useLanguage } from "@/components/LanguageContext";
 
-export default function BlogPreview() {
+export default function BlogPreview({ posts }: { posts: BlogSummary[] }) {
     const { t, language, localePath } = useLanguage();
-    // Get the 3 newest posts by date
-    const latestPosts = [...blogPosts]
-        .sort((a, b) => b.date.localeCompare(a.date))
-        .slice(0, 3);
+    const latestPosts = posts;
 
     return (
         <section className="py-24 px-4 bg-surface/30">

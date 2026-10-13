@@ -2,13 +2,17 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { blogPosts } from "@/data/blog-posts";
+import { useState } from "react";
+import type { BlogSummary } from "@/lib/blog-summaries";
 import { useLanguage } from "@/components/LanguageContext";
 
-const orderedPosts = [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
+const PAGE = 24;
 
-export default function BlogClient() {
+export default function BlogClient({ posts }: { posts: BlogSummary[] }) {
     const { t, language, localePath } = useLanguage();
+    // 300+ cards at once made a 50k-px page; show a page at a time (the sitemap lists every post).
+    const [shown, setShown] = useState(PAGE);
+    const orderedPosts = posts.slice(0, shown);
 
     return (
         <div className="min-h-screen bg-background pt-32 pb-20 px-4">
@@ -30,6 +34,7 @@ export default function BlogClient() {
                                         src={post.image}
                                         alt={post.imageAlt[language]}
                                         fill
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                         className="object-cover group-hover:scale-110 transition-transform duration-700"
                                     />
                                     <div className="absolute top-4 left-4 bg-primary text-black text-[10px] font-black uppercase px-3 py-1 rounded-full">
@@ -56,6 +61,14 @@ export default function BlogClient() {
                         </article>
                     ))}
                 </div>
+
+                {shown < posts.length && (
+                    <div className="mt-16 text-center">
+                        <button type="button" onClick={() => setShown((n) => n + PAGE)} className="btn-outline">
+                            {t.blog_preview.load_more} ({posts.length - shown})
+                        </button>
+                    </div>
+                )}
             </div>
         </div>
     );
