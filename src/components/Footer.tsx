@@ -8,7 +8,7 @@ export default function Footer() {
   const { t, localePath } = useLanguage();
 
   return (
-    <footer className="bg-surface py-20 px-4 mt-20 relative overflow-hidden">
+    <footer className="on-dark bg-surface py-20 px-4 mt-20 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
 
       <div className="max-w-6xl mx-auto relative z-10">

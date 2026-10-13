@@ -6,7 +6,7 @@ export default function CTASection() {
     const { t } = useLanguage();
 
     return (
-        <section className="py-24 px-4 relative overflow-hidden">
+        <section className="on-dark bg-background py-24 px-4 relative overflow-hidden">
             <div className="absolute inset-0 bg-primary/5 z-0" />
             <div className="max-w-4xl mx-auto relative z-10 text-center">
                 <div className="bg-surface p-12 sm:p-20 rounded-[3rem] border border-primary/10 relative overflow-hidden shadow-2xl">

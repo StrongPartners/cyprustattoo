@@ -1,8 +1,8 @@
 # Günlük blog rutini (Ekim 2026'dan itibaren)
 
 Her gün **bir** yazı. Yazar Claude; bir Claude Code Routine her sabah bu dosyayı izler.
-Yazı `blog/auto-<UTC zaman damgası>` dalına push edilir, `.github/workflows/blog-auto-merge.yml`
-dalı main üzerinde derleyip yayınlar ve Cloudflare'e deploy eder. Prosedürü burada değiştir, routine'de değil.
+Yazı doğrudan `main`'e commit edilip push edilir, ardından `scripts/publish.sh` siteyi Cloudflare'e deploy eder
+ve IndexNow'a bildirir (GitHub Actions yok; Sergen doğrudan yayın yetkisi verdi). Prosedürü burada değiştir, routine'de değil.
 
 ## Neden yeniden kuruldu
 - Eski akış 23 Haziran 2026'da durdu (Gemini bakiyesi bitti, ardından kurulan routine silinmiş).
@@ -33,8 +33,8 @@ dalı main üzerinde derleyip yayınlar ve Cloudflare'e deploy eder. Prosedürü
    category{tr,en}, readTime{tr,en}, image, imageAlt{tr,en}, content{tr,en}. Örnek: en son eklenen dosya.
    En büyük id ve slug kontrolü: `ls content/blog | tail -1`, `grep -h '"slug"' content/blog/*.json`.
 9. **Kontrol:** `npm run build` geçmeli. Slug benzersiz, ASCII, küçük harf, tireli.
-10. **Yayın:** `git checkout -B blog/auto-$(date -u +%Y%m%d-%H%M%S) origin/main`, commit (`feat(blog): <TR başlık>`),
-    push. Gerisini workflow yapar. Main'e doğrudan push etme.
+10. **Yayın:** `git fetch origin main && git checkout -B main origin/main`, dosyaları ekle, commit (`feat(blog): <TR başlık>`),
+    `git push origin main`, sonra `bash scripts/publish.sh`. Canlı adresi curl ile kontrol et (200).
 11. **Rapor:** Türkçe 2-3 satır: başlık, hedeflenen arama, canlı adres (`https://cyprustattoo.ink/blog/<slug>`).
 
 ## Konu listesi

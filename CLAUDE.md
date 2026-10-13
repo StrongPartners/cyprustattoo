@@ -8,7 +8,7 @@ Next.js 15 (App Router) + Tailwind v4 site for Cyprus Tattoo Ink, a professional
 - **Styling:** Tailwind v4 via `@theme` in `src/app/globals.css`
 - **Fonts:** Inter (latin), Outfit (body via CSS var)
 - **Images:** next/image with AVIF/WebP, responsive `deviceSizes`
-- **Hosting:** Cloudflare Workers via OpenNext (`wrangler.jsonc`, `open-next.config.ts`), deployed by `.github/workflows/deploy-cloudflare.yml` on every push to `main`. Prerendered pages are served from static assets; next/image goes through the `IMAGES` binding. (Moved off Vercel in Oct 2026.)
+- **Hosting:** Cloudflare Workers via OpenNext (`wrangler.jsonc`, `open-next.config.ts`), deployed from this session with `scripts/publish.sh` after every push to `main` (no GitHub Actions). Prerendered pages are served from static assets; next/image goes through the `IMAGES` binding. (Moved off Vercel in Oct 2026.)
 
 ## Architecture conventions
 
@@ -81,19 +81,14 @@ See `DESIGN.md` for the phased design roadmap and `README.md` for repo basics.
 
 One post a day, written by Claude from a Claude Code Routine. The procedure (rules, topic backlog,
 image, publishing) is `docs/BLOG_RUTIN.md` — change it there, not in the routine.
-
-1. **Routine session** — branches from `main` to `blog/auto-<UTC timestamp>`, adds `content/blog/<id>.json`
-   + `public/blog/<slug>.jpg`, runs `npm run build`, pushes the branch. It stops there.
-2. **`.github/workflows/blog-auto-merge.yml`** — builds the branch merged onto current `main`, merges it,
-   deletes the branch and deploys to Cloudflare. Branch prefix `blog/auto-` is load-bearing.
-
-The old Gemini/Anthropic-API generator (`scripts/generate-blog.mjs`, `daily-blog.yml`) was removed in Oct 2026;
-it edited the old single-file data format.
+Sergen gave Claude direct publishing rights (Oct 2026): the routine commits the post to `main`, pushes,
+and runs `scripts/publish.sh` (OpenNext build → Cloudflare deploy → IndexNow ping). There are no
+GitHub Actions workflows any more.
 
 ## Branch discipline
 
 - Main development branch for this stream: `claude/fix-seo-content-sharing-HN1CM`
-- Never push to `main` directly for feature work. `main` is the production deploy target (Cloudflare).
+- `main` is production. Blog posts and site changes Sergen asked for are pushed to `main` and published with `scripts/publish.sh`.
 - The blog Routine is the one exception — it pushes content-only commits to `main` on its own schedule. Coordinate any refactor of `src/data/blog-posts.ts` around 00/06/12/18 UTC.
 
 ## Commit style

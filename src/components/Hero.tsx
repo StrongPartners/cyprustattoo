@@ -70,7 +70,7 @@ export default function Hero() {
     return (
         <section
             ref={containerRef}
-            className="relative flex min-h-[95vh] items-center justify-center overflow-hidden bg-[#0a0a0a]"
+            className="on-dark relative flex min-h-[95vh] items-center justify-center overflow-hidden bg-[#0a0a0a]"
         >
             {/* Still plate: real work on screen from the first paint, the clip fades in over it. */}
             <motion.div
@@ -150,7 +150,7 @@ export default function Hero() {
                         href="https://wa.me/905488910673"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn-gold w-full text-center sm:w-auto"
+                        className="btn-gold aurora-btn w-full text-center sm:w-auto"
                     >
                         {t.hero.cta_whatsapp}
                     </a>

@@ -38,9 +38,9 @@ export default function ServicesSection() {
                                     alt={service.title}
                                     fill
                                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                    className="object-cover opacity-70 transition-all duration-700 group-hover:scale-105 group-hover:opacity-90"
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+                                <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-surface via-surface/85 to-transparent" />
                                 {service.badge && (
                                     <span className="absolute right-6 top-6 rounded-full bg-primary px-3 py-1 text-[10px] font-black uppercase text-black">
                                         {service.badge}
