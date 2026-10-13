@@ -12,7 +12,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const { slug } = await params;
+    const slug = decodeURIComponent((await params).slug);
     const post = blogPosts.find((p) => p.slug === slug);
 
     if (!post) return { title: "Post Not Found" };
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function EnBlogPostPage({ params }: Props) {
-    const { slug } = await params;
+    const slug = decodeURIComponent((await params).slug);
     const post = blogPosts.find((p) => p.slug === slug);
 
     if (!post) notFound();

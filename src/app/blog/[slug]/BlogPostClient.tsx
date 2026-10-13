@@ -7,6 +7,7 @@ import type { BlogPost } from "@/data/blog-posts";
 import type { BlogSummary } from "@/lib/blog-summaries";
 import ReadingProgress from "@/components/ReadingProgress";
 import RelatedPosts from "@/components/RelatedPosts";
+import PostBody from "@/components/PostBody";
 
 export default function BlogPostClient({ post, related }: { post: BlogPost; related: BlogSummary[] }) {
     const { t, language, localePath } = useLanguage();
@@ -50,23 +51,7 @@ export default function BlogPostClient({ post, related }: { post: BlogPost; rela
                 </header>
 
                 {/* Post Content */}
-                <div className="prose prose-invert max-w-none">
-                    {post.content[language].split("\n\n").map((paragraph, idx) => {
-                        if (paragraph.startsWith("## ")) {
-                            return (
-                                <h2 key={idx} className="text-3xl sm:text-4xl font-black text-white mt-20 mb-10 uppercase tracking-tight">
-                                    <span className="text-primary mr-4">—</span>
-                                    {paragraph.replace("## ", "")}
-                                </h2>
-                            );
-                        }
-                        return (
-                            <p key={idx} className="text-white/60 text-lg sm:text-xl leading-relaxed mb-8 font-light italic">
-                                {paragraph}
-                            </p>
-                        );
-                    })}
-                </div>
+                <PostBody content={post.content[language]} />
 
                 {/* Related Posts */}
                 <RelatedPosts posts={related} />

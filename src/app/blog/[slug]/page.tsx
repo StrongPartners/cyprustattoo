@@ -12,7 +12,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const { slug } = await params;
+    const slug = decodeURIComponent((await params).slug);
     const post = blogPosts.find((p) => p.slug === slug);
 
     if (!post) return { title: "Yazı Bulunamadı" };
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPostPage({ params }: Props) {
-    const { slug } = await params;
+    const slug = decodeURIComponent((await params).slug);
     const post = blogPosts.find((p) => p.slug === slug);
 
     if (!post) notFound();
