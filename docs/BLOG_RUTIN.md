@@ -39,7 +39,7 @@ ve IndexNow'a bildirir (GitHub Actions yok; Sergen doğrudan yayın yetkisi verd
 
 ## Konu listesi
 - [x] Kuzey Kıbrıs'ta ilk piercing rehberi: türler, iyileşme süreleri, bakım
-- [ ] Kulak piercing türleri: lob, helix, tragus, conch, daith — hangisi kime uygun
+- [x] Kulak piercing türleri: lob, helix, tragus, conch, daith — hangisi kime uygun
 - [ ] Piercing takısı malzemeleri: implant titanyum, cerrahi çelik, altın — neden önemli
 - [ ] Piercing enfeksiyonu mu, normal iyileşme mi? Belirtiler ve ne zaman doktora gidilir
 - [ ] Burun piercing (nostril, septum) bakımı ve iyileşme takvimi
