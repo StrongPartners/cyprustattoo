@@ -41,7 +41,7 @@ ve IndexNow'a bildirir (GitHub Actions yok; Sergen doğrudan yayın yetkisi verd
 - [x] Kuzey Kıbrıs'ta ilk piercing rehberi: türler, iyileşme süreleri, bakım
 - [x] Kulak piercing türleri: lob, helix, tragus, conch, daith — hangisi kime uygun
 - [x] Piercing takısı malzemeleri: implant titanyum, cerrahi çelik, altın — neden önemli
-- [ ] Piercing enfeksiyonu mu, normal iyileşme mi? Belirtiler ve ne zaman doktora gidilir
+- [x] Piercing enfeksiyonu mu, normal iyileşme mi? Belirtiler ve ne zaman doktora gidilir
 - [ ] Burun piercing (nostril, septum) bakımı ve iyileşme takvimi
 - [ ] Dövme gün gün nasıl iyileşir: ilk 30 gün takvimi
 - [ ] Dövmeden sonra deniz, havuz ve güneş: Kıbrıs yazında dikkat edilecekler
