@@ -42,7 +42,7 @@ ve IndexNow'a bildirir (GitHub Actions yok; Sergen doğrudan yayın yetkisi verd
 - [x] Kulak piercing türleri: lob, helix, tragus, conch, daith — hangisi kime uygun
 - [x] Piercing takısı malzemeleri: implant titanyum, cerrahi çelik, altın — neden önemli
 - [x] Piercing enfeksiyonu mu, normal iyileşme mi? Belirtiler ve ne zaman doktora gidilir
-- [ ] Burun piercing (nostril, septum) bakımı ve iyileşme takvimi
+- [x] Burun piercing (nostril, septum) bakımı ve iyileşme takvimi
 - [ ] Dövme gün gün nasıl iyileşir: ilk 30 gün takvimi
 - [ ] Dövmeden sonra deniz, havuz ve güneş: Kıbrıs yazında dikkat edilecekler
 - [ ] Dövme fiyatını ne belirler? Boyut, detay, yer, seans sayısı
