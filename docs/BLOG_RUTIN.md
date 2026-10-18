@@ -13,7 +13,8 @@ ve IndexNow'a bildirir (GitHub Actions yok; Sergen doğrudan yayın yetkisi verd
 ## Kurallar
 1. **Konu:** aşağıdaki listeden ilk kullanılmamış konu (kullanılınca `[x]` yap). Liste bitince aynı ölçütle 20 yeni konu ekle:
    Girne / Kuzey Kıbrıs / KKTC + dövme veya piercing + gerçek bir soru. Mevcut slug'larla (`grep 'slug:' src/data/blog-posts.ts`)
-   aynı konuyu yazma.
+   aynı konuyu yazma. Eski (Mart 2026) yazılar da sayılır: konunun anahtar kelimesini slug ve başlıklarda ara; karşılığı varsa
+   konuyu `[x] (eski yazı var: <slug>)` diye işaretleyip sıradakine geç.
 2. **Marka:** "JBA Cyprus Tattoo & Piercing" (Girne). Adres: Emin Alpkaya Sk., Çelebi Apt. No:1, Girne.
    WhatsApp/telefon: +90 548 891 0673 (`https://wa.me/905488910673`). Eski yazılardaki "Cyprus Tattoo Ink" adını kullanma.
 3. **Doğruluk:** fiyat, istatistik, müşteri sayısı, ödül, sağlık iddiası uydurma. Tıbbi konuda genel bilgi ver ve
@@ -43,15 +44,15 @@ ve IndexNow'a bildirir (GitHub Actions yok; Sergen doğrudan yayın yetkisi verd
 - [x] Piercing takısı malzemeleri: implant titanyum, cerrahi çelik, altın — neden önemli
 - [x] Piercing enfeksiyonu mu, normal iyileşme mi? Belirtiler ve ne zaman doktora gidilir
 - [x] Burun piercing (nostril, septum) bakımı ve iyileşme takvimi
-- [ ] Dövme gün gün nasıl iyileşir: ilk 30 gün takvimi
-- [ ] Dövmeden sonra deniz, havuz ve güneş: Kıbrıs yazında dikkat edilecekler
-- [ ] Dövme fiyatını ne belirler? Boyut, detay, yer, seans sayısı
-- [ ] Girne'de dövme yaptırmadan önce stüdyoya sorulacak 10 soru
-- [ ] Cover-up nasıl yapılır: eski dövme yeni tasarımla nasıl kapatılır
-- [ ] Lazer silme mi cover-up mı? Hangi durumda hangisi
-- [ ] Fine line dövmeler: neden zamanla yayılır, nasıl uzun ömürlü olur
-- [ ] Dövme ağrı haritası: vücudun hangi bölgesi ne kadar acıtır
-- [ ] Realistik portre dövme süreci: fotoğraf seçiminden son seansa
+- [x] Dövme gün gün nasıl iyileşir: ilk 30 gün takvimi (eski yazı var: dovme-sonrasi-iyilesme-sureci)
+- [x] Dövmeden sonra deniz, havuz ve güneş: Kıbrıs yazında dikkat edilecekler (eski yazı var: kibris-ikliminde-dovme-bakimi)
+- [x] Dövme fiyatını ne belirler? Boyut, detay, yer, seans sayısı (eski yazı var: kibris-dovme-fiyatlari-2026)
+- [x] Girne'de dövme yaptırmadan önce stüdyoya sorulacak 10 soru (eski yazı var: guvenilir-dovme-studyosu-secme-rehberi)
+- [x] Cover-up nasıl yapılır: eski dövme yeni tasarımla nasıl kapatılır (eski yazı var: cover-up-dovme-planlama-rehberi)
+- [x] Lazer silme mi cover-up mı? Hangi durumda hangisi (eski yazı var: dovme-sildirme-mi-cover-up-mi)
+- [x] Fine line dövmeler: neden zamanla yayılır, nasıl uzun ömürlü olur (eski yazı var: fineline-dovme-kibris-ikliminde-bakim)
+- [x] Dövme ağrı haritası: vücudun hangi bölgesi ne kadar acıtır (eski yazı var: dovme-agri-yonetimi-anestezi)
+- [x] Realistik portre dövme süreci: fotoğraf seçiminden son seansa
 - [ ] Kol boyu (sleeve) dövme planlama: tema, akış, seans sayısı
 - [ ] Yazı (lettering) dövmesinde font ve boyut seçimi
 - [ ] Anı (memorial) dövmeleri: kayıpları anlamlı biçimde taşımak
