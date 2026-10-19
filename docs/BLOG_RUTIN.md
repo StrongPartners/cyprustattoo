@@ -53,7 +53,7 @@ ve IndexNow'a bildirir (GitHub Actions yok; Sergen doğrudan yayın yetkisi verd
 - [x] Fine line dövmeler: neden zamanla yayılır, nasıl uzun ömürlü olur (eski yazı var: fineline-dovme-kibris-ikliminde-bakim)
 - [x] Dövme ağrı haritası: vücudun hangi bölgesi ne kadar acıtır (eski yazı var: dovme-agri-yonetimi-anestezi)
 - [x] Realistik portre dövme süreci: fotoğraf seçiminden son seansa
-- [ ] Kol boyu (sleeve) dövme planlama: tema, akış, seans sayısı
+- [x] Kol boyu (sleeve) dövme planlama: tema, akış, seans sayısı
 - [ ] Yazı (lettering) dövmesinde font ve boyut seçimi
 - [ ] Anı (memorial) dövmeleri: kayıpları anlamlı biçimde taşımak
 - [ ] Çift ve arkadaş dövmeleri: fikirler ve dikkat edilecekler
