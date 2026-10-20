@@ -54,7 +54,7 @@ ve IndexNow'a bildirir (GitHub Actions yok; Sergen doğrudan yayın yetkisi verd
 - [x] Dövme ağrı haritası: vücudun hangi bölgesi ne kadar acıtır (eski yazı var: dovme-agri-yonetimi-anestezi)
 - [x] Realistik portre dövme süreci: fotoğraf seçiminden son seansa
 - [x] Kol boyu (sleeve) dövme planlama: tema, akış, seans sayısı
-- [ ] Yazı (lettering) dövmesinde font ve boyut seçimi
+- [x] Yazı (lettering) dövmesinde font ve boyut seçimi
 - [ ] Anı (memorial) dövmeleri: kayıpları anlamlı biçimde taşımak
 - [ ] Çift ve arkadaş dövmeleri: fikirler ve dikkat edilecekler
 - [ ] Dövme sonrası kaşıntı, kabuklanma ve soyulma: neler normal
