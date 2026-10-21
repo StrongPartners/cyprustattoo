@@ -55,7 +55,7 @@ ve IndexNow'a bildirir (GitHub Actions yok; Sergen doğrudan yayın yetkisi verd
 - [x] Realistik portre dövme süreci: fotoğraf seçiminden son seansa
 - [x] Kol boyu (sleeve) dövme planlama: tema, akış, seans sayısı
 - [x] Yazı (lettering) dövmesinde font ve boyut seçimi
-- [ ] Anı (memorial) dövmeleri: kayıpları anlamlı biçimde taşımak
+- [x] Anı (memorial) dövmeleri: kayıpları anlamlı biçimde taşımak
 - [ ] Çift ve arkadaş dövmeleri: fikirler ve dikkat edilecekler
 - [ ] Dövme sonrası kaşıntı, kabuklanma ve soyulma: neler normal
 - [ ] Dövme randevusundan önceki 24 saat: yeme, uyku, kıyafet
