@@ -12,7 +12,7 @@ if [ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ]; then
 fi
 
 npm ci --no-audit --no-fund
-npx opennextjs-cloudflare build
+npx opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion   # Next 15 desteği 21 Eki 2026 bitti; Next 16 geçişine kadar geçici
 npx opennextjs-cloudflare deploy
 
 # Give the edge a moment, then tell IndexNow (Bing, Yandex…) about every URL in the sitemap.
